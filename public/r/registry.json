@@ -1,0 +1,68 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "az8-ui",
+  "homepage": "http://localhost:3000",
+  "items": [
+    {
+      "name": "icon-base",
+      "type": "registry:lib",
+      "title": "Icon Base",
+      "description": "AZ8 图标基础容器：统一 size / color / a11y 行为。所有 az8-ui 图标都依赖它。",
+      "files": [
+        {
+          "path": "registry/lib/icon-base.tsx",
+          "type": "registry:lib",
+          "target": "components/icons/icon-base.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-right",
+      "type": "registry:ui",
+      "title": "IconArrowRight",
+      "description": "AZ8 图标：IconArrowRight",
+      "registryDependencies": [
+        "http://localhost:3000/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/icon-arrow-right.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/icon-arrow-right.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-az8-logo",
+      "type": "registry:ui",
+      "title": "IconAz8Logo",
+      "description": "AZ8 图标：IconAz8Logo",
+      "registryDependencies": [
+        "http://localhost:3000/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/icon-az8-logo.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/icon-az8-logo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-check",
+      "type": "registry:ui",
+      "title": "IconCheck",
+      "description": "AZ8 图标：IconCheck",
+      "registryDependencies": [
+        "http://localhost:3000/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/icon-check.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/icon-check.tsx"
+        }
+      ]
+    }
+  ]
+}

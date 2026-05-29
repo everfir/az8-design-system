@@ -1,0 +1,78 @@
+# 部署到 GitHub Pages：
+#   - 构建产物 = registry items (public/r/*.json) + 静态文档站 (out/)
+#   - 文档站 build 时把 public/ 的内容拷进 out/，所以 out/r/*.json 一并发布
+#   - registryDependencies 里嵌入的 URL 需要在 build 时就指向最终公网地址
+#     由 REGISTRY_BASE_URL 环境变量控制
+#
+# 使用前必做：
+#   1. Settings → Pages → Source 改成 "GitHub Actions"
+#   2. 把下面 BASE_PATH 和 REGISTRY_BASE_URL 改成你的 owner / repo / 自定义域名
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # 仓库托管在 https://<owner>.github.io/<repo>/ 时 BASE_PATH = /<repo>
+      # 绑了自定义域名（含 CNAME 文件）就把 BASE_PATH 留空
+      BASE_PATH: /az8-design-system
+      # registry items 内部依赖 URL 的前缀。必须与最终公网 URL 完全一致
+      # 例：https://<owner>.github.io/az8-design-system  或  https://ui.az8.design
+      PAGES_URL: https://sweet-retry.github.io/az8-design-system
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # 1. 编译 SVG → 组件 → registry.json
+      # 2. shadcn build → public/r/*.json，里面的 dependency URL 嵌入 PAGES_URL
+      - name: Build registry
+        env:
+          REGISTRY_BASE_URL: ${{ env.PAGES_URL }}
+        run: pnpm registry:build
+
+      # 3. 静态导出文档站
+      - name: Build site
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ env.BASE_PATH }}
+          NEXT_PUBLIC_REGISTRY_BASE_URL: ${{ env.PAGES_URL }}
+        run: pnpm build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

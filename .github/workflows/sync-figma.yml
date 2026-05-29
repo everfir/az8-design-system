@@ -1,0 +1,93 @@
+# 从 Figma 拉取最新图标 → 跑构建 → 如有变动开 PR
+#
+# 触发：
+#   - 手动: Actions → "sync from figma" → Run workflow
+#   - 定时: 默认每周一 03:00 UTC（按需调整 cron）
+#
+# 配置（一次性）：
+#   Settings → Secrets and variables → Actions
+#     - Secret: FIGMA_TOKEN      ← Figma personal access token
+#     - Secret: FIGMA_FILE_KEY   ← Figma 文件 URL 里的 key
+#     （可选 Variable: FIGMA_PAGE_NAME，默认 Icons）
+#
+# 行为：
+#   - 拉 SVG → public/raw-svg/
+#   - 跑 icons:build 重新生成组件 + registry.json
+#   - 跑 shadcn build 更新 public/r/*.json
+#   - 有变动 → 开 PR；无变动 → 跳过
+#
+# 默认带 --prune：Figma 删了的图标本地也删，防止僵尸文件
+name: sync from figma
+
+on:
+  workflow_dispatch:
+    inputs:
+      prune:
+        description: "删除 Figma 中已不存在的本地图标"
+        type: boolean
+        default: true
+  schedule:
+    # 每周一 03:00 UTC（北京时间周一 11:00）
+    - cron: "0 3 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Sync icons from Figma
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+          FIGMA_PAGE_NAME: ${{ vars.FIGMA_PAGE_NAME || 'Icons' }}
+        run: |
+          if [ "${{ inputs.prune }}" = "false" ]; then
+            pnpm icons:sync
+          else
+            pnpm icons:sync --prune
+          fi
+
+      - name: Rebuild registry
+        run: pnpm registry:build
+        # 部署时 deploy.yml 会用真实 PAGES_URL 再跑一次，这里只是为了 PR diff 完整
+        env:
+          REGISTRY_BASE_URL: https://placeholder.invalid
+
+      - name: Open PR if changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore(icons): sync from figma"
+          title: "chore(icons): sync from figma"
+          body: |
+            自动从 Figma 拉取最新图标。
+
+            合并前请检查：
+            - [ ] 新增 / 删除的图标符合预期
+            - [ ] SVG diff 没有 mask / clip 等渲染异常
+            - [ ] /icons gallery 在预览中显示正常
+
+            合并后 deploy workflow 会自动发布到 GitHub Pages。
+          branch: bot/sync-figma
+          delete-branch: true
+          add-paths: |
+            public/raw-svg
+            registry
+            registry.json
+            components/icons
+            public/r
