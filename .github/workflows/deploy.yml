@@ -32,7 +32,7 @@ jobs:
       BASE_PATH: /az8-design-system
       # registry items 内部依赖 URL 的前缀。必须与最终公网 URL 完全一致
       # 例：https://<owner>.github.io/az8-design-system  或  https://ui.az8.design
-      PAGES_URL: https://sweet-retry.github.io/az8-design-system
+      PAGES_URL: https://everfir-retry.github.io/az8-design-system
     steps:
       - uses: actions/checkout@v4
 
