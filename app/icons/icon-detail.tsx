@@ -42,13 +42,15 @@ function ThemeFrame({
   inner: string
   viewBox: string
 }) {
-  // 在子树里强制 .dark / .light 来覆盖全局，做到对比预览
+  // 预览框用具体色而非主题变量，确保两边在任何全局主题下都呈现各自的对比
   const isDark = mode === "dark"
   return (
     <div
       className={cn(
         "flex aspect-square flex-col items-center justify-center gap-2 rounded-lg border",
-        isDark ? "dark bg-background text-foreground" : "bg-background text-foreground",
+        isDark
+          ? "border-zinc-800 bg-zinc-950 text-zinc-50"
+          : "border-zinc-200 bg-white text-zinc-900",
       )}
     >
       <svg
@@ -62,7 +64,12 @@ function ThemeFrame({
         strokeLinejoin="round"
         dangerouslySetInnerHTML={{ __html: jsxInnerToHtml(inner) }}
       />
-      <span className="text-muted-foreground text-[10px] uppercase tracking-wider">
+      <span
+        className={cn(
+          "text-[10px] uppercase tracking-wider",
+          isDark ? "text-zinc-500" : "text-zinc-400",
+        )}
+      >
         {mode}
       </span>
     </div>
