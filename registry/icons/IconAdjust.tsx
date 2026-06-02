@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconAdjust(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M13.5 3v6H12V3zM13.5 15v6H12v-6zM9.95 9v6h-1.5V9z" /><path fill="currentColor" d="M20 6.75h-8v-1.5h8zM20 18.5h-8V17h8zM20 12.75h-8v-1.5h8zM10 6.75H4v-1.5h6zM10 18.5H4V17h6zM9 12.75H4v-1.5h5z" />
+      <path fill="#F5F5F7" d="M13.5 3v6H12V3zM13.5 15v6H12v-6zM9.95 9v6h-1.5V9z" /><path fill="#F5F5F7" d="M20 6.75h-8v-1.5h8zM20 18.5h-8V17h8zM20 12.75h-8v-1.5h8zM10 6.75H4v-1.5h6zM10 18.5H4V17h6zM9 12.75H4v-1.5h5z" />
     </IconBase>
   )
 }

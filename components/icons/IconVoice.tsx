@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconVoice(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M14.75 6.5a2.75 2.75 0 1 0-5.5 0V11a2.75 2.75 0 1 0 5.5 0zm1.5 4.5a4.25 4.25 0 0 1-8.5 0V6.5a4.25 4.25 0 0 1 8.5 0z" /><path fill="currentColor" d="M5.25 10.5a6.75 6.75 0 0 0 13.5 0h1.5a8.25 8.25 0 1 1-16.5 0z" /><path fill="currentColor" d="M12.75 18v3h-1.5v-3z" />
+      <path fill="#F4F4F5" d="M14.75 6.5a2.75 2.75 0 1 0-5.5 0V11a2.75 2.75 0 1 0 5.5 0zm1.5 4.5a4.25 4.25 0 0 1-8.5 0V6.5a4.25 4.25 0 0 1 8.5 0z" /><path fill="#F4F4F5" d="M5.25 10.5a6.75 6.75 0 0 0 13.5 0h1.5a8.25 8.25 0 1 1-16.5 0z" /><path fill="#F4F4F5" d="M12.75 18v3h-1.5v-3z" />
     </IconBase>
   )
 }

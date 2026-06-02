@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-base",
-  "type": "registry:lib",
   "title": "Icon Base",
   "description": "AZ8 图标基础容器：统一 size / color / a11y 行为。所有 az8-ui 图标都依赖它。",
   "files": [
@@ -11,5 +10,6 @@
       "type": "registry:lib",
       "target": "components/icons/icon-base.tsx"
     }
-  ]
+  ],
+  "type": "registry:lib"
 }

@@ -23,7 +23,9 @@ import { IconAdd, IconModel3D, IconStoryboardGrid25 } from "@/components/icons"
 <IconStoryboardGrid25 className="size-8 text-primary" />  // 完全自定义
 ```
 
-`IconBase` 暴露的 props：所有 `SVGProps<SVGSVGElement>` + 语义化 `size?: 'sm' | 'md' | 'lg' | 'xl'`。颜色走 `currentColor`，跟随 Tailwind `text-*`。
+`IconBase` 暴露的 props：所有 `SVGProps<SVGSVGElement>` + 语义化 `size?: 'sm' | 'md' | 'lg' | 'xl'`。
+
+**颜色策略**：图标 fill/stroke 原样保留 Figma 上的色值（多数是 `#F5F5F7`，为深色画板设计）。工程**不擅自**替换成 `currentColor`，避免和 Figma 视觉脱节。如果项目浅色背景看不清，自行包一层带背景的容器或在拿到 SVG 后做项目级处理。
 
 ### 通过 shadcn CLI 装到外部项目
 
@@ -164,7 +166,7 @@ FIGMA_NODE_ID=256:3152
   - 推荐用 node id 而不是 page name：精确指向"标准版本"那个 frame，避免扫到同 page 下的旧版/草稿 component
 - 该 node 下所有 `COMPONENT` / `COMPONENT_SET` 都视为图标
 - component 命名 PascalCase（`AZ8/Icon/Model3D` 也接受，脚本只取最后一段）
-- 描边色用 `#000` / `black`，构建时替换为 `currentColor`，让消费方用 Tailwind `text-*` 控色
+- fill / stroke 原样保留，构建时**不**做颜色替换；想要 `currentColor` 行为请在 Figma 上直接用 `currentColor`（变量名）或工程侧自行包一层
 
 ## 目录结构
 

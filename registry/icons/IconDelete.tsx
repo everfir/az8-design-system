@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconDelete(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="m10.003 3.827.004-.785L14 3.063l-.004.786-.003.786L10 4.61zM20 6v1.545H4V6zM12.75 16h-1.5V9h1.5z" /><path fill="currentColor" d="M17.75 19.5c0 .69-.56 1.25-1.25 1.25h-9c-.69 0-1.25-.56-1.25-1.25V9h1.5v10.25h8.5V9h1.5z" />
+      <path fill="#F5F5F7" d="m10.003 3.827.004-.785L14 3.063l-.004.786-.003.786L10 4.61zM20 6v1.545H4V6zM12.75 16h-1.5V9h1.5z" /><path fill="#F5F5F7" d="M17.75 19.5c0 .69-.56 1.25-1.25 1.25h-9c-.69 0-1.25-.56-1.25-1.25V9h1.5v10.25h8.5V9h1.5z" />
     </IconBase>
   )
 }

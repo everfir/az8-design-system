@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconMultiAngleView(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M19.25 7.938 12 3.86 4.75 7.938v8.123L12 20.139l7.25-4.078zm1.5 8.562a.75.75 0 0 1-.382.653l-8 4.5a.75.75 0 0 1-.736 0l-8-4.5a.75.75 0 0 1-.382-.653v-9c0-.27.146-.52.382-.653l8-4.5a.75.75 0 0 1 .736 0l8 4.5a.75.75 0 0 1 .382.653z" /><path fill="currentColor" d="M12.75 3v18h-1.5V3z" /><path fill="currentColor" d="m20.377 8.148-15.5 9-.754-1.296 15.5-9z" /><path fill="currentColor" d="m3.623 8.148 15.5 9 .754-1.296-15.5-9z" />
+      <path fill="#F5F5F7" d="M19.25 7.938 12 3.86 4.75 7.938v8.123L12 20.139l7.25-4.078zm1.5 8.562a.75.75 0 0 1-.382.653l-8 4.5a.75.75 0 0 1-.736 0l-8-4.5a.75.75 0 0 1-.382-.653v-9c0-.27.146-.52.382-.653l8-4.5a.75.75 0 0 1 .736 0l8 4.5a.75.75 0 0 1 .382.653z" /><path fill="#F5F5F7" d="M12.75 3v18h-1.5V3z" /><path fill="#F5F5F7" d="m20.377 8.148-15.5 9-.754-1.296 15.5-9z" /><path fill="#F5F5F7" d="m3.623 8.148 15.5 9 .754-1.296-15.5-9z" />
     </IconBase>
   )
 }
