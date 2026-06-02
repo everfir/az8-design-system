@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T04:35:30.072Z",
+  "generatedAt": "2026-06-02T04:40:26.723Z",
   "icons": [
     {
       "registryName": "icon-action",
@@ -35,13 +35,13 @@
       "registryName": "icon-alignleft",
       "componentName": "IconAlignLeft",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M4.75 4v16h-1.5V4z\" /><mask id=\"a\" fill=\"currentColor\"><rect width={13} height={5} x={7} y={6} rx={0.5} /></mask><rect width={13} height={5} x={7} y={6} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} /><mask id=\"b\" fill=\"currentColor\"><rect width={10} height={5} x={7} y={13} rx={0.5} /></mask><rect width={10} height={5} x={7} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} />"
+      "inner": "<path fill=\"currentColor\" d=\"M4.75 4v16h-1.5V4z\" /><mask id=\"a\" fill=\"#fff\"><rect width={13} height={5} x={7} y={6} rx={0.5} /></mask><rect width={13} height={5} x={7} y={6} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} /><mask id=\"b\" fill=\"#fff\"><rect width={10} height={5} x={7} y={13} rx={0.5} /></mask><rect width={10} height={5} x={7} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} />"
     },
     {
       "registryName": "icon-aligntop",
       "componentName": "IconAlignTop",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M20 4.75H4v-1.5h16z\" /><mask id=\"a\" fill=\"currentColor\"><rect width={13} height={5} x={11} y={7} rx={0.5} transform=\"rotate(90 11 7)\" /></mask><rect width={13} height={5} x={11} y={7} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} transform=\"rotate(90 11 7)\" /><mask id=\"b\" fill=\"currentColor\"><rect width={10} height={5} x={18} y={7} rx={0.5} transform=\"rotate(90 18 7)\" /></mask><rect width={10} height={5} x={18} y={7} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} transform=\"rotate(90 18 7)\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M20 4.75H4v-1.5h16z\" /><mask id=\"a\" fill=\"#fff\"><rect width={13} height={5} x={11} y={7} rx={0.5} transform=\"rotate(90 11 7)\" /></mask><rect width={13} height={5} x={11} y={7} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} transform=\"rotate(90 11 7)\" /><mask id=\"b\" fill=\"#fff\"><rect width={10} height={5} x={18} y={7} rx={0.5} transform=\"rotate(90 18 7)\" /></mask><rect width={10} height={5} x={18} y={7} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} transform=\"rotate(90 18 7)\" />"
     },
     {
       "registryName": "icon-assets",
@@ -113,7 +113,7 @@
       "registryName": "icon-defaultassets",
       "componentName": "IconDefaultAssets",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M4.5 18h15V9.284L15.467 6H4.5zM21 19l-.01.1a.5.5 0 0 1-.49.4h-17A.5.5 0 0 1 3 19V5a.5.5 0 0 1 .5-.5H16l4.815 3.92a.5.5 0 0 1 .185.39z\" /><mask id=\"a\" fill=\"currentColor\"><path d=\"M13.5 9a.5.5 0 0 1 .5.5v1.833l1.69-1.126a.2.2 0 0 1 .31.167v3.252a.2.2 0 0 1-.31.167L14 12.666V14.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M14 9.5h1.2zm0 1.833h-1.2v2.242l1.865-1.243zm1.69-1.126-.664-1-.002.001zm.31.167h-1.2zm0 3.252h1.2zm-.31.167-.666.998.002.002zM14 12.666l.666-.998-1.866-1.245v2.243zM13.5 15v1.2zM8 14.5H6.8zM8.5 9V7.8zm5 0v1.2a.7.7 0 0 1-.7-.7h2.4a1.7 1.7 0 0 0-1.7-1.7zm.5.5h-1.2v1.833h2.4V9.5zm0 1.833.665.999 1.69-1.126-.665-.999-.666-.999-1.69 1.127zm1.69-1.126.663 1a1 1 0 0 1-1.553-.833h2.4c0-1.114-1.24-1.786-2.174-1.167zm.31.167h-1.2v3.252h2.4v-3.252zm0 3.252h-1.2a1 1 0 0 1 1.553-.833l-.664 1-.663 1c.933.619 2.174-.053 2.174-1.167zm-.31.167.665-.998-1.69-1.127-.665.998-.666.998 1.69 1.127zM14 12.666h-1.2V14.5h2.4v-1.834zm0 1.834h-1.2a.7.7 0 0 1 .7-.7v2.4a1.7 1.7 0 0 0 1.7-1.7zm-.5.5v-1.2h-5v2.4h5zm-5 0v-1.2a.7.7 0 0 1 .7.7H6.8a1.7 1.7 0 0 0 1.7 1.7zm-.5-.5h1.2v-5H6.8v5zm0-5h1.2a.7.7 0 0 1-.7.7V7.8a1.7 1.7 0 0 0-1.7 1.7zm.5-.5v1.2h5V7.8h-5z\" mask=\"url(#a)\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M4.5 18h15V9.284L15.467 6H4.5zM21 19l-.01.1a.5.5 0 0 1-.49.4h-17A.5.5 0 0 1 3 19V5a.5.5 0 0 1 .5-.5H16l4.815 3.92a.5.5 0 0 1 .185.39z\" /><mask id=\"a\" fill=\"#fff\"><path d=\"M13.5 9a.5.5 0 0 1 .5.5v1.833l1.69-1.126a.2.2 0 0 1 .31.167v3.252a.2.2 0 0 1-.31.167L14 12.666V14.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M14 9.5h1.2zm0 1.833h-1.2v2.242l1.865-1.243zm1.69-1.126-.664-1-.002.001zm.31.167h-1.2zm0 3.252h1.2zm-.31.167-.666.998.002.002zM14 12.666l.666-.998-1.866-1.245v2.243zM13.5 15v1.2zM8 14.5H6.8zM8.5 9V7.8zm5 0v1.2a.7.7 0 0 1-.7-.7h2.4a1.7 1.7 0 0 0-1.7-1.7zm.5.5h-1.2v1.833h2.4V9.5zm0 1.833.665.999 1.69-1.126-.665-.999-.666-.999-1.69 1.127zm1.69-1.126.663 1a1 1 0 0 1-1.553-.833h2.4c0-1.114-1.24-1.786-2.174-1.167zm.31.167h-1.2v3.252h2.4v-3.252zm0 3.252h-1.2a1 1 0 0 1 1.553-.833l-.664 1-.663 1c.933.619 2.174-.053 2.174-1.167zm-.31.167.665-.998-1.69-1.127-.665.998-.666.998 1.69 1.127zM14 12.666h-1.2V14.5h2.4v-1.834zm0 1.834h-1.2a.7.7 0 0 1 .7-.7v2.4a1.7 1.7 0 0 0 1.7-1.7zm-.5.5v-1.2h-5v2.4h5zm-5 0v-1.2a.7.7 0 0 1 .7.7H6.8a1.7 1.7 0 0 0 1.7 1.7zm-.5-.5h1.2v-5H6.8v5zm0-5h1.2a.7.7 0 0 1-.7.7V7.8a1.7 1.7 0 0 0-1.7 1.7zm.5-.5v1.2h5V7.8h-5z\" mask=\"url(#a)\" />"
     },
     {
       "registryName": "icon-delete",
@@ -155,7 +155,7 @@
       "registryName": "icon-freelayout",
       "componentName": "IconFreeLayout",
       "viewBox": "0 0 24 24",
-      "inner": "<mask id=\"a\" fill=\"currentColor\"><rect width={16} height={7} x={11} y={4} rx={0.5} transform=\"rotate(90 11 4)\" /></mask><rect width={16} height={7} x={11} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} transform=\"rotate(90 11 4)\" /><mask id=\"b\" fill=\"currentColor\"><rect width={7} height={7} x={20} y={4} rx={0.5} transform=\"rotate(90 20 4)\" /></mask><rect width={7} height={7} x={20} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} transform=\"rotate(90 20 4)\" /><path fill=\"currentColor\" d=\"M17.25 13v7h-1.5v-7z\" /><path fill=\"currentColor\" d=\"M20 17.25h-7v-1.5h7z\" />"
+      "inner": "<mask id=\"a\" fill=\"#fff\"><rect width={16} height={7} x={11} y={4} rx={0.5} transform=\"rotate(90 11 4)\" /></mask><rect width={16} height={7} x={11} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} transform=\"rotate(90 11 4)\" /><mask id=\"b\" fill=\"#fff\"><rect width={7} height={7} x={20} y={4} rx={0.5} transform=\"rotate(90 20 4)\" /></mask><rect width={7} height={7} x={20} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} transform=\"rotate(90 20 4)\" /><path fill=\"currentColor\" d=\"M17.25 13v7h-1.5v-7z\" /><path fill=\"currentColor\" d=\"M20 17.25h-7v-1.5h7z\" />"
     },
     {
       "registryName": "icon-generationhistory",
@@ -167,7 +167,7 @@
       "registryName": "icon-group",
       "componentName": "IconGroup",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M20 8h-1.5V5.5H16V4h4zM20 16h-1.5v2.5H16V20h4zM4 8h1.5V5.5H8V4H4zM4 16h1.5v2.5H8V20H4z\" /><mask id=\"a\" fill=\"currentColor\"><path d=\"M13 7.5a.5.5 0 0 1 .5.5v2.5H16a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-2.5H8a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M13.5 8H15zm0 2.5H12V12h1.5zm3 .5H18zm-.5 5.5V18zm-5.5-.5H9zm0-2.5H12V12h-1.5zm-3-.5H6zM8 7.5V6zm5 0V9a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H12v2.5h3V8zm0 2.5V12H16V9h-2.5zm2.5 0V12a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H15v5h3v-5zm0 5H15a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V15h-5v3h5zm-5 0V15a1 1 0 0 1 1 1H9a2 2 0 0 0 2 2zm-.5-.5H12v-2.5H9V16zm0-2.5V12H8v3h2.5zm-2.5 0V12a1 1 0 0 1 1 1H6a2 2 0 0 0 2 2zm-.5-.5H9V8H6v5zm0-5H9a1 1 0 0 1-1 1V6a2 2 0 0 0-2 2zm.5-.5V9h5V6H8z\" mask=\"url(#a)\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M20 8h-1.5V5.5H16V4h4zM20 16h-1.5v2.5H16V20h4zM4 8h1.5V5.5H8V4H4zM4 16h1.5v2.5H8V20H4z\" /><mask id=\"a\" fill=\"#fff\"><path d=\"M13 7.5a.5.5 0 0 1 .5.5v2.5H16a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-2.5H8a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M13.5 8H15zm0 2.5H12V12h1.5zm3 .5H18zm-.5 5.5V18zm-5.5-.5H9zm0-2.5H12V12h-1.5zm-3-.5H6zM8 7.5V6zm5 0V9a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H12v2.5h3V8zm0 2.5V12H16V9h-2.5zm2.5 0V12a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H15v5h3v-5zm0 5H15a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V15h-5v3h5zm-5 0V15a1 1 0 0 1 1 1H9a2 2 0 0 0 2 2zm-.5-.5H12v-2.5H9V16zm0-2.5V12H8v3h2.5zm-2.5 0V12a1 1 0 0 1 1 1H6a2 2 0 0 0 2 2zm-.5-.5H9V8H6v5zm0-5H9a1 1 0 0 1-1 1V6a2 2 0 0 0-2 2zm.5-.5V9h5V6H8z\" mask=\"url(#a)\" />"
     },
     {
       "registryName": "icon-image",
@@ -203,13 +203,13 @@
       "registryName": "icon-notification",
       "componentName": "IconNotification",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M14.5 18a2.5 2.5 0 0 1-5 0H11a1 1 0 1 0 2 0z\" /><mask id=\"a\" fill=\"currentColor\"><path d=\"M12 4a5 5 0 0 1 5 5v7H7V9a5 5 0 0 1 5-5\" /></mask><path fill=\"currentColor\" d=\"M17 16v1.5h1.5V16zM7 16H5.5v1.5H7zm5-12v1.5A3.5 3.5 0 0 1 15.5 9h3A6.5 6.5 0 0 0 12 2.5zm5 5h-1.5v7h3V9zm0 7v-1.5H7v3h10zM7 16h1.5V9h-3v7zm0-7h1.5A3.5 3.5 0 0 1 12 5.5v-3A6.5 6.5 0 0 0 5.5 9z\" mask=\"url(#a)\" /><path fill=\"currentColor\" d=\"M19 14.75v1.5H5v-1.5z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M14.5 18a2.5 2.5 0 0 1-5 0H11a1 1 0 1 0 2 0z\" /><mask id=\"a\" fill=\"#fff\"><path d=\"M12 4a5 5 0 0 1 5 5v7H7V9a5 5 0 0 1 5-5\" /></mask><path fill=\"currentColor\" d=\"M17 16v1.5h1.5V16zM7 16H5.5v1.5H7zm5-12v1.5A3.5 3.5 0 0 1 15.5 9h3A6.5 6.5 0 0 0 12 2.5zm5 5h-1.5v7h3V9zm0 7v-1.5H7v3h10zM7 16h1.5V9h-3v7zm0-7h1.5A3.5 3.5 0 0 1 12 5.5v-3A6.5 6.5 0 0 0 5.5 9z\" mask=\"url(#a)\" /><path fill=\"currentColor\" d=\"M19 14.75v1.5H5v-1.5z\" />"
     },
     {
       "registryName": "icon-project",
       "componentName": "IconProject",
       "viewBox": "0 0 24 24",
-      "inner": "<rect width={5.5} height={5.5} x={13.75} y={4.75} stroke=\"currentColor\" strokeWidth={1.5} rx={2.75} /><mask id=\"a\" fill=\"currentColor\"><rect width={7} height={7} x={4} y={4} rx={0.5} /></mask><rect width={7} height={7} x={4} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} /><mask id=\"b\" fill=\"currentColor\"><rect width={7} height={7} x={13} y={13} rx={0.5} /></mask><rect width={7} height={7} x={13} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} /><mask id=\"c\" fill=\"currentColor\"><rect width={7} height={7} x={4} y={13} rx={0.5} /></mask><rect width={7} height={7} x={4} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#c)\" rx={0.5} />"
+      "inner": "<rect width={5.5} height={5.5} x={13.75} y={4.75} stroke=\"currentColor\" strokeWidth={1.5} rx={2.75} /><mask id=\"a\" fill=\"#fff\"><rect width={7} height={7} x={4} y={4} rx={0.5} /></mask><rect width={7} height={7} x={4} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} /><mask id=\"b\" fill=\"#fff\"><rect width={7} height={7} x={13} y={13} rx={0.5} /></mask><rect width={7} height={7} x={13} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} /><mask id=\"c\" fill=\"#fff\"><rect width={7} height={7} x={4} y={13} rx={0.5} /></mask><rect width={7} height={7} x={4} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#c)\" rx={0.5} />"
     },
     {
       "registryName": "icon-projectlist",
@@ -227,7 +227,7 @@
       "registryName": "icon-projectpreview",
       "componentName": "IconProjectPreview",
       "viewBox": "0 0 24 24",
-      "inner": "<mask id=\"a\" fill=\"currentColor\"><rect width={7} height={7} x={4} y={4} rx={0.5} /></mask><rect width={7} height={7} x={4} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} /><mask id=\"b\" fill=\"currentColor\"><rect width={7} height={7} x={13} y={4} rx={0.5} /></mask><rect width={7} height={7} x={13} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} /><mask id=\"c\" fill=\"currentColor\"><rect width={7} height={7} x={13} y={13} rx={0.5} /></mask><rect width={7} height={7} x={13} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#c)\" rx={0.5} /><mask id=\"d\" fill=\"currentColor\"><rect width={7} height={7} x={4} y={13} rx={0.5} /></mask><rect width={7} height={7} x={4} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#d)\" rx={0.5} />"
+      "inner": "<mask id=\"a\" fill=\"#fff\"><rect width={7} height={7} x={4} y={4} rx={0.5} /></mask><rect width={7} height={7} x={4} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} /><mask id=\"b\" fill=\"#fff\"><rect width={7} height={7} x={13} y={4} rx={0.5} /></mask><rect width={7} height={7} x={13} y={4} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} /><mask id=\"c\" fill=\"#fff\"><rect width={7} height={7} x={13} y={13} rx={0.5} /></mask><rect width={7} height={7} x={13} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#c)\" rx={0.5} /><mask id=\"d\" fill=\"#fff\"><rect width={7} height={7} x={4} y={13} rx={0.5} /></mask><rect width={7} height={7} x={4} y={13} stroke=\"currentColor\" strokeWidth={3} mask=\"url(#d)\" rx={0.5} />"
     },
     {
       "registryName": "icon-redoaction",
@@ -281,7 +281,7 @@
       "registryName": "icon-singleimage9gridinference",
       "componentName": "IconSingleImage9GridInference",
       "viewBox": "0 0 24 24",
-      "inner": "<mask id=\"a\" fill=\"currentColor\"><path d=\"M20 3.5a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M20 3.5V2zm.5.5H22zm0 16H22zm-.5.5V22zm-16 0V22zm-.5-.5H5zm0-16H2zm.5-.5V5zm16 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19v16h3V4zm0 16H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h16V2H4z\" mask=\"url(#a)\" /><path fill=\"currentColor\" d=\"M19.5 8.75v1.5H4v-1.5z\" /><path fill=\"currentColor\" d=\"M10.25 19.5h-1.5V4h1.5zM15.25 19.5h-1.5V4h1.5z\" /><path fill=\"currentColor\" d=\"M19.5 13.75v1.5H4v-1.5z\" />"
+      "inner": "<mask id=\"a\" fill=\"#fff\"><path d=\"M20 3.5a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M20 3.5V2zm.5.5H22zm0 16H22zm-.5.5V22zm-16 0V22zm-.5-.5H5zm0-16H2zm.5-.5V5zm16 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19v16h3V4zm0 16H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h16V2H4z\" mask=\"url(#a)\" /><path fill=\"currentColor\" d=\"M19.5 8.75v1.5H4v-1.5z\" /><path fill=\"currentColor\" d=\"M10.25 19.5h-1.5V4h1.5zM15.25 19.5h-1.5V4h1.5z\" /><path fill=\"currentColor\" d=\"M19.5 13.75v1.5H4v-1.5z\" />"
     },
     {
       "registryName": "icon-smart",
@@ -293,13 +293,13 @@
       "registryName": "icon-splitfromgrid",
       "componentName": "IconSplitFromGrid",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"m20.53 4.53-6 6-1.06-1.06 6-6z\" /><mask id=\"a\" fill=\"currentColor\"><path d=\"M10.556 3.5a.5.5 0 0 1 .5.5v8.944H20a.5.5 0 0 1 .5.5V20a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M10.556 3.5V2zm.5.5h1.5zm0 8.944h-1.5v1.5h1.5zm8.944 0v-1.5zm.5.5H22zm0 6.556H22zm-.5.5V22zm-16 0V22zm-.5-.5H2zm0-16H2zm.5-.5V2zm6.556 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5h-1.5v8.944h3V4zm0 8.944v1.5H20v-3h-8.944zm8.944 0v1.5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19V20h3v-6.556zm0 6.556H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h6.556V2H4z\" mask=\"url(#a)\" /><path fill=\"currentColor\" d=\"M20.5 9.5H19V5h-4.5V3.5h6z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"m20.53 4.53-6 6-1.06-1.06 6-6z\" /><mask id=\"a\" fill=\"#fff\"><path d=\"M10.556 3.5a.5.5 0 0 1 .5.5v8.944H20a.5.5 0 0 1 .5.5V20a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M10.556 3.5V2zm.5.5h1.5zm0 8.944h-1.5v1.5h1.5zm8.944 0v-1.5zm.5.5H22zm0 6.556H22zm-.5.5V22zm-16 0V22zm-.5-.5H2zm0-16H2zm.5-.5V2zm6.556 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5h-1.5v8.944h3V4zm0 8.944v1.5H20v-3h-8.944zm8.944 0v1.5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19V20h3v-6.556zm0 6.556H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h6.556V2H4z\" mask=\"url(#a)\" /><path fill=\"currentColor\" d=\"M20.5 9.5H19V5h-4.5V3.5h6z\" />"
     },
     {
       "registryName": "icon-storyboardgrid25",
       "componentName": "IconStoryboardGrid25",
       "viewBox": "0 0 24 24",
-      "inner": "<mask id=\"a\" fill=\"currentColor\"><path d=\"M20 3.5a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M20 3.5V2zm.5.5H22zm0 16H22zm-.5.5V22zm-16 0V22zm-.5-.5H5zm0-16H2zm.5-.5V5zm16 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19v16h3V4zm0 16H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h16V2H4z\" mask=\"url(#a)\" /><path fill=\"currentColor\" d=\"M10 8.75v1.5H4v-1.5zM20 8.75v1.5h-6v-1.5z\" /><path fill=\"currentColor\" d=\"M10.25 19.5h-1.5V4h1.5zM15.25 19.5h-1.5V4h1.5z\" /><path fill=\"currentColor\" d=\"M15 13.75v1.5H9v-1.5z\" />"
+      "inner": "<mask id=\"a\" fill=\"#fff\"><path d=\"M20 3.5a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M20 3.5V2zm.5.5H22zm0 16H22zm-.5.5V22zm-16 0V22zm-.5-.5H5zm0-16H2zm.5-.5V5zm16 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19v16h3V4zm0 16H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h16V2H4z\" mask=\"url(#a)\" /><path fill=\"currentColor\" d=\"M10 8.75v1.5H4v-1.5zM20 8.75v1.5h-6v-1.5z\" /><path fill=\"currentColor\" d=\"M10.25 19.5h-1.5V4h1.5zM15.25 19.5h-1.5V4h1.5z\" /><path fill=\"currentColor\" d=\"M15 13.75v1.5H9v-1.5z\" />"
     },
     {
       "registryName": "icon-text",

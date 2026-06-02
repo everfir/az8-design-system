@@ -83,8 +83,13 @@ async function buildOne(svgPath: string): Promise<BuildResult> {
       // Figma 上设计师在暗色主题画板上用的"icon 语义色"。统一替换成 currentColor，
       // 让消费方用 Tailwind text-* 自由控色。覆盖：
       //   - 黑系（旧手画图标常用）：#000 / #000000 / black
-      //   - 暗主题画板上的近白系：#F5F5F7 / #F4F4F5 / white （az8 当前 58 个图标全是这一系）
-      // 注意 svgr 这里是字面量匹配且大小写敏感，所以小写 hex 也要列上。
+      //   - 暗主题画板上的近白系：#F5F5F7 / #F4F4F5
+      //
+      // 注意：白色（white / #FFF / #FFFFFF）**不能**列在这里。Figma 用 mask + inside-stroke
+      // 模拟 inside-aligned stroke 时，会写成 `<mask fill="white">`——这里的 white 是 SVG mask
+      // 的"显示"语义而不是设计色，替换掉会让 11 个含 mask 的图标（AlignLeft 等）全部渲染错乱。
+      // 当前 58 个 az8 图标里 white 全部出现在 mask 上，零设计色用法，所以直接不替换最稳。
+      // svgr 这里字面量匹配且大小写敏感，所以小写 hex 也要列上。
       replaceAttrValues: {
         "#000": "currentColor",
         "#000000": "currentColor",
@@ -93,11 +98,6 @@ async function buildOne(svgPath: string): Promise<BuildResult> {
         "#f5f5f7": "currentColor",
         "#F4F4F5": "currentColor",
         "#f4f4f5": "currentColor",
-        white: "currentColor",
-        "#FFF": "currentColor",
-        "#fff": "currentColor",
-        "#FFFFFF": "currentColor",
-        "#ffffff": "currentColor",
       },
       svgo: true,
       svgoConfig: {
