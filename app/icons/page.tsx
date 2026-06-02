@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises"
 import path from "node:path"
 import Link from "next/link"
-import { IconArrowRight } from "@/components/icons"
+import { ArrowLeft } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { IconsBrowser, type IconMeta } from "./icons-browser"
 
@@ -45,7 +45,7 @@ export default async function IconsPage() {
           href="/"
           className="text-muted-foreground hover:text-foreground flex w-fit items-center gap-1.5 text-sm"
         >
-          <IconArrowRight size="sm" className="rotate-180" />
+          <ArrowLeft className="size-4" />
           Back
         </Link>
         <ThemeToggle />

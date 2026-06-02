@@ -1,10 +1,15 @@
 /**
  * 从 Figma 文件拉取图标 → public/raw-svg/<name>.svg
  *
- * 约定：
- *   - Figma 文件里有一个名为 "Icons" 的 page
- *   - 该 page 下所有 COMPONENT / COMPONENT_SET 都视为图标
- *   - component 的名字就是图标名（脚本会做 kebab-case 归一化）
+ * 扫描根的两种模式（二选一，FIGMA_NODE_ID 优先）：
+ *   1. 按 node id：FIGMA_NODE_ID 指向一个 frame/section/page，从它开始递归收集
+ *      所有 COMPONENT / COMPONENT_SET。推荐用法，能精确指向"标准版本"那个 frame，
+ *      避免把同 page 下的旧版/草稿 component 也带进来。
+ *   2. 按 page 名：FIGMA_PAGE_NAME（默认 "Icons"），从该 page 整体扫。
+ *
+ * component 的名字就是图标名。脚本会：
+ *   - 取 "/" 之后最后一段作为图标名（兼容 "AZ8/Icon/Add" 这类带前缀的命名）
+ *   - 做 kebab-case 归一化
  *
  * 环境变量：
  *   FIGMA_TOKEN     必填。Personal Access Token。
@@ -12,7 +17,8 @@
  *                   只需勾选 File content (read-only)
  *   FIGMA_FILE_KEY  必填。Figma 文件 key。
  *                   从 URL https://www.figma.com/design/<KEY>/<title> 中抠出 <KEY>
- *   FIGMA_PAGE_NAME 可选。默认 "Icons"。
+ *   FIGMA_NODE_ID   可选。指定扫描根 node id，如 "256:3152"。URL 里的 256-3152 形式也能识别。
+ *   FIGMA_PAGE_NAME 可选。默认 "Icons"。仅在没设 FIGMA_NODE_ID 时生效。
  *
  * 使用：
  *   pnpm icons:sync           # 拉取 + 同步本地
@@ -30,6 +36,8 @@ const RAW_DIR = path.join(ROOT, "public/raw-svg");
 const FIGMA_TOKEN = process.env.FIGMA_TOKEN;
 const FIGMA_FILE_KEY = process.env.FIGMA_FILE_KEY;
 const FIGMA_PAGE_NAME = process.env.FIGMA_PAGE_NAME ?? "Icons";
+// Figma URL 里 node-id 用 `-` 分隔（256-3152），API 里用 `:`（256:3152），两种都接受
+const FIGMA_NODE_ID = process.env.FIGMA_NODE_ID?.replace(/-/g, ":");
 
 const args = new Set(process.argv.slice(2));
 const DRY = args.has("--dry");
@@ -70,14 +78,25 @@ async function figma<T>(url: string): Promise<T> {
   return (await res.json()) as T;
 }
 
-function toKebab(name: string) {
-  return name
-    .trim()
-    .toLowerCase()
-    .replace(/[\s_/]+/g, "-")
-    .replace(/[^a-z0-9-]/g, "")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
+/**
+ * Figma component 名 → 工程侧权威名。
+ *
+ * 规则极简：取 "/" 后最后一段、去掉非法字符，保留 PascalCase 不变。
+ *   "AZ8/Icon/Model3D"             → "Model3D"
+ *   "AZ8/Icon/StoryboardGrid25"    → "StoryboardGrid25"
+ *
+ * 不拆词、不归一化大小写。设计师在 Figma 写的就是工程里 import 的：
+ *   import { IconModel3D } from "@/components/icons"
+ *
+ * 文件名也直接用它（如 IconModel3D.tsx）。registry slug（CLI 用的小写 id）
+ * 在 build-icons 里再统一小写化，那是另一回事。
+ */
+function normalizeName(rawName: string) {
+  const last = rawName.split("/").pop() ?? "";
+  // 只保留字母数字，剔除空格 / 标点；首字符若是数字就加下划线占位（避免 IconBase 写不出 component 名）
+  const cleaned = last.trim().replace(/[^A-Za-z0-9]/g, "");
+  if (!cleaned) return "";
+  return /^[0-9]/.test(cleaned) ? `_${cleaned}` : cleaned;
 }
 
 /** 在文档树里找指定名字的 page。Figma 顶层 children 都是 CANVAS（即 page） */
@@ -106,44 +125,68 @@ async function main() {
   assert(FIGMA_TOKEN, "缺少环境变量 FIGMA_TOKEN");
   assert(FIGMA_FILE_KEY, "缺少环境变量 FIGMA_FILE_KEY");
 
-  console.log(`📄 fetching file ${FIGMA_FILE_KEY} ...`);
-  // depth=4 通常足够覆盖 page → frame/section → component_set → component
-  // 如果你的图标埋得更深，调大或去掉 depth 参数
-  const file = await figma<FileResponse>(
-    `https://api.figma.com/v1/files/${FIGMA_FILE_KEY}?depth=4`,
-  );
-  console.log(`   file: "${file.name}"`);
+  let rootNode: FigmaNode;
+  let rootLabel: string;
 
-  const page = findPage(file.document, FIGMA_PAGE_NAME);
-  assert(
-    page,
-    `在文件里找不到名为 "${FIGMA_PAGE_NAME}" 的 page。请检查 Figma 文件里是否有这个 page，或设置 FIGMA_PAGE_NAME`,
-  );
+  if (FIGMA_NODE_ID) {
+    // 模式 1：按 node id。/v1/files/<KEY>/nodes 返回的就是以这个 node 为根的子树
+    console.log(
+      `📄 fetching file ${FIGMA_FILE_KEY} node ${FIGMA_NODE_ID} ...`,
+    );
+    const data = await figma<{
+      name: string;
+      nodes: Record<string, { document: FigmaNode } | null>;
+    }>(
+      `https://api.figma.com/v1/files/${FIGMA_FILE_KEY}/nodes?ids=${encodeURIComponent(FIGMA_NODE_ID)}&depth=4`,
+    );
+    console.log(`   file: "${data.name}"`);
+    const entry = data.nodes[FIGMA_NODE_ID];
+    assert(
+      entry?.document,
+      `在文件里找不到 node "${FIGMA_NODE_ID}"。请检查 FIGMA_NODE_ID 是否正确（URL 里的 node-id=256-3152 对应 256:3152）`,
+    );
+    rootNode = entry.document;
+    rootLabel = `node "${rootNode.name}" (${FIGMA_NODE_ID})`;
+  } else {
+    // 模式 2：按 page name 兜底
+    console.log(`📄 fetching file ${FIGMA_FILE_KEY} ...`);
+    const file = await figma<FileResponse>(
+      `https://api.figma.com/v1/files/${FIGMA_FILE_KEY}?depth=4`,
+    );
+    console.log(`   file: "${file.name}"`);
+    const page = findPage(file.document, FIGMA_PAGE_NAME);
+    assert(
+      page,
+      `在文件里找不到名为 "${FIGMA_PAGE_NAME}" 的 page。请检查 Figma 文件里是否有这个 page，或设置 FIGMA_PAGE_NAME / FIGMA_NODE_ID`,
+    );
+    rootNode = page;
+    rootLabel = `page "${FIGMA_PAGE_NAME}"`;
+  }
 
-  const icons = collectIcons(page!);
+  const icons = collectIcons(rootNode);
   assert(
     icons.length > 0,
-    `page "${FIGMA_PAGE_NAME}" 里没有 COMPONENT。请把图标转成 component（选中 → ⌥⌘K）`,
+    `${rootLabel} 里没有 COMPONENT。请把图标转成 component（选中 → ⌥⌘K）`,
   );
 
-  // 处理同名（kebab 归一化后）冲突
+  // 同名冲突：去掉非法字符后大小写敏感地比较
   const byName = new Map<string, { id: string; rawName: string }>();
   for (const it of icons) {
-    const kebab = toKebab(it.name);
-    if (!kebab) {
+    const name = normalizeName(it.name);
+    if (!name) {
       console.warn(`   ⚠ 跳过空名 component (id=${it.id})`);
       continue;
     }
-    if (byName.has(kebab)) {
+    if (byName.has(name)) {
       console.warn(
-        `   ⚠ 名字冲突: "${it.name}" 和 "${byName.get(kebab)!.rawName}" 都映射为 "${kebab}"，用前者`,
+        `   ⚠ 名字冲突: "${it.name}" 和 "${byName.get(name)!.rawName}" 都映射为 "${name}"，用前者`,
       );
       continue;
     }
-    byName.set(kebab, { id: it.id, rawName: it.name });
+    byName.set(name, { id: it.id, rawName: it.name });
   }
 
-  console.log(`🎯 found ${byName.size} icons in page "${FIGMA_PAGE_NAME}"`);
+  console.log(`🎯 found ${byName.size} icons in ${rootLabel}`);
 
   // Figma /v1/images 一次最多支持几百个 ids，单批就够
   const ids = [...byName.values()].map((v) => v.id);
@@ -157,46 +200,64 @@ async function main() {
   const existing = new Set(
     (await readdir(RAW_DIR)).filter((f) => f.endsWith(".svg")),
   );
+  // 在 case-insensitive 的 APFS / Windows 文件系统上，"add.svg" 和 "Add.svg" 是同一个文件。
+  // 没有这个映射的话：会先 writeFile("Add.svg") 实际覆写 "add.svg" 但保留原 case；
+  // 紧接着 prune 把不在 written 集合里的 "add.svg" 当孤儿删掉，刚写好的内容就没了。
+  const existingByLower = new Map<string, string>(
+    [...existing].map((f) => [f.toLowerCase(), f]),
+  );
 
   const tasks: Array<Promise<void>> = [];
   const written = new Set<string>();
   let added = 0;
   let updated = 0;
 
-  for (const [kebab, meta] of byName) {
+  for (const [name, meta] of byName) {
     const url = images.images[meta.id];
     if (!url) {
-      console.warn(`   ⚠ "${kebab}" 没拿到 SVG URL，跳过`);
+      console.warn(`   ⚠ "${name}" 没拿到 SVG URL，跳过`);
       continue;
     }
-    const filename = `${kebab}.svg`;
+    const filename = `${name}.svg`;
     written.add(filename);
 
     tasks.push(
       (async () => {
         const r = await fetch(url);
         if (!r.ok) {
-          console.warn(`   ⚠ 下载失败 ${kebab}: ${r.status}`);
+          console.warn(`   ⚠ 下载失败 ${name}: ${r.status}`);
           return;
         }
         const svg = await r.text();
         const target = path.join(RAW_DIR, filename);
 
-        const isNew = !existing.has(filename);
-        // 只比较 Figma 这次的产物和磁盘上的差异，实际写入由 dry 控制
+        const existingCase = existingByLower.get(filename.toLowerCase());
+        const isNew = !existingCase;
+        const caseChanged = existingCase && existingCase !== filename;
+
         if (DRY) {
-          console.log(`   ${isNew ? "+" : "~"} ${filename}`);
+          console.log(
+            `   ${isNew ? "+" : caseChanged ? "↻" : "~"} ${filename}${caseChanged ? `  (was ${existingCase})` : ""}`,
+          );
           if (isNew) added++;
           else updated++;
           return;
+        }
+
+        // case 变化时（add.svg → Add.svg）必须先 unlink，否则 case-insensitive
+        // 文件系统会保留旧 case 当做覆写，prune 会把这个文件错杀
+        if (caseChanged) {
+          await unlink(path.join(RAW_DIR, existingCase!)).catch(() => {});
         }
         await writeFile(target, svg, "utf8");
         if (isNew) {
           added++;
           console.log(`   + ${filename}`);
+        } else if (caseChanged) {
+          updated++;
+          console.log(`   ↻ ${existingCase} → ${filename}`);
         } else {
           updated++;
-          // 不打印 unchanged 噪音，但 updated 计数会包含 "字节相同的覆写"
         }
       })(),
     );
@@ -205,20 +266,25 @@ async function main() {
   await Promise.all(tasks);
 
   // prune：Figma 删了的图标本地也删
+  // 用大小写不敏感比对：写入阶段已经把 case 变更（add.svg → Add.svg）当 update 处理掉了，
+  // 这里只清理"在 Figma 完全找不到对应名字"的真孤儿
+  const writtenLower = new Set([...written].map((f) => f.toLowerCase()));
   let removed = 0;
   if (PRUNE) {
     for (const f of existing) {
-      if (!written.has(f)) {
+      if (!writtenLower.has(f.toLowerCase())) {
         if (DRY) {
           console.log(`   - ${f}`);
         } else {
-          await unlink(path.join(RAW_DIR, f));
+          await unlink(path.join(RAW_DIR, f)).catch(() => {});
         }
         removed++;
       }
     }
   } else {
-    const orphans = [...existing].filter((f) => !written.has(f));
+    const orphans = [...existing].filter(
+      (f) => !writtenLower.has(f.toLowerCase()),
+    );
     if (orphans.length > 0) {
       console.log(
         `\n   ℹ ${orphans.length} 个本地 SVG 在 Figma 已不存在（加 --prune 自动删除）：`,

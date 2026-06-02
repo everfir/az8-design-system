@@ -1,6 +1,12 @@
 /**
- * 把 public/raw-svg/*.svg 转成 registry/icons/icon-<kebab>.tsx，
+ * 把 public/raw-svg/<PascalCase>.svg 转成 registry/icons/Icon<PascalCase>.tsx，
  * 同时把每个图标作为 registry:ui 注入 registry.json 的 items。
+ *
+ * 命名约定（设计师与工程双向友好）：
+ *   - SVG 文件：raw-svg/Model3D.svg     ← Figma 上 component 名直接落盘（sync-figma 保证）
+ *   - 组件名 ：IconModel3D              ← "Icon" + Figma name
+ *   - 文件名 ：IconModel3D.tsx          ← 同组件名
+ *   - registry slug ：icon-model3d      ← 组件名小写化，给 shadcn CLI 用，无需可读
  *
  * 流程：
  *   1. 用 @svgr/core 把原始 SVG 跑一遍 svgo + jsx 生成「中间产物」
@@ -27,16 +33,14 @@ const META_FILE = path.join(ROOT, "components/icons-meta.json");
 const REGISTRY_BASE_URL =
   process.env.REGISTRY_BASE_URL?.replace(/\/$/, "") || "https://az8.design";
 
-function toPascalCase(name: string) {
-  return name
-    .replace(/\.svg$/i, "")
-    .split(/[-_\s]+/)
-    .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-    .join("");
+/** SVG 文件名已是 PascalCase（由 sync-figma 保证），剥掉扩展名就是图标名 */
+function stripExt(filename: string) {
+  return filename.replace(/\.svg$/i, "");
 }
 
-function toKebabCase(name: string) {
-  return name.replace(/\.svg$/i, "").toLowerCase().replace(/[_\s]+/g, "-");
+/** 给 shadcn CLI 用的 slug：保持机械小写，不拆词。Model3D → icon-model3d */
+function toRegistrySlug(pascal: string) {
+  return `icon-${pascal.toLowerCase()}`;
 }
 
 /** 从 svgr 中间产物里抠出 <svg ...>{children}</svg> 的 children + viewBox */
@@ -62,10 +66,10 @@ interface BuildResult {
 
 async function buildOne(svgPath: string): Promise<BuildResult> {
   const filename = path.basename(svgPath);
-  const kebab = toKebabCase(filename);
-  const componentName = `Icon${toPascalCase(filename)}`;
-  const outName = `icon-${kebab}.tsx`;
-  const registryName = `icon-${kebab}`;
+  const pascalName = stripExt(filename);
+  const componentName = `Icon${pascalName}`;
+  const outName = `${componentName}.tsx`;
+  const registryName = toRegistrySlug(pascalName);
 
   const svg = await readFile(svgPath, "utf8");
 

@@ -2,13 +2,15 @@
 #
 # 触发：
 #   - 手动: Actions → "sync from figma" → Run workflow
-#   - 定时: 默认每周一 03:00 UTC（按需调整 cron）
+#   - 定时: 每天 02:00 UTC（北京时间 10:00）
 #
 # 配置（一次性）：
 #   Settings → Secrets and variables → Actions
 #     - Secret: FIGMA_TOKEN      ← Figma personal access token
 #     - Secret: FIGMA_FILE_KEY   ← Figma 文件 URL 里的 key
-#     （可选 Variable: FIGMA_PAGE_NAME，默认 Icons）
+#     可选：
+#     - Variable: FIGMA_NODE_ID  ← 指定扫描根 frame，如 "256:3152"。推荐用，能精确指向标准版本
+#     - Variable: FIGMA_PAGE_NAME ← 没设 NODE_ID 时退回按 page 名扫，默认 "Icons"
 #
 # 行为：
 #   - 拉 SVG → public/raw-svg/
@@ -27,8 +29,8 @@ on:
         type: boolean
         default: true
   schedule:
-    # 每周一 03:00 UTC（北京时间周一 11:00）
-    - cron: "0 3 * * 1"
+    # 每天 02:00 UTC（北京时间 10:00）
+    - cron: "0 2 * * *"
 
 permissions:
   contents: write
@@ -55,6 +57,7 @@ jobs:
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
           FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+          FIGMA_NODE_ID: ${{ vars.FIGMA_NODE_ID }}
           FIGMA_PAGE_NAME: ${{ vars.FIGMA_PAGE_NAME || 'Icons' }}
         run: |
           if [ "${{ inputs.prune }}" = "false" ]; then

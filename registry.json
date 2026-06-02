@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "az8-ui",
-  "homepage": "https://az8.design",
+  "homepage": "https://placeholder.invalid",
   "items": [
     {
       "name": "icon-base",
@@ -17,50 +17,930 @@
       ]
     },
     {
-      "name": "icon-arrow-right",
+      "name": "icon-action",
       "type": "registry:ui",
-      "title": "IconArrowRight",
-      "description": "AZ8 图标：IconArrowRight",
+      "title": "IconAction",
+      "description": "AZ8 图标：IconAction",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
-          "path": "registry/icons/icon-arrow-right.tsx",
+          "path": "registry/icons/IconAction.tsx",
           "type": "registry:ui",
-          "target": "components/icons/icon-arrow-right.tsx"
+          "target": "components/icons/IconAction.tsx"
         }
       ]
     },
     {
-      "name": "icon-az8-logo",
+      "name": "icon-add",
       "type": "registry:ui",
-      "title": "IconAz8Logo",
-      "description": "AZ8 图标：IconAz8Logo",
+      "title": "IconAdd",
+      "description": "AZ8 图标：IconAdd",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
-          "path": "registry/icons/icon-az8-logo.tsx",
+          "path": "registry/icons/IconAdd.tsx",
           "type": "registry:ui",
-          "target": "components/icons/icon-az8-logo.tsx"
+          "target": "components/icons/IconAdd.tsx"
         }
       ]
     },
     {
-      "name": "icon-check",
+      "name": "icon-addalt",
       "type": "registry:ui",
-      "title": "IconCheck",
-      "description": "AZ8 图标：IconCheck",
+      "title": "IconAddAlt",
+      "description": "AZ8 图标：IconAddAlt",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
-          "path": "registry/icons/icon-check.tsx",
+          "path": "registry/icons/IconAddAlt.tsx",
           "type": "registry:ui",
-          "target": "components/icons/icon-check.tsx"
+          "target": "components/icons/IconAddAlt.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-adjust",
+      "type": "registry:ui",
+      "title": "IconAdjust",
+      "description": "AZ8 图标：IconAdjust",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAdjust.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAdjust.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-adjustangle",
+      "type": "registry:ui",
+      "title": "IconAdjustAngle",
+      "description": "AZ8 图标：IconAdjustAngle",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAdjustAngle.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAdjustAngle.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-alignleft",
+      "type": "registry:ui",
+      "title": "IconAlignLeft",
+      "description": "AZ8 图标：IconAlignLeft",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAlignLeft.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAlignLeft.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-aligntop",
+      "type": "registry:ui",
+      "title": "IconAlignTop",
+      "description": "AZ8 图标：IconAlignTop",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAlignTop.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAlignTop.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-assets",
+      "type": "registry:ui",
+      "title": "IconAssets",
+      "description": "AZ8 图标：IconAssets",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAssets.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAssets.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-assetsalt",
+      "type": "registry:ui",
+      "title": "IconAssetsAlt",
+      "description": "AZ8 图标：IconAssetsAlt",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAssetsAlt.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAssetsAlt.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-audio",
+      "type": "registry:ui",
+      "title": "IconAudio",
+      "description": "AZ8 图标：IconAudio",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAudio.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAudio.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-close",
+      "type": "registry:ui",
+      "title": "IconClose",
+      "description": "AZ8 图标：IconClose",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconClose.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconClose.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-collapse",
+      "type": "registry:ui",
+      "title": "IconCollapse",
+      "description": "AZ8 图标：IconCollapse",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCollapse.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCollapse.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-community",
+      "type": "registry:ui",
+      "title": "IconCommunity",
+      "description": "AZ8 图标：IconCommunity",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCommunity.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCommunity.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-confirm",
+      "type": "registry:ui",
+      "title": "IconConfirm",
+      "description": "AZ8 图标：IconConfirm",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconConfirm.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconConfirm.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-copyimage",
+      "type": "registry:ui",
+      "title": "IconCopyImage",
+      "description": "AZ8 图标：IconCopyImage",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCopyImage.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCopyImage.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-copynode",
+      "type": "registry:ui",
+      "title": "IconCopyNode",
+      "description": "AZ8 图标：IconCopyNode",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCopyNode.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCopyNode.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-credits",
+      "type": "registry:ui",
+      "title": "IconCredits",
+      "description": "AZ8 图标：IconCredits",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCredits.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCredits.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-crop",
+      "type": "registry:ui",
+      "title": "IconCrop",
+      "description": "AZ8 图标：IconCrop",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCrop.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCrop.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-defaultassets",
+      "type": "registry:ui",
+      "title": "IconDefaultAssets",
+      "description": "AZ8 图标：IconDefaultAssets",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconDefaultAssets.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconDefaultAssets.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-delete",
+      "type": "registry:ui",
+      "title": "IconDelete",
+      "description": "AZ8 图标：IconDelete",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconDelete.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconDelete.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-download",
+      "type": "registry:ui",
+      "title": "IconDownload",
+      "description": "AZ8 图标：IconDownload",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconDownload.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconDownload.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-edit",
+      "type": "registry:ui",
+      "title": "IconEdit",
+      "description": "AZ8 图标：IconEdit",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconEdit.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconEdit.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-exit",
+      "type": "registry:ui",
+      "title": "IconExit",
+      "description": "AZ8 图标：IconExit",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconExit.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconExit.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-expand",
+      "type": "registry:ui",
+      "title": "IconExpand",
+      "description": "AZ8 图标：IconExpand",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconExpand.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconExpand.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-explore",
+      "type": "registry:ui",
+      "title": "IconExplore",
+      "description": "AZ8 图标：IconExplore",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconExplore.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconExplore.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-freelayout",
+      "type": "registry:ui",
+      "title": "IconFreeLayout",
+      "description": "AZ8 图标：IconFreeLayout",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconFreeLayout.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconFreeLayout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-generationhistory",
+      "type": "registry:ui",
+      "title": "IconGenerationHistory",
+      "description": "AZ8 图标：IconGenerationHistory",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconGenerationHistory.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconGenerationHistory.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-group",
+      "type": "registry:ui",
+      "title": "IconGroup",
+      "description": "AZ8 图标：IconGroup",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconGroup.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconGroup.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-image",
+      "type": "registry:ui",
+      "title": "IconImage",
+      "description": "AZ8 图标：IconImage",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconImage.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconImage.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-lighting",
+      "type": "registry:ui",
+      "title": "IconLighting",
+      "description": "AZ8 图标：IconLighting",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconLighting.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconLighting.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-maximizepreview",
+      "type": "registry:ui",
+      "title": "IconMaximizePreview",
+      "description": "AZ8 图标：IconMaximizePreview",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconMaximizePreview.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconMaximizePreview.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-model3d",
+      "type": "registry:ui",
+      "title": "IconModel3D",
+      "description": "AZ8 图标：IconModel3D",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconModel3D.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconModel3D.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-multiangleview",
+      "type": "registry:ui",
+      "title": "IconMultiAngleView",
+      "description": "AZ8 图标：IconMultiAngleView",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconMultiAngleView.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconMultiAngleView.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-notification",
+      "type": "registry:ui",
+      "title": "IconNotification",
+      "description": "AZ8 图标：IconNotification",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconNotification.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconNotification.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-project",
+      "type": "registry:ui",
+      "title": "IconProject",
+      "description": "AZ8 图标：IconProject",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconProject.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconProject.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-projectlist",
+      "type": "registry:ui",
+      "title": "IconProjectList",
+      "description": "AZ8 图标：IconProjectList",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconProjectList.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconProjectList.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-projectmigration",
+      "type": "registry:ui",
+      "title": "IconProjectMigration",
+      "description": "AZ8 图标：IconProjectMigration",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconProjectMigration.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconProjectMigration.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-projectpreview",
+      "type": "registry:ui",
+      "title": "IconProjectPreview",
+      "description": "AZ8 图标：IconProjectPreview",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconProjectPreview.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconProjectPreview.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-redoaction",
+      "type": "registry:ui",
+      "title": "IconRedoAction",
+      "description": "AZ8 图标：IconRedoAction",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconRedoAction.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconRedoAction.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-refresh",
+      "type": "registry:ui",
+      "title": "IconRefresh",
+      "description": "AZ8 图标：IconRefresh",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconRefresh.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconRefresh.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-savetoassets",
+      "type": "registry:ui",
+      "title": "IconSaveToAssets",
+      "description": "AZ8 图标：IconSaveToAssets",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSaveToAssets.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSaveToAssets.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-search",
+      "type": "registry:ui",
+      "title": "IconSearch",
+      "description": "AZ8 图标：IconSearch",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSearch.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSearch.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-send",
+      "type": "registry:ui",
+      "title": "IconSend",
+      "description": "AZ8 图标：IconSend",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSend.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSend.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-settings",
+      "type": "registry:ui",
+      "title": "IconSettings",
+      "description": "AZ8 图标：IconSettings",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSettings.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSettings.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-share",
+      "type": "registry:ui",
+      "title": "IconShare",
+      "description": "AZ8 图标：IconShare",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconShare.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconShare.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-signal",
+      "type": "registry:ui",
+      "title": "IconSignal",
+      "description": "AZ8 图标：IconSignal",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSignal.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSignal.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-singleimage9gridinference",
+      "type": "registry:ui",
+      "title": "IconSingleImage9GridInference",
+      "description": "AZ8 图标：IconSingleImage9GridInference",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSingleImage9GridInference.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSingleImage9GridInference.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-smart",
+      "type": "registry:ui",
+      "title": "IconSmart",
+      "description": "AZ8 图标：IconSmart",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSmart.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSmart.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-splitfromgrid",
+      "type": "registry:ui",
+      "title": "IconSplitFromGrid",
+      "description": "AZ8 图标：IconSplitFromGrid",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSplitFromGrid.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSplitFromGrid.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-storyboardgrid25",
+      "type": "registry:ui",
+      "title": "IconStoryboardGrid25",
+      "description": "AZ8 图标：IconStoryboardGrid25",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconStoryboardGrid25.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconStoryboardGrid25.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-text",
+      "type": "registry:ui",
+      "title": "IconText",
+      "description": "AZ8 图标：IconText",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconText.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconText.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-threeview",
+      "type": "registry:ui",
+      "title": "IconThreeView",
+      "description": "AZ8 图标：IconThreeView",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconThreeView.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconThreeView.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-translate",
+      "type": "registry:ui",
+      "title": "IconTranslate",
+      "description": "AZ8 图标：IconTranslate",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconTranslate.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconTranslate.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-undo",
+      "type": "registry:ui",
+      "title": "IconUndo",
+      "description": "AZ8 图标：IconUndo",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconUndo.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconUndo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-undoaction",
+      "type": "registry:ui",
+      "title": "IconUndoAction",
+      "description": "AZ8 图标：IconUndoAction",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconUndoAction.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconUndoAction.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-upload",
+      "type": "registry:ui",
+      "title": "IconUpload",
+      "description": "AZ8 图标：IconUpload",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconUpload.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconUpload.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-video",
+      "type": "registry:ui",
+      "title": "IconVideo",
+      "description": "AZ8 图标：IconVideo",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconVideo.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconVideo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-voice",
+      "type": "registry:ui",
+      "title": "IconVoice",
+      "description": "AZ8 图标：IconVoice",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconVoice.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconVoice.tsx"
         }
       ]
     }

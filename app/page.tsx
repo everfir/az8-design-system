@@ -1,14 +1,16 @@
 import Link from "next/link"
-import { IconArrowRight, IconAz8Logo } from "@/components/icons"
+import { ArrowRight } from "lucide-react"
 
 export default function HomePage() {
   return (
     <main className="mx-auto flex min-h-svh max-w-3xl flex-col gap-12 px-6 py-16">
       <header className="flex flex-col gap-3">
         <div className="flex items-center gap-2">
-          <IconAz8Logo size="xl" className="text-foreground" />
+          <span className="text-foreground text-2xl font-semibold tracking-tight">
+            AZ8
+          </span>
           <span className="text-sm tracking-wider text-muted-foreground uppercase">
-            AZ8 / design system
+            / design system
           </span>
         </div>
         <h1 className="text-4xl font-semibold tracking-tight">az8-ui</h1>
@@ -37,9 +39,8 @@ export default function HomePage() {
                   品牌图标库（自研 SVG）
                 </span>
               </div>
-              <IconArrowRight
-                size="md"
-                className="text-muted-foreground transition group-hover:translate-x-1 group-hover:text-foreground"
+              <ArrowRight
+                className="size-5 text-muted-foreground transition group-hover:translate-x-1 group-hover:text-foreground"
               />
             </Link>
           </li>
