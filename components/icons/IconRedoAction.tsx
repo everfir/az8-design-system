@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconRedoAction(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="m13.528 5.414-1.06 1.06 5.468 5.469-5.468 5.467 1.061 1.061 6.528-6.528z" /><path fill="#F5F5F7" d="m6.528 5.414-1.06 1.06 5.468 5.469-5.468 5.467 1.061 1.061 6.528-6.528z" />
+      <path fill="currentColor" d="m13.528 5.414-1.06 1.06 5.468 5.469-5.468 5.467 1.061 1.061 6.528-6.528z" /><path fill="currentColor" d="m6.528 5.414-1.06 1.06 5.468 5.469-5.468 5.467 1.061 1.061 6.528-6.528z" />
     </IconBase>
   )
 }

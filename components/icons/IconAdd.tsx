@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconAdd(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <circle cx={12} cy={12} r={8.25} stroke="#F5F5F7" strokeWidth={1.5} /><path fill="#F5F5F7" d="M16 11.25v1.5H8v-1.5z" /><path fill="#F5F5F7" d="M12.75 16h-1.5V8h1.5z" />
+      <path fill="currentColor" d="M19.5 12a7.5 7.5 0 1 0-7.5 7.5V21a9 9 0 1 1 0-18 9 9 0 0 1 0 18v-1.5a7.5 7.5 0 0 0 7.5-7.5" /><path fill="currentColor" d="M16 11.25v1.5H8v-1.5z" /><path fill="currentColor" d="M12.75 16h-1.5V8h1.5z" />
     </IconBase>
   )
 }

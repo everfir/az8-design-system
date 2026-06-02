@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-loading",
+  "type": "registry:ui",
+  "title": "IconLoading",
+  "description": "AZ8 图标：IconLoading",
+  "registryDependencies": [
+    "https://az8.design/r/icon-base.json"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/IconLoading.tsx",
+      "content": "import { type CSSProperties, type HTMLAttributes } from \"react\"\nimport { type IconProps } from \"@/components/icons/icon-base\"\nimport { cn } from \"@/lib/utils\"\n\nconst sizeClass: Record<NonNullable<IconProps[\"size\"]>, string> = {\n  sm: \"size-3.5\",\n  md: \"size-4\",\n  lg: \"size-5\",\n  xl: \"size-6\",\n}\n\n// 24px 基准：外径 18px、线宽 1.5px、端点圆直径 1.5px。\n// 全部用百分比表达，确保 size 变化时线宽和端点一起缩放。\nconst ringInset = \"12.5%\"\nconst ringMask =\n  \"radial-gradient(farthest-side, transparent 83.333333%, #000 83.333333%)\"\nconst capSize = \"6.25%\"\nconst capLeft = \"46.875%\"\nconst capTop = \"81.25%\"\nconst gradient = \"conic-gradient(from 180deg, currentColor 0deg, transparent 360deg)\"\n\nexport function IconLoading({\n  className,\n  size,\n  style,\n  ...props\n}: IconProps) {\n  return (\n    <span\n      aria-hidden=\"true\"\n      className={cn(\n        \"relative inline-block shrink-0\",\n        size ? sizeClass[size] : \"size-4\",\n        className,\n      )}\n      style={\n        {\n          ...style,\n        } as CSSProperties\n      }\n      {...(props as HTMLAttributes<HTMLSpanElement>)}\n    >\n      <span\n        aria-hidden=\"true\"\n        className=\"absolute rounded-full\"\n        style={{\n          inset: ringInset,\n          color: \"inherit\",\n          background: gradient,\n          mask: ringMask,\n          WebkitMask: ringMask,\n        }}\n      />\n      <span\n        aria-hidden=\"true\"\n        className=\"absolute rounded-full\"\n        style={{\n          width: capSize,\n          height: capSize,\n          left: capLeft,\n          top: capTop,\n          color: \"inherit\",\n          backgroundColor: \"currentColor\",\n        }}\n      />\n    </span>\n  )\n}\n\nIconLoading.displayName = \"IconLoading\"\n",
+      "type": "registry:ui",
+      "target": "components/icons/IconLoading.tsx"
+    }
+  ]
+}

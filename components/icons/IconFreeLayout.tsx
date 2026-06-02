@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconFreeLayout(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <mask id="a" fill="#fff"><rect width={16} height={7} x={11} y={4} rx={0.5} transform="rotate(90 11 4)" /></mask><rect width={16} height={7} x={11} y={4} stroke="#F5F5F7" strokeWidth={3} mask="url(#a)" rx={0.5} transform="rotate(90 11 4)" /><mask id="b" fill="#fff"><rect width={7} height={7} x={20} y={4} rx={0.5} transform="rotate(90 20 4)" /></mask><rect width={7} height={7} x={20} y={4} stroke="#F5F5F7" strokeWidth={3} mask="url(#b)" rx={0.5} transform="rotate(90 20 4)" /><path fill="#F5F5F7" d="M17.25 13v7h-1.5v-7z" /><path fill="#F5F5F7" d="M20 17.25h-7v-1.5h7z" />
+      <path fill="currentColor" d="M5.5 5.5v13h4v-13zM4.5 20l-.1-.01a.5.5 0 0 1-.39-.39L4 19.5v-15l.01-.1a.5.5 0 0 1 .39-.39L4.5 4h6a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5zM14.5 5.5v4h4v-4zm-1 5.5-.1-.01a.5.5 0 0 1-.39-.39l-.01-.1v-6l.01-.1a.5.5 0 0 1 .39-.39l.1-.01h6a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5zM17.25 13v7h-1.5v-7z" /><path fill="currentColor" d="M20 17.25h-7v-1.5h7z" />
     </IconBase>
   )
 }

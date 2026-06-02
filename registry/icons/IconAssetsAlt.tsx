@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconAssetsAlt(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="M20 10.25v1.5H4v-1.5z" /><path stroke="#F5F5F7" strokeWidth={1.5} d="m9.307 4.25 4.329 2.405.17.095h5.944v13H4.25V4.25z" />
+      <path fill="currentColor" d="M20 10.25v1.5H4v-1.5z" /><path fill="currentColor" d="M5 19h14V7.5h-5.389L9.111 5H5zm15.5 1a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5h5.5L14 6h6a.5.5 0 0 1 .5.5z" />
     </IconBase>
   )
 }

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { CheckIcon, CopyIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { jsxInnerToHtml, type IconMeta } from "./icons-browser"
+import { LoadingPreview, jsxInnerToHtml, type IconMeta } from "./icons-browser"
 
 export function IconDetail({
   icon,
@@ -21,8 +21,18 @@ export function IconDetail({
     <div className="flex flex-1 flex-col gap-6 p-4">
       {/* 亮 / 暗 双栏预览 —— 强制各自的主题，独立于全局 toggle */}
       <div className="grid grid-cols-2 gap-2">
-        <ThemeFrame mode="light" inner={icon.inner} viewBox={icon.viewBox} />
-        <ThemeFrame mode="dark" inner={icon.inner} viewBox={icon.viewBox} />
+        <ThemeFrame
+          mode="light"
+          inner={icon.inner}
+          viewBox={icon.viewBox}
+          preview={icon.preview}
+        />
+        <ThemeFrame
+          mode="dark"
+          inner={icon.inner}
+          viewBox={icon.viewBox}
+          preview={icon.preview}
+        />
       </div>
 
       <Block label="安装" content={installCmd} />
@@ -37,10 +47,12 @@ function ThemeFrame({
   mode,
   inner,
   viewBox,
+  preview,
 }: {
   mode: "light" | "dark"
   inner: string
   viewBox: string
+  preview?: IconMeta["preview"]
 }) {
   // 预览框用具体色而非主题变量，确保两边在任何全局主题下都呈现各自的对比
   const isDark = mode === "dark"
@@ -53,17 +65,19 @@ function ThemeFrame({
           : "border-zinc-200 bg-white text-zinc-900",
       )}
     >
-      <svg
-        viewBox={viewBox}
-        width={48}
-        height={48}
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        dangerouslySetInnerHTML={{ __html: jsxInnerToHtml(inner) }}
-      />
+      {preview === "loading" ? (
+        <LoadingPreview size={48} />
+      ) : (
+        <svg
+          viewBox={viewBox}
+          width={48}
+          height={48}
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          dangerouslySetInnerHTML={{ __html: jsxInnerToHtml(inner) }}
+        />
+      )}
       <span
         className={cn(
           "text-[10px] uppercase tracking-wider",
@@ -124,10 +138,14 @@ function Block({
   )
 }
 
-/** 拼出独立可粘贴使用的 SVG 字符串，描边色 currentColor */
+/** 拼出独立可粘贴使用的 SVG 字符串，颜色保持图标节点自身声明。 */
 function renderStandaloneSvg(icon: IconMeta): string {
+  if (icon.preview === "loading") {
+    return `<IconLoading size="xl" className="text-primary" />`
+  }
+
   const inner = jsxInnerToHtml(icon.inner)
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${icon.viewBox}" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${icon.viewBox}" width="24" height="24" fill="none" stroke-linecap="round" stroke-linejoin="round">
   ${inner}
 </svg>`
 }

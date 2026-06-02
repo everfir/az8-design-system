@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconProjectMigration(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="M14 6h6a.5.5 0 0 1 .5.5V12H19V7.5h-5.389l-.34-.188L9.112 5H5v14h2.5v1.5H4a.5.5 0 0 1-.49-.4L3.5 20V4a.5.5 0 0 1 .5-.5h5.5z" /><path fill="#F5F5F7" d="m10.656 16.01 10-.02.003 1.498-10 .022z" /><path fill="#F5F5F7" d="m12.828 12.91 1.061 1.061-2.768 2.768 2.768 2.767-1.06 1.061L9 16.74z" />
+      <path fill="currentColor" d="M14 6h6a.5.5 0 0 1 .5.5V12H19V7.5h-5.389l-.34-.188L9.112 5H5v14h2.5v1.5H4a.5.5 0 0 1-.49-.4L3.5 20V4a.5.5 0 0 1 .5-.5h5.5z" /><path fill="currentColor" d="m10.656 16.01 10-.02.003 1.498-10 .022z" /><path fill="currentColor" d="m12.828 12.91 1.061 1.061-2.768 2.768 2.768 2.767-1.06 1.061L9 16.74z" />
     </IconBase>
   )
 }

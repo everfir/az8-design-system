@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconCopyNode(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="M9.5 3.75v1.5h9.75V15h1.5V5c0-.69-.56-1.25-1.25-1.25z" /><path stroke="#F5F5F7" strokeWidth={1.5} d="M16.25 18.75H4.75V8.25h11.5z" />
+      <path fill="currentColor" d="M9.5 3.75v1.5h9.75V15h1.5V5c0-.69-.56-1.25-1.25-1.25z" /><path fill="currentColor" d="M5.5 9v9h10V9zm-1 10.5-.1-.01A.5.5 0 0 1 4 19V8a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5z" />
     </IconBase>
   )
 }

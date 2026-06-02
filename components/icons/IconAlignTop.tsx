@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconAlignTop(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="M20 4.75H4v-1.5h16z" /><mask id="a" fill="#fff"><rect width={13} height={5} x={11} y={7} rx={0.5} transform="rotate(90 11 7)" /></mask><rect width={13} height={5} x={11} y={7} stroke="#F5F5F7" strokeWidth={3} mask="url(#a)" rx={0.5} transform="rotate(90 11 7)" /><mask id="b" fill="#fff"><rect width={10} height={5} x={18} y={7} rx={0.5} transform="rotate(90 18 7)" /></mask><rect width={10} height={5} x={18} y={7} stroke="#F5F5F7" strokeWidth={3} mask="url(#b)" rx={0.5} transform="rotate(90 18 7)" />
+      <path fill="currentColor" d="M20 4.75H4v-1.5h16zM7.5 8.5v10h2v-10zM6.5 20a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5zM14.5 8.5v7h2v-7zm-1 8.5-.1-.01a.5.5 0 0 1-.39-.39l-.01-.1v-9l.01-.1a.5.5 0 0 1 .39-.39l.1-.01h4a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5z" />
     </IconBase>
   )
 }

@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconAlignLeft(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="M4.75 4v16h-1.5V4z" /><mask id="a" fill="#fff"><rect width={13} height={5} x={7} y={6} rx={0.5} /></mask><rect width={13} height={5} x={7} y={6} stroke="#F5F5F7" strokeWidth={3} mask="url(#a)" rx={0.5} /><mask id="b" fill="#fff"><rect width={10} height={5} x={7} y={13} rx={0.5} /></mask><rect width={10} height={5} x={7} y={13} stroke="#F5F5F7" strokeWidth={3} mask="url(#b)" rx={0.5} />
+      <path fill="currentColor" d="M4.75 4v16h-1.5V4zM8.5 9.5h10v-2h-10zm11.5 1a.5.5 0 0 1-.5.5h-12a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .5.5zM8.5 16.5h7v-2h-7zm8.5 1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5z" />
     </IconBase>
   )
 }

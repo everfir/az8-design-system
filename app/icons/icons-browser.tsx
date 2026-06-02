@@ -18,6 +18,7 @@ export interface IconMeta {
   viewBox: string
   /** JSX 形式的 SVG 内部，例：`<path d="..." strokeWidth={1.5} />` */
   inner: string
+  preview?: "loading"
 }
 
 const SIZES = [16, 20, 24, 32] as const
@@ -126,6 +127,7 @@ export function IconsBrowser({
                   inner={icon.inner}
                   viewBox={icon.viewBox}
                   size={size}
+                  preview={icon.preview}
                 />
                 <span className="text-muted-foreground group-hover:text-foreground line-clamp-1 text-[10px] transition">
                   {icon.registryName.replace(/^icon-/, "")}
@@ -175,12 +177,18 @@ function SvgPreview({
   viewBox,
   size,
   className,
+  preview,
 }: {
   inner: string
   viewBox: string
   size: number
   className?: string
+  preview?: IconMeta["preview"]
 }) {
+  if (preview === "loading") {
+    return <LoadingPreview size={size} className={className} />
+  }
+
   // 把 React JSX 形式的 attribute（如 width={18}、strokeWidth={1.5}）转成 HTML 形式
   const html = jsxInnerToHtml(inner)
   return (
@@ -189,14 +197,57 @@ function SvgPreview({
       width={size}
       height={size}
       fill="none"
-      stroke="currentColor"
-      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
       className={cn("text-foreground", className)}
       dangerouslySetInnerHTML={{ __html: html }}
     />
+  )
+}
+
+export function LoadingPreview({
+  size,
+  className,
+}: {
+  size: number
+  className?: string
+}) {
+  return (
+    <span
+      aria-hidden="true"
+      className={cn("relative inline-block", className)}
+      style={{
+        width: size,
+        height: size,
+      }}
+    >
+      <span
+        aria-hidden="true"
+        className="absolute rounded-full"
+        style={{
+          inset: "12.5%",
+          color: "inherit",
+          background:
+            "conic-gradient(from 180deg, currentColor 0deg, transparent 360deg)",
+          mask: "radial-gradient(farthest-side, transparent 83.333333%, #000 83.333333%)",
+          WebkitMask:
+            "radial-gradient(farthest-side, transparent 83.333333%, #000 83.333333%)",
+        }}
+      />
+      <span
+        aria-hidden="true"
+        className="absolute rounded-full"
+        style={{
+          width: "6.25%",
+          height: "6.25%",
+          left: "46.875%",
+          top: "81.25%",
+          color: "inherit",
+          backgroundColor: "currentColor",
+        }}
+      />
+    </span>
   )
 }
 

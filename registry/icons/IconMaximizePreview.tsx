@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconMaximizePreview(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="m19.53 5.53-5 5-1.06-1.06 5-5zM19.53 18.47l-5-5-1.06 1.06 5 5zM4.47 5.53l5 5 1.06-1.06-5-5zM4.47 18.47l5-5 1.06 1.06-5 5z" /><path fill="#F5F5F7" d="M20 9h-1.5V5.5H15V4h5zM20 15h-1.5v3.5H15V20h5zM4 9h1.5V5.5H9V4H4zM4 15h1.5v3.5H9V20H4z" />
+      <path fill="currentColor" d="m19.53 5.53-5 5-1.06-1.06 5-5zM19.53 18.47l-5-5-1.06 1.06 5 5zM4.47 5.53l5 5 1.06-1.06-5-5zM4.47 18.47l5-5 1.06 1.06-5 5z" /><path fill="currentColor" d="M19.5 4a.5.5 0 0 1 .5.5V9h-1.5V6a.5.5 0 0 0-.5-.5h-3V4zM19.5 20a.5.5 0 0 0 .5-.5V15h-1.5v3.5H15V20zM4.5 4a.5.5 0 0 0-.5.5V9h1.5V5.5H9V4zM4.5 20a.5.5 0 0 1-.5-.5V15h1.5v3.5H9V20z" />
     </IconBase>
   )
 }

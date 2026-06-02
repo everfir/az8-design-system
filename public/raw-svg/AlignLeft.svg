@@ -1,11 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.75 4V20H3.25V4H4.75Z" fill="#F5F5F7"/>
-<mask id="path-2-inside-1_190_267" fill="white">
-<rect x="7" y="6" width="13" height="5" rx="0.5"/>
-</mask>
-<rect x="7" y="6" width="13" height="5" rx="0.5" stroke="#F5F5F7" stroke-width="3" mask="url(#path-2-inside-1_190_267)"/>
-<mask id="path-3-inside-2_190_267" fill="white">
-<rect x="7" y="13" width="10" height="5" rx="0.5"/>
-</mask>
-<rect x="7" y="13" width="10" height="5" rx="0.5" stroke="#F5F5F7" stroke-width="3" mask="url(#path-3-inside-2_190_267)"/>
+<path d="M8.5 9.5H18.5V7.5H8.5V9.5ZM20 10.5C20 10.7761 19.7761 11 19.5 11H7.5C7.22386 11 7 10.7761 7 10.5V6.5C7 6.22386 7.22386 6 7.5 6H19.5C19.7761 6 20 6.22386 20 6.5V10.5Z" fill="#F5F5F7"/>
+<path d="M8.5 16.5H15.5V14.5H8.5V16.5ZM17 17.5C17 17.7761 16.7761 18 16.5 18H7.5C7.22386 18 7 17.7761 7 17.5V13.5C7 13.2239 7.22386 13 7.5 13H16.5C16.7761 13 17 13.2239 17 13.5V17.5Z" fill="#F5F5F7"/>
 </svg>

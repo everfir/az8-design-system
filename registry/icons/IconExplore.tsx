@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconExplore(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <circle cx={12} cy={12} r={8.25} stroke="#F5F5F7" strokeWidth={1.5} /><path stroke="#F5F5F7" strokeWidth={1.5} d="M13.613 13.612 9.244 14.64l1.03-4.368 4.369-1.03z" />
+      <path fill="currentColor" d="M19.5 12a7.5 7.5 0 1 0-7.5 7.5V21a9 9 0 1 1 0-18 9 9 0 0 1 0 18v-1.5a7.5 7.5 0 0 0 7.5-7.5" /><path fill="currentColor" d="M14.863 8.421a.5.5 0 0 1 .601.602l-1.158 4.912a.5.5 0 0 1-.371.372l-4.912 1.157a.5.5 0 0 1-.602-.602L9.578 9.95a.5.5 0 0 1 .305-.35l.068-.02zm-3.966 2.476-.645 2.736 2.737-.645.644-2.736z" />
     </IconBase>
   )
 }

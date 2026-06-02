@@ -561,6 +561,22 @@
       ]
     },
     {
+      "name": "icon-pause",
+      "type": "registry:ui",
+      "title": "IconPause",
+      "description": "AZ8 图标：IconPause",
+      "registryDependencies": [
+        "https://az8.design/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconPause.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconPause.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-project",
       "type": "registry:ui",
       "title": "IconProject",
@@ -941,6 +957,22 @@
           "path": "registry/icons/IconVoice.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconVoice.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-loading",
+      "type": "registry:ui",
+      "title": "IconLoading",
+      "description": "AZ8 图标：IconLoading",
+      "registryDependencies": [
+        "https://az8.design/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconLoading.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconLoading.tsx"
         }
       ]
     }

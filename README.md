@@ -25,7 +25,7 @@ import { IconAdd, IconModel3D, IconStoryboardGrid25 } from "@/components/icons"
 
 `IconBase` 暴露的 props：所有 `SVGProps<SVGSVGElement>` + 语义化 `size?: 'sm' | 'md' | 'lg' | 'xl'`。
 
-**颜色策略**：图标 fill/stroke 原样保留 Figma 上的色值（多数是 `#F5F5F7`，为深色画板设计）。工程**不擅自**替换成 `currentColor`，避免和 Figma 视觉脱节。如果项目浅色背景看不清，自行包一层带背景的容器或在拿到 SVG 后做项目级处理。
+**颜色策略**：构建时会把可见图形节点的 `fill` 色值替换成 `fill="currentColor"`，方便消费方用 `className="text-primary"` 控制主填充色。`fill="none"`、渐变引用和 mask 这类结构性填充会保留。`stroke` 会原样保留；需要完全“面性”的图标，应在 Figma 源头先把 stroke outline / flatten 成填充路径。
 
 ### 通过 shadcn CLI 装到外部项目
 
@@ -159,6 +159,18 @@ FIGMA_NODE_ID=256:3152
 
 把 SVG 直接丢进 `public/raw-svg/<PascalCase>.svg`（24×24，stroke 用 `#000`），跑 `pnpm registry:build`。**注意**：下次定时同步若开了 `--prune`，这个图标会被 Figma 视为孤儿删掉。所以正确做法仍然是先在 Figma 加 component。
 
+### 图标组件覆盖
+
+少数图标不适合走 Figma SVG 导出，例如 angular / conic gradient 会被 Figma 导出成 `foreignObject`，在 registry、复制 SVG 和预览页里都不稳定。这类图标走工程侧覆盖：
+
+- 覆盖源：`registry/icon-overrides/IconLoading.tsx`
+- 构建输出：`registry/icons/IconLoading.tsx` 和 `components/icons/IconLoading.tsx`
+- registry item：`icon-loading`
+- Figma 同步：`scripts/sync-figma.ts` 会跳过 `loading`，`--prune` 也不会删除本地同名 SVG
+- 图标构建：`scripts/build-icons.ts` 会跳过 `loading.svg`，始终使用覆盖组件
+
+如果后续新增组件覆盖图标，需要同时加入 `scripts/sync-figma.ts` 的 `ICON_COMPONENT_OVERRIDE_NAMES` 和 `scripts/build-icons.ts` 的 `ICON_COMPONENT_OVERRIDES`。
+
 ## Figma 端约定
 
 - 文件 key（URL 里 `/design/<KEY>/`）：写到 secret `FIGMA_FILE_KEY`
@@ -166,7 +178,7 @@ FIGMA_NODE_ID=256:3152
   - 推荐用 node id 而不是 page name：精确指向"标准版本"那个 frame，避免扫到同 page 下的旧版/草稿 component
 - 该 node 下所有 `COMPONENT` / `COMPONENT_SET` 都视为图标
 - component 命名 PascalCase（`AZ8/Icon/Model3D` 也接受，脚本只取最后一段）
-- fill / stroke 原样保留，构建时**不**做颜色替换；想要 `currentColor` 行为请在 Figma 上直接用 `currentColor`（变量名）或工程侧自行包一层
+- 构建时会把可见图形节点的 `fill` 色值转成 `fill="currentColor"`；`stroke` 原样保留。需要完全“面性”时，请在 Figma 源头把 stroke outline / flatten 成填充路径
 
 ## 目录结构
 

@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconClose(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="m18.509 6.55-13 12-1.018-1.1 13-12z" /><path fill="#F5F5F7" d="m4.491 6.55 13 12 1.018-1.1-13-12z" />
+      <path fill="currentColor" d="m18.509 6.55-13 12-1.018-1.1 13-12z" /><path fill="currentColor" d="m4.491 6.55 13 12 1.018-1.1-13-12z" />
     </IconBase>
   )
 }

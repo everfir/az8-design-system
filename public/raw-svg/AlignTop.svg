@@ -1,11 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20 4.75L4 4.75L4 3.25L20 3.25L20 4.75Z" fill="#F5F5F7"/>
-<mask id="path-2-inside-1_190_272" fill="white">
-<rect x="11" y="7" width="13" height="5" rx="0.5" transform="rotate(90 11 7)"/>
-</mask>
-<rect x="11" y="7" width="13" height="5" rx="0.5" transform="rotate(90 11 7)" stroke="#F5F5F7" stroke-width="3" mask="url(#path-2-inside-1_190_272)"/>
-<mask id="path-3-inside-2_190_272" fill="white">
-<rect x="18" y="7" width="10" height="5" rx="0.5" transform="rotate(90 18 7)"/>
-</mask>
-<rect x="18" y="7" width="10" height="5" rx="0.5" transform="rotate(90 18 7)" stroke="#F5F5F7" stroke-width="3" mask="url(#path-3-inside-2_190_272)"/>
+<path d="M7.5 8.5L7.5 18.5L9.5 18.5L9.5 8.5L7.5 8.5ZM6.5 20C6.22386 20 6 19.7761 6 19.5L6 7.5C6 7.22386 6.22386 7 6.5 7L10.5 7C10.7761 7 11 7.22386 11 7.5L11 19.5C11 19.7761 10.7761 20 10.5 20L6.5 20Z" fill="#F5F5F7"/>
+<path d="M14.5 8.5L14.5 15.5L16.5 15.5L16.5 8.5L14.5 8.5ZM13.5 17L13.3994 16.9902C13.2039 16.9503 13.0497 16.7961 13.0098 16.6006L13 16.5L13 7.5L13.0098 7.39941C13.0497 7.20392 13.2039 7.04966 13.3994 7.00977L13.5 7L17.5 7C17.7761 7 18 7.22386 18 7.5L18 16.5C18 16.7761 17.7761 17 17.5 17L13.5 17Z" fill="#F5F5F7"/>
 </svg>

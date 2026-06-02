@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconProjectPreview(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <mask id="a" fill="#fff"><rect width={7} height={7} x={4} y={4} rx={0.5} /></mask><rect width={7} height={7} x={4} y={4} stroke="#F5F5F7" strokeWidth={3} mask="url(#a)" rx={0.5} /><mask id="b" fill="#fff"><rect width={7} height={7} x={13} y={4} rx={0.5} /></mask><rect width={7} height={7} x={13} y={4} stroke="#F5F5F7" strokeWidth={3} mask="url(#b)" rx={0.5} /><mask id="c" fill="#fff"><rect width={7} height={7} x={13} y={13} rx={0.5} /></mask><rect width={7} height={7} x={13} y={13} stroke="#F5F5F7" strokeWidth={3} mask="url(#c)" rx={0.5} /><mask id="d" fill="#fff"><rect width={7} height={7} x={4} y={13} rx={0.5} /></mask><rect width={7} height={7} x={4} y={13} stroke="#F5F5F7" strokeWidth={3} mask="url(#d)" rx={0.5} />
+      <path fill="currentColor" d="M5.5 9.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5zM14.5 9.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5zM14.5 18.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5zM5.5 18.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5z" />
     </IconBase>
   )
 }

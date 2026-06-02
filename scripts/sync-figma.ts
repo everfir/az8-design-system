@@ -43,6 +43,8 @@ const args = new Set(process.argv.slice(2));
 const DRY = args.has("--dry");
 const PRUNE = args.has("--prune");
 
+const ICON_COMPONENT_OVERRIDE_NAMES = new Set(["loading"]);
+
 interface FigmaNode {
   id: string;
   name: string;
@@ -177,6 +179,10 @@ async function main() {
       console.warn(`   ⚠ 跳过空名 component (id=${it.id})`);
       continue;
     }
+    if (ICON_COMPONENT_OVERRIDE_NAMES.has(name.toLowerCase())) {
+      console.log(`   ◆ 跳过组件覆盖图标 "${name}"，使用工程侧覆盖组件`);
+      continue;
+    }
     if (byName.has(name)) {
       console.warn(
         `   ⚠ 名字冲突: "${it.name}" 和 "${byName.get(name)!.rawName}" 都映射为 "${name}"，用前者`,
@@ -209,6 +215,7 @@ async function main() {
 
   const tasks: Array<Promise<void>> = [];
   const written = new Set<string>();
+  const iconsWithStroke: string[] = [];
   let added = 0;
   let updated = 0;
 
@@ -229,6 +236,9 @@ async function main() {
           return;
         }
         const svg = await r.text();
+        if (/\bstroke\s*=/.test(svg)) {
+          iconsWithStroke.push(name);
+        }
         const target = path.join(RAW_DIR, filename);
 
         const existingCase = existingByLower.get(filename.toLowerCase());
@@ -265,6 +275,15 @@ async function main() {
 
   await Promise.all(tasks);
 
+  if (iconsWithStroke.length > 0) {
+    console.warn(
+      `\n⚠ ${iconsWithStroke.length} 个同步图标仍包含 stroke=，需要设计侧 outline / flatten：`,
+    );
+    for (const name of [...new Set(iconsWithStroke)].sort()) {
+      console.warn(`   - ${name}`);
+    }
+  }
+
   // prune：Figma 删了的图标本地也删
   // 用大小写不敏感比对：写入阶段已经把 case 变更（add.svg → Add.svg）当 update 处理掉了，
   // 这里只清理"在 Figma 完全找不到对应名字"的真孤儿
@@ -272,6 +291,13 @@ async function main() {
   let removed = 0;
   if (PRUNE) {
     for (const f of existing) {
+      if (
+        ICON_COMPONENT_OVERRIDE_NAMES.has(
+          f.replace(/\.svg$/i, "").toLowerCase(),
+        )
+      ) {
+        continue;
+      }
       if (!writtenLower.has(f.toLowerCase())) {
         if (DRY) {
           console.log(`   - ${f}`);
@@ -283,7 +309,11 @@ async function main() {
     }
   } else {
     const orphans = [...existing].filter(
-      (f) => !writtenLower.has(f.toLowerCase()),
+      (f) =>
+        !writtenLower.has(f.toLowerCase()) &&
+        !ICON_COMPONENT_OVERRIDE_NAMES.has(
+          f.replace(/\.svg$/i, "").toLowerCase(),
+        ),
     );
     if (orphans.length > 0) {
       console.log(
