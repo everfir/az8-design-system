@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconSplitFromGrid(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="m20.53 4.53-6 6-1.06-1.06 6-6z" /><mask id="a" fill="#fff"><path d="M10.556 3.5a.5.5 0 0 1 .5.5v8.944H20a.5.5 0 0 1 .5.5V20a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z" /></mask><path fill="#F5F5F7" d="M10.556 3.5V2zm.5.5h1.5zm0 8.944h-1.5v1.5h1.5zm8.944 0v-1.5zm.5.5H22zm0 6.556H22zm-.5.5V22zm-16 0V22zm-.5-.5H2zm0-16H2zm.5-.5V2zm6.556 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5h-1.5v8.944h3V4zm0 8.944v1.5H20v-3h-8.944zm8.944 0v1.5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19V20h3v-6.556zm0 6.556H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h6.556V2H4z" mask="url(#a)" /><path fill="#F5F5F7" d="M20.5 9.5H19V5h-4.5V3.5h6z" />
+      <path fill="currentColor" d="m20.53 4.53-6 6-1.06-1.06 6-6z" /><mask id="a" fill="currentColor"><path d="M10.556 3.5a.5.5 0 0 1 .5.5v8.944H20a.5.5 0 0 1 .5.5V20a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z" /></mask><path fill="currentColor" d="M10.556 3.5V2zm.5.5h1.5zm0 8.944h-1.5v1.5h1.5zm8.944 0v-1.5zm.5.5H22zm0 6.556H22zm-.5.5V22zm-16 0V22zm-.5-.5H2zm0-16H2zm.5-.5V2zm6.556 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5h-1.5v8.944h3V4zm0 8.944v1.5H20v-3h-8.944zm8.944 0v1.5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19V20h3v-6.556zm0 6.556H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h6.556V2H4z" mask="url(#a)" /><path fill="currentColor" d="M20.5 9.5H19V5h-4.5V3.5h6z" />
     </IconBase>
   )
 }

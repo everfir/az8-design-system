@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconCollapse(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="m19.53 5.03-7 7a.75.75 0 0 1-1.06 0l-7-7 1.06-1.06L12 10.44l6.47-6.47z" /><path fill="#F5F5F7" d="m19.53 13.03-7 7a.75.75 0 0 1-1.06 0l-7-7 1.06-1.06L12 18.44l6.47-6.47z" />
+      <path fill="currentColor" d="m19.53 5.03-7 7a.75.75 0 0 1-1.06 0l-7-7 1.06-1.06L12 10.44l6.47-6.47z" /><path fill="currentColor" d="m19.53 13.03-7 7a.75.75 0 0 1-1.06 0l-7-7 1.06-1.06L12 18.44l6.47-6.47z" />
     </IconBase>
   )
 }

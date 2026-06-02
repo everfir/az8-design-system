@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconAlignTop(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="#F5F5F7" d="M20 4.75H4v-1.5h16z" /><mask id="a" fill="#fff"><rect width={13} height={5} x={11} y={7} rx={0.5} transform="rotate(90 11 7)" /></mask><rect width={13} height={5} x={11} y={7} stroke="#F5F5F7" strokeWidth={3} mask="url(#a)" rx={0.5} transform="rotate(90 11 7)" /><mask id="b" fill="#fff"><rect width={10} height={5} x={18} y={7} rx={0.5} transform="rotate(90 18 7)" /></mask><rect width={10} height={5} x={18} y={7} stroke="#F5F5F7" strokeWidth={3} mask="url(#b)" rx={0.5} transform="rotate(90 18 7)" />
+      <path fill="currentColor" d="M20 4.75H4v-1.5h16z" /><mask id="a" fill="currentColor"><rect width={13} height={5} x={11} y={7} rx={0.5} transform="rotate(90 11 7)" /></mask><rect width={13} height={5} x={11} y={7} stroke="currentColor" strokeWidth={3} mask="url(#a)" rx={0.5} transform="rotate(90 11 7)" /><mask id="b" fill="currentColor"><rect width={10} height={5} x={18} y={7} rx={0.5} transform="rotate(90 18 7)" /></mask><rect width={10} height={5} x={18} y={7} stroke="currentColor" strokeWidth={3} mask="url(#b)" rx={0.5} transform="rotate(90 18 7)" />
     </IconBase>
   )
 }

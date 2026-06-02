@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconProjectPreview(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <mask id="a" fill="#fff"><rect width={7} height={7} x={4} y={4} rx={0.5} /></mask><rect width={7} height={7} x={4} y={4} stroke="#F5F5F7" strokeWidth={3} mask="url(#a)" rx={0.5} /><mask id="b" fill="#fff"><rect width={7} height={7} x={13} y={4} rx={0.5} /></mask><rect width={7} height={7} x={13} y={4} stroke="#F5F5F7" strokeWidth={3} mask="url(#b)" rx={0.5} /><mask id="c" fill="#fff"><rect width={7} height={7} x={13} y={13} rx={0.5} /></mask><rect width={7} height={7} x={13} y={13} stroke="#F5F5F7" strokeWidth={3} mask="url(#c)" rx={0.5} /><mask id="d" fill="#fff"><rect width={7} height={7} x={4} y={13} rx={0.5} /></mask><rect width={7} height={7} x={4} y={13} stroke="#F5F5F7" strokeWidth={3} mask="url(#d)" rx={0.5} />
+      <mask id="a" fill="currentColor"><rect width={7} height={7} x={4} y={4} rx={0.5} /></mask><rect width={7} height={7} x={4} y={4} stroke="currentColor" strokeWidth={3} mask="url(#a)" rx={0.5} /><mask id="b" fill="currentColor"><rect width={7} height={7} x={13} y={4} rx={0.5} /></mask><rect width={7} height={7} x={13} y={4} stroke="currentColor" strokeWidth={3} mask="url(#b)" rx={0.5} /><mask id="c" fill="currentColor"><rect width={7} height={7} x={13} y={13} rx={0.5} /></mask><rect width={7} height={7} x={13} y={13} stroke="currentColor" strokeWidth={3} mask="url(#c)" rx={0.5} /><mask id="d" fill="currentColor"><rect width={7} height={7} x={4} y={13} rx={0.5} /></mask><rect width={7} height={7} x={4} y={13} stroke="currentColor" strokeWidth={3} mask="url(#d)" rx={0.5} />
     </IconBase>
   )
 }

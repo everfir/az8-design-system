@@ -80,10 +80,24 @@ async function buildOne(svgPath: string): Promise<BuildResult> {
       typescript: true,
       jsxRuntime: "automatic",
       icon: true,
+      // Figma 上设计师在暗色主题画板上用的"icon 语义色"。统一替换成 currentColor，
+      // 让消费方用 Tailwind text-* 自由控色。覆盖：
+      //   - 黑系（旧手画图标常用）：#000 / #000000 / black
+      //   - 暗主题画板上的近白系：#F5F5F7 / #F4F4F5 / white （az8 当前 58 个图标全是这一系）
+      // 注意 svgr 这里是字面量匹配且大小写敏感，所以小写 hex 也要列上。
       replaceAttrValues: {
         "#000": "currentColor",
         "#000000": "currentColor",
         black: "currentColor",
+        "#F5F5F7": "currentColor",
+        "#f5f5f7": "currentColor",
+        "#F4F4F5": "currentColor",
+        "#f4f4f5": "currentColor",
+        white: "currentColor",
+        "#FFF": "currentColor",
+        "#fff": "currentColor",
+        "#FFFFFF": "currentColor",
+        "#ffffff": "currentColor",
       },
       svgo: true,
       svgoConfig: {

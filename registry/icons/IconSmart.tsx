@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconSmart(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path stroke="#F5F5F7" strokeWidth={1.5} d="M18.656 12.91a16.75 16.75 0 0 0-5.746 5.746L11.9 20.34l-1.011-1.685a16.75 16.75 0 0 0-5.746-5.746L3.458 11.9l1.685-1.01a16.75 16.75 0 0 0 5.746-5.746l1.01-1.686 1.011 1.686a16.75 16.75 0 0 0 5.746 5.746l1.685 1.01z" /><path fill="#F5F5F7" d="m11.968 10.2 1.768 1.768-1.768 1.768-1.768-1.768z" />
+      <path stroke="currentColor" strokeWidth={1.5} d="M18.656 12.91a16.75 16.75 0 0 0-5.746 5.746L11.9 20.34l-1.011-1.685a16.75 16.75 0 0 0-5.746-5.746L3.458 11.9l1.685-1.01a16.75 16.75 0 0 0 5.746-5.746l1.01-1.686 1.011 1.686a16.75 16.75 0 0 0 5.746 5.746l1.685 1.01z" /><path fill="currentColor" d="m11.968 10.2 1.768 1.768-1.768 1.768-1.768-1.768z" />
     </IconBase>
   )
 }
