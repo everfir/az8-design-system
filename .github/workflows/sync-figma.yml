@@ -1,4 +1,4 @@
-# 从 Figma 拉取最新图标 → 跑构建 → 如有变动推送日期分支
+# 从 Figma 拉取最新图标 → 跑构建 → 如有变动直接提交 main
 #
 # 触发：
 #   - 手动: Actions → "sync from figma" → Run workflow
@@ -16,7 +16,7 @@
 #   - 拉 SVG → public/raw-svg/
 #   - 跑 icons:build 重新生成组件 + registry.json
 #   - 跑 shadcn build 更新 public/r/*.json
-#   - 有变动 → 推送 bot/sync-figma-日期 分支；无变动 → 跳过
+#   - 有变动 → 直接提交到 main 触发 deploy；无变动 → 跳过
 #
 # 默认带 --prune：Figma 删了的图标本地也删，防止僵尸文件
 name: sync from figma
@@ -71,7 +71,7 @@ jobs:
         env:
           REGISTRY_BASE_URL: https://placeholder.invalid
 
-      - name: Push dated branch if changed
+      - name: Commit changes to main if changed
         run: |
           changed_paths="$(
             git status --porcelain -- \
@@ -87,11 +87,8 @@ jobs:
             exit 0
           fi
 
-          branch="bot/sync-figma-$(date -u +'%Y%m%d-%H%M%S')-${GITHUB_RUN_ID}"
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$branch"
           git add -- \
             public/raw-svg \
             registry \
@@ -99,7 +96,7 @@ jobs:
             components/icons \
             public/r
           git commit -m "chore(icons): sync from figma"
-          git push origin "HEAD:$branch"
+          git pull --rebase origin main
+          git push origin HEAD:main
 
-          echo "Pushed branch: $branch"
-          echo "Open PR: https://github.com/${GITHUB_REPOSITORY}/compare/main...${branch}?expand=1"
+          echo "Pushed icon sync commit to main."
