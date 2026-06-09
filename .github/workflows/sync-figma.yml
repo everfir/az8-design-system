@@ -1,4 +1,4 @@
-# 从 Figma 拉取最新图标 → 跑构建 → 如有变动开 PR
+# 从 Figma 拉取最新图标 → 跑构建 → 如有变动推送日期分支
 #
 # 触发：
 #   - 手动: Actions → "sync from figma" → Run workflow
@@ -8,7 +8,6 @@
 #   Settings → Secrets and variables → Actions
 #     - Secret: FIGMA_TOKEN      ← Figma personal access token
 #     - Secret: FIGMA_FILE_KEY   ← Figma 文件 URL 里的 key
-#     - Secret: AZ8_BOT_TOKEN    ← GitHub fine-grained PAT，用于创建 PR
 #     可选：
 #     - Variable: FIGMA_NODE_ID  ← 指定扫描根 frame，如 "256:3152"。推荐用，能精确指向标准版本
 #     - Variable: FIGMA_PAGE_NAME ← 没设 NODE_ID 时退回按 page 名扫，默认 "Icons"
@@ -17,7 +16,7 @@
 #   - 拉 SVG → public/raw-svg/
 #   - 跑 icons:build 重新生成组件 + registry.json
 #   - 跑 shadcn build 更新 public/r/*.json
-#   - 有变动 → 开 PR；无变动 → 跳过
+#   - 有变动 → 推送 bot/sync-figma-日期 分支；无变动 → 跳过
 #
 # 默认带 --prune：Figma 删了的图标本地也删，防止僵尸文件
 name: sync from figma
@@ -35,7 +34,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   sync:
@@ -73,27 +71,35 @@ jobs:
         env:
           REGISTRY_BASE_URL: https://placeholder.invalid
 
-      - name: Open PR if changed
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.AZ8_BOT_TOKEN }}
-          branch-token: ${{ github.token }}
-          commit-message: "chore(icons): sync from figma"
-          title: "chore(icons): sync from figma"
-          body: |
-            自动从 Figma 拉取最新图标。
+      - name: Push dated branch if changed
+        run: |
+          changed_paths="$(
+            git status --porcelain -- \
+              public/raw-svg \
+              registry \
+              registry.json \
+              components/icons \
+              public/r
+          )"
 
-            合并前请检查：
-            - [ ] 新增 / 删除的图标符合预期
-            - [ ] SVG diff 没有 mask / clip 等渲染异常
-            - [ ] /icons gallery 在预览中显示正常
+          if [ -z "$changed_paths" ]; then
+            echo "No icon changes found."
+            exit 0
+          fi
 
-            合并后 deploy workflow 会自动发布到 GitHub Pages。
-          branch: bot/sync-figma
-          delete-branch: true
-          add-paths: |
-            public/raw-svg
-            registry
-            registry.json
-            components/icons
+          branch="bot/sync-figma-$(date -u +'%Y%m%d-%H%M%S')-${GITHUB_RUN_ID}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -- \
+            public/raw-svg \
+            registry \
+            registry.json \
+            components/icons \
             public/r
+          git commit -m "chore(icons): sync from figma"
+          git push origin "HEAD:$branch"
+
+          echo "Pushed branch: $branch"
+          echo "Open PR: https://github.com/${GITHUB_REPOSITORY}/compare/main...${branch}?expand=1"
