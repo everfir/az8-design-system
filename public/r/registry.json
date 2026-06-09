@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "az8-ui",
-  "homepage": "https://az8.design",
+  "homepage": "https://placeholder.invalid",
   "items": [
     {
       "name": "icon-base",
@@ -22,7 +22,7 @@
       "title": "IconAction",
       "description": "AZ8 图标：IconAction",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -38,7 +38,7 @@
       "title": "IconAdd",
       "description": "AZ8 图标：IconAdd",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -54,7 +54,7 @@
       "title": "IconAddAlt",
       "description": "AZ8 图标：IconAddAlt",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -70,7 +70,7 @@
       "title": "IconAdjust",
       "description": "AZ8 图标：IconAdjust",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -86,7 +86,7 @@
       "title": "IconAdjustAngle",
       "description": "AZ8 图标：IconAdjustAngle",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -102,7 +102,7 @@
       "title": "IconAlignLeft",
       "description": "AZ8 图标：IconAlignLeft",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -118,7 +118,7 @@
       "title": "IconAlignTop",
       "description": "AZ8 图标：IconAlignTop",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -134,7 +134,7 @@
       "title": "IconAssets",
       "description": "AZ8 图标：IconAssets",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -150,7 +150,7 @@
       "title": "IconAssetsAlt",
       "description": "AZ8 图标：IconAssetsAlt",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -166,7 +166,7 @@
       "title": "IconAudio",
       "description": "AZ8 图标：IconAudio",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -177,12 +177,28 @@
       ]
     },
     {
+      "name": "icon-availabletoview",
+      "type": "registry:ui",
+      "title": "IconAvailabletoview",
+      "description": "AZ8 图标：IconAvailabletoview",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAvailabletoview.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAvailabletoview.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-close",
       "type": "registry:ui",
       "title": "IconClose",
       "description": "AZ8 图标：IconClose",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -198,7 +214,7 @@
       "title": "IconCollapse",
       "description": "AZ8 图标：IconCollapse",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -214,7 +230,7 @@
       "title": "IconCommunity",
       "description": "AZ8 图标：IconCommunity",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -230,7 +246,7 @@
       "title": "IconConfirm",
       "description": "AZ8 图标：IconConfirm",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -246,7 +262,7 @@
       "title": "IconCopyImage",
       "description": "AZ8 图标：IconCopyImage",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -262,7 +278,7 @@
       "title": "IconCopyNode",
       "description": "AZ8 图标：IconCopyNode",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -278,7 +294,7 @@
       "title": "IconCredits",
       "description": "AZ8 图标：IconCredits",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -294,7 +310,7 @@
       "title": "IconCrop",
       "description": "AZ8 图标：IconCrop",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -310,7 +326,7 @@
       "title": "IconDefaultAssets",
       "description": "AZ8 图标：IconDefaultAssets",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -326,7 +342,7 @@
       "title": "IconDelete",
       "description": "AZ8 图标：IconDelete",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -342,7 +358,7 @@
       "title": "IconDownload",
       "description": "AZ8 图标：IconDownload",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -358,7 +374,7 @@
       "title": "IconEdit",
       "description": "AZ8 图标：IconEdit",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -374,7 +390,7 @@
       "title": "IconExit",
       "description": "AZ8 图标：IconExit",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -390,7 +406,7 @@
       "title": "IconExpand",
       "description": "AZ8 图标：IconExpand",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -406,7 +422,7 @@
       "title": "IconExplore",
       "description": "AZ8 图标：IconExplore",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -422,7 +438,7 @@
       "title": "IconFreeLayout",
       "description": "AZ8 图标：IconFreeLayout",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -438,7 +454,7 @@
       "title": "IconGenerationHistory",
       "description": "AZ8 图标：IconGenerationHistory",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -454,7 +470,7 @@
       "title": "IconGroup",
       "description": "AZ8 图标：IconGroup",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -470,7 +486,7 @@
       "title": "IconImage",
       "description": "AZ8 图标：IconImage",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -486,7 +502,7 @@
       "title": "IconLighting",
       "description": "AZ8 图标：IconLighting",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -502,7 +518,7 @@
       "title": "IconMaximizePreview",
       "description": "AZ8 图标：IconMaximizePreview",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -518,7 +534,7 @@
       "title": "IconModel3D",
       "description": "AZ8 图标：IconModel3D",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -534,7 +550,7 @@
       "title": "IconMultiAngleView",
       "description": "AZ8 图标：IconMultiAngleView",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -550,7 +566,7 @@
       "title": "IconNotification",
       "description": "AZ8 图标：IconNotification",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -566,7 +582,7 @@
       "title": "IconPause",
       "description": "AZ8 图标：IconPause",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -582,7 +598,7 @@
       "title": "IconProject",
       "description": "AZ8 图标：IconProject",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -598,7 +614,7 @@
       "title": "IconProjectList",
       "description": "AZ8 图标：IconProjectList",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -614,7 +630,7 @@
       "title": "IconProjectMigration",
       "description": "AZ8 图标：IconProjectMigration",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -630,7 +646,7 @@
       "title": "IconProjectPreview",
       "description": "AZ8 图标：IconProjectPreview",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -646,7 +662,7 @@
       "title": "IconRedoAction",
       "description": "AZ8 图标：IconRedoAction",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -662,7 +678,7 @@
       "title": "IconRefresh",
       "description": "AZ8 图标：IconRefresh",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -678,7 +694,7 @@
       "title": "IconSaveToAssets",
       "description": "AZ8 图标：IconSaveToAssets",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -694,7 +710,7 @@
       "title": "IconSearch",
       "description": "AZ8 图标：IconSearch",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -710,7 +726,7 @@
       "title": "IconSend",
       "description": "AZ8 图标：IconSend",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -726,7 +742,7 @@
       "title": "IconSettings",
       "description": "AZ8 图标：IconSettings",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -742,7 +758,7 @@
       "title": "IconShare",
       "description": "AZ8 图标：IconShare",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -758,7 +774,7 @@
       "title": "IconSignal",
       "description": "AZ8 图标：IconSignal",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -774,7 +790,7 @@
       "title": "IconSingleImage9GridInference",
       "description": "AZ8 图标：IconSingleImage9GridInference",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -790,7 +806,7 @@
       "title": "IconSmart",
       "description": "AZ8 图标：IconSmart",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -806,7 +822,7 @@
       "title": "IconSplitFromGrid",
       "description": "AZ8 图标：IconSplitFromGrid",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -822,7 +838,7 @@
       "title": "IconStoryboardGrid25",
       "description": "AZ8 图标：IconStoryboardGrid25",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -838,7 +854,7 @@
       "title": "IconText",
       "description": "AZ8 图标：IconText",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -854,7 +870,7 @@
       "title": "IconThreeView",
       "description": "AZ8 图标：IconThreeView",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -870,7 +886,7 @@
       "title": "IconTranslate",
       "description": "AZ8 图标：IconTranslate",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -886,7 +902,7 @@
       "title": "IconUndo",
       "description": "AZ8 图标：IconUndo",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -902,7 +918,7 @@
       "title": "IconUndoAction",
       "description": "AZ8 图标：IconUndoAction",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -918,7 +934,7 @@
       "title": "IconUpload",
       "description": "AZ8 图标：IconUpload",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -934,7 +950,7 @@
       "title": "IconVideo",
       "description": "AZ8 图标：IconVideo",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -945,12 +961,28 @@
       ]
     },
     {
+      "name": "icon-videoclarity",
+      "type": "registry:ui",
+      "title": "IconVideoclarity",
+      "description": "AZ8 图标：IconVideoclarity",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconVideoclarity.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconVideoclarity.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-voice",
       "type": "registry:ui",
       "title": "IconVoice",
       "description": "AZ8 图标：IconVoice",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {
@@ -961,12 +993,76 @@
       ]
     },
     {
+      "name": "icon-volumeadjustment",
+      "type": "registry:ui",
+      "title": "IconVolumeadjustment",
+      "description": "AZ8 图标：IconVolumeadjustment",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconVolumeadjustment.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconVolumeadjustment.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-adjustment",
+      "type": "registry:ui",
+      "title": "Iconadjustment",
+      "description": "AZ8 图标：Iconadjustment",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/Iconadjustment.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/Iconadjustment.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-play",
+      "type": "registry:ui",
+      "title": "Iconplay",
+      "description": "AZ8 图标：Iconplay",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/Iconplay.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/Iconplay.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-playspeed",
+      "type": "registry:ui",
+      "title": "Iconplayspeed",
+      "description": "AZ8 图标：Iconplayspeed",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/Iconplayspeed.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/Iconplayspeed.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-loading",
       "type": "registry:ui",
       "title": "IconLoading",
       "description": "AZ8 图标：IconLoading",
       "registryDependencies": [
-        "https://az8.design/r/icon-base.json"
+        "https://placeholder.invalid/r/icon-base.json"
       ],
       "files": [
         {

@@ -5,7 +5,7 @@
   "title": "IconLoading",
   "description": "AZ8 图标：IconLoading",
   "registryDependencies": [
-    "https://az8.design/r/icon-base.json"
+    "https://placeholder.invalid/r/icon-base.json"
   ],
   "files": [
     {

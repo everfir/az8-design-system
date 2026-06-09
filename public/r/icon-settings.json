@@ -5,7 +5,7 @@
   "title": "IconSettings",
   "description": "AZ8 图标：IconSettings",
   "registryDependencies": [
-    "https://az8.design/r/icon-base.json"
+    "https://placeholder.invalid/r/icon-base.json"
   ],
   "files": [
     {
