@@ -14,7 +14,7 @@
 #
 # 行为：
 #   - 拉 SVG → public/raw-svg/
-#   - 跑 icons:build 重新生成组件 + registry.json
+#   - 跑 icons:build 重新生成组件 + icons-meta.json + registry.json
 #   - 跑 shadcn build 更新 public/r/*.json
 #   - 有变动 → 直接提交到 main 触发 deploy；无变动 → 跳过
 #
@@ -79,6 +79,7 @@ jobs:
               registry \
               registry.json \
               components/icons \
+              components/icons-meta.json \
               public/r
           )"
 
@@ -94,6 +95,7 @@ jobs:
             registry \
             registry.json \
             components/icons \
+            components/icons-meta.json \
             public/r
           git commit -m "chore(icons): sync from figma"
           git pull --rebase origin main

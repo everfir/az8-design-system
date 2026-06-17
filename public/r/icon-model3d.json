@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-model3d",
-  "type": "registry:ui",
   "title": "IconModel3D",
   "description": "AZ8 图标：IconModel3D",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconModel3D.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

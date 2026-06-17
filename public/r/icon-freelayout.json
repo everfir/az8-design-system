@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-freelayout",
-  "type": "registry:ui",
   "title": "IconFreeLayout",
   "description": "AZ8 图标：IconFreeLayout",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconFreeLayout.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-availabletoview",
-  "type": "registry:ui",
   "title": "IconAvailabletoview",
   "description": "AZ8 图标：IconAvailabletoview",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconAvailabletoview.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

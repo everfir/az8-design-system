@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-close",
-  "type": "registry:ui",
   "title": "IconClose",
   "description": "AZ8 图标：IconClose",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconClose.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

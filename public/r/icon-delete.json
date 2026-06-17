@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-delete",
-  "type": "registry:ui",
   "title": "IconDelete",
   "description": "AZ8 图标：IconDelete",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconDelete.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

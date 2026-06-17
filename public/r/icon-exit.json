@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-exit",
-  "type": "registry:ui",
   "title": "IconExit",
   "description": "AZ8 图标：IconExit",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconExit.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

@@ -287,7 +287,6 @@ async function main() {
   // viewBox + inner 是 JSX 形式（驼峰属性、自闭合 tag），可直接在 React 里当 dangerouslySetInnerHTML
   // 来做"复制 SVG"按钮时再转回 HTML 形式
   const meta = {
-    generatedAt: new Date().toISOString(),
     icons: built.map((b) => ({
       registryName: b.registryName,
       componentName: b.componentName,

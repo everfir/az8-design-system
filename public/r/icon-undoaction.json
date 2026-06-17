@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-undoaction",
-  "type": "registry:ui",
   "title": "IconUndoAction",
   "description": "AZ8 图标：IconUndoAction",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconUndoAction.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

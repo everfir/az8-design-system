@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-storyboardgrid25",
-  "type": "registry:ui",
   "title": "IconStoryboardGrid25",
   "description": "AZ8 图标：IconStoryboardGrid25",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconStoryboardGrid25.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

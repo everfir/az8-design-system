@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-upload",
-  "type": "registry:ui",
   "title": "IconUpload",
   "description": "AZ8 图标：IconUpload",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconUpload.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

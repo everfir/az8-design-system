@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-adjustment",
-  "type": "registry:ui",
   "title": "Iconadjustment",
   "description": "AZ8 图标：Iconadjustment",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/Iconadjustment.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

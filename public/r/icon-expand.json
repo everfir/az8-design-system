@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-expand",
-  "type": "registry:ui",
   "title": "IconExpand",
   "description": "AZ8 图标：IconExpand",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconExpand.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

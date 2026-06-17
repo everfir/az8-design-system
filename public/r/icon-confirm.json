@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-confirm",
-  "type": "registry:ui",
   "title": "IconConfirm",
   "description": "AZ8 图标：IconConfirm",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconConfirm.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

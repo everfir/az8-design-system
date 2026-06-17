@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-smart",
-  "type": "registry:ui",
   "title": "IconSmart",
   "description": "AZ8 图标：IconSmart",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconSmart.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

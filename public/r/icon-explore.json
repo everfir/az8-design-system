@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-explore",
-  "type": "registry:ui",
   "title": "IconExplore",
   "description": "AZ8 图标：IconExplore",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconExplore.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

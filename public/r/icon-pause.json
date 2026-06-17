@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-pause",
-  "type": "registry:ui",
   "title": "IconPause",
   "description": "AZ8 图标：IconPause",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconPause.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

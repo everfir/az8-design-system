@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-collapse",
-  "type": "registry:ui",
   "title": "IconCollapse",
   "description": "AZ8 图标：IconCollapse",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconCollapse.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

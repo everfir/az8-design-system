@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-loading",
-  "type": "registry:ui",
   "title": "IconLoading",
   "description": "AZ8 图标：IconLoading",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconLoading.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

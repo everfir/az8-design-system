@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-addalt",
-  "type": "registry:ui",
   "title": "IconAddAlt",
   "description": "AZ8 图标：IconAddAlt",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconAddAlt.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }

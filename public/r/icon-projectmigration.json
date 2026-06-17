@@ -1,7 +1,6 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-projectmigration",
-  "type": "registry:ui",
   "title": "IconProjectMigration",
   "description": "AZ8 图标：IconProjectMigration",
   "registryDependencies": [
@@ -14,5 +13,6 @@
       "type": "registry:ui",
       "target": "components/icons/IconProjectMigration.tsx"
     }
-  ]
+  ],
+  "type": "registry:ui"
 }
