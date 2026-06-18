@@ -1,6 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-copynode",
+  "type": "registry:ui",
   "title": "IconCopyNode",
   "description": "AZ8 图标：IconCopyNode",
   "registryDependencies": [
@@ -13,6 +14,5 @@
       "type": "registry:ui",
       "target": "components/icons/IconCopyNode.tsx"
     }
-  ],
-  "type": "registry:ui"
+  ]
 }

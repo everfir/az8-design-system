@@ -58,7 +58,7 @@
       "registryName": "icon-audio",
       "componentName": "IconAudio",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M12.75 4v16h-1.5V4zM16.75 7v10h-1.5V7zM4.75 10v4h-1.5v-4zM20.75 10v4h-1.5v-4zM8.75 7v10h-1.5V7z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M12.75 4v16h-1.5V4zM16.75 7v10h-1.5V7zM5 10v4H3.5v-4zM20.5 10v4H19v-4zM8.75 7v10h-1.5V7z\" />"
     },
     {
       "registryName": "icon-availabletoview",
@@ -121,6 +121,12 @@
       "inner": "<path fill=\"currentColor\" d=\"M4.5 18h15V9.284L15.467 6H4.5zM21 19l-.01.1a.5.5 0 0 1-.49.4h-17A.5.5 0 0 1 3 19V5a.5.5 0 0 1 .5-.5H16l4.815 3.92a.5.5 0 0 1 .185.39z\" /><mask id=\"a\" fill=\"#fff\"><path d=\"M13.5 9a.5.5 0 0 1 .5.5v1.833l1.69-1.126a.2.2 0 0 1 .31.167v3.252a.2.2 0 0 1-.31.167L14 12.666V14.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5z\" /></mask><path fill=\"currentColor\" d=\"M14 9.5h1.2zm0 1.833h-1.2v2.242l1.865-1.243zm1.69-1.126-.664-1-.002.001zm.31.167h-1.2zm0 3.252h1.2zm-.31.167-.666.998.002.002zM14 12.666l.666-.998-1.866-1.245v2.243zM13.5 15v1.2zM8 14.5H6.8zM8.5 9V7.8zm5 0v1.2a.7.7 0 0 1-.7-.7h2.4a1.7 1.7 0 0 0-1.7-1.7zm.5.5h-1.2v1.833h2.4V9.5zm0 1.833.665.999 1.69-1.126-.665-.999-.666-.999-1.69 1.127zm1.69-1.126.663 1a1 1 0 0 1-1.553-.833h2.4c0-1.114-1.24-1.786-2.174-1.167zm.31.167h-1.2v3.252h2.4v-3.252zm0 3.252h-1.2a1 1 0 0 1 1.553-.833l-.664 1-.663 1c.933.619 2.174-.053 2.174-1.167zm-.31.167.665-.998-1.69-1.127-.665.998-.666.998 1.69 1.127zM14 12.666h-1.2V14.5h2.4v-1.834zm0 1.834h-1.2a.7.7 0 0 1 .7-.7v2.4a1.7 1.7 0 0 0 1.7-1.7zm-.5.5v-1.2h-5v2.4h5zm-5 0v-1.2a.7.7 0 0 1 .7.7H6.8a1.7 1.7 0 0 0 1.7 1.7zm-.5-.5h1.2v-5H6.8v5zm0-5h1.2a.7.7 0 0 1-.7.7V7.8a1.7 1.7 0 0 0-1.7 1.7zm.5-.5v1.2h5V7.8h-5z\" mask=\"url(#a)\" />"
     },
     {
+      "registryName": "icon-defaultavatar",
+      "componentName": "IconDefaultavatar",
+      "viewBox": "0 0 24 24",
+      "inner": "<g stroke=\"#F5F5F7\" strokeWidth={1.5} clipPath=\"url(#a)\"><path d=\"M10 16.75h4c2.9 0 5.25 2.35 5.25 5.25v3.25H4.75V22c0-2.9 2.35-5.25 5.25-5.25Z\" /><circle cx={12} cy={9} r={4.25} /></g><defs><clipPath id=\"a\"><path fill=\"currentColor\" d=\"M0 0h24v24H0z\" /></clipPath></defs>"
+    },
+    {
       "registryName": "icon-delete",
       "componentName": "IconDelete",
       "viewBox": "0 0 24 24",
@@ -155,6 +161,12 @@
       "componentName": "IconExplore",
       "viewBox": "0 0 24 24",
       "inner": "<path fill=\"currentColor\" d=\"M19.5 12a7.5 7.5 0 1 0-7.5 7.5V21a9 9 0 1 1 0-18 9 9 0 0 1 0 18v-1.5a7.5 7.5 0 0 0 7.5-7.5\" /><path fill=\"currentColor\" d=\"M14.863 8.421a.5.5 0 0 1 .601.602l-1.158 4.912a.5.5 0 0 1-.371.372l-4.912 1.157a.5.5 0 0 1-.602-.602L9.578 9.95a.5.5 0 0 1 .305-.35l.068-.02zm-3.966 2.476-.645 2.736 2.737-.645.644-2.736z\" />"
+    },
+    {
+      "registryName": "icon-findreference",
+      "componentName": "IconFindreference",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M19.864 6.999a.5.5 0 0 1 .136.342V20.5a.5.5 0 0 1-.5.5H13v-1.5h5.5V7.736L15.462 4.5H7.5V8H6V3.5a.5.5 0 0 1 .5-.5h9.611z\" /><path stroke=\"#F5F5F7\" strokeWidth={1.5} d=\"M10.741 16.384a3 3 0 1 1-.913-5.93 3 3 0 0 1 .913 5.93Z\" /><path stroke=\"#F5F5F7\" strokeLinejoin=\"round\" strokeWidth={1.5} d=\"m8.118 15.776-3.584 4.093\" />"
     },
     {
       "registryName": "icon-freelayout",
@@ -196,7 +208,7 @@
       "registryName": "icon-model3d",
       "componentName": "IconModel3D",
       "viewBox": "0 0 24 24",
-      "inner": "<path stroke=\"#F5F5F7\" strokeLinejoin=\"round\" strokeWidth={1.5} d=\"M12 3.75a8.25 8.25 0 1 1 0 16.5 8.25 8.25 0 0 1 0-16.5Z\" /><path fill=\"currentColor\" d=\"M12.463 9.004C17.218 9.084 21 10.394 21 12l-.012.154C20.748 13.74 16.815 15 12 15l-.463-.004a26 26 0 0 1-1.865-.1q-.088-.725-.132-1.518c.77.078 1.596.122 2.46.122 2.369 0 4.451-.322 5.89-.802.714-.238 1.19-.49 1.46-.698-.27-.209-.746-.46-1.46-.698-1.439-.48-3.521-.802-5.89-.802-.864 0-1.69.043-2.46.121q.043-.793.132-1.52A26 26 0 0 1 12 9zm-4.325.285q-.078.745-.113 1.54c-.719.128-1.364.29-1.915.473-.715.238-1.19.49-1.46.698.27.209.745.46 1.46.698.551.184 1.197.344 1.917.472q.035.794.114 1.539C5.1 14.227 3 13.196 3 12s2.1-2.23 5.138-2.71\" /><path fill=\"currentColor\" d=\"M12 3c1.657 0 3 4.03 3 9l-.003.315q-.72.09-1.505.138.006-.224.008-.453c0-2.369-.322-4.451-.802-5.89-.238-.715-.49-1.19-.698-1.46-.209.27-.46.745-.698 1.46-.48 1.439-.802 3.521-.802 5.89s.322 4.451.802 5.89c.238.714.49 1.19.698 1.46.209-.27.46-.746.698-1.46.342-1.026.6-2.378.723-3.928a25 25 0 0 0 1.513-.126C14.65 17.926 13.447 21 12 21l-.154-.012c-1.534-.233-2.764-3.923-2.842-8.525L9 12c0-4.97 1.343-9 3-9\" />"
+      "inner": "<path stroke=\"#F5F5F7\" strokeLinejoin=\"round\" strokeWidth={1.5} d=\"M12 3.75a8.25 8.25 0 1 1 0 16.5 8.25 8.25 0 0 1 0-16.5Z\" /><path fill=\"currentColor\" d=\"M12 3c1.63 0 2.954 3.899 2.997 8.757q-.716.12-1.499.183c-.005-2.344-.324-4.404-.8-5.83-.238-.715-.49-1.19-.698-1.46-.209.27-.46.745-.698 1.46-.48 1.439-.802 3.521-.802 5.89s.322 4.451.802 5.89c.238.714.49 1.19.698 1.46.209-.27.46-.746.698-1.46.343-1.028.602-2.385.724-3.94a19 19 0 0 0 1.515-.17C14.663 17.898 13.455 21 12 21l-.154-.012c-1.534-.233-2.764-3.923-2.842-8.525L9 12c0-4.97 1.343-9 3-9\" /><path fill=\"currentColor\" d=\"M2.999 11.999c0-1.052 1.623-1.976 4.079-2.511a16 16 0 0 0-.08 1.557q-.477.12-.89.255c-.714.239-1.19.49-1.46.698.27.21.746.46 1.46.699 1.44.48 3.522.802 5.89.802 2.37 0 4.452-.323 5.89-.802.714-.238 1.19-.49 1.46-.698-.27-.21-.745-.46-1.46-.699-1.438-.48-3.52-.802-5.89-.802-1.067 0-2.076.07-2.995.185.014-.528.055-1.04.119-1.527.903-.102 1.87-.157 2.877-.157l.462.003c4.756.08 8.538 1.391 8.538 2.996l-.012.155c-.233 1.534-3.923 2.764-8.526 2.842l-.463.004c-4.97 0-9-1.344-9-3\" />"
     },
     {
       "registryName": "icon-multiangleview",
@@ -262,7 +274,7 @@
       "registryName": "icon-search",
       "componentName": "IconSearch",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M19.05 4.95a7 7 0 0 0-10.4 9.34l-4.272 4.272 1.06 1.06 4.272-4.271A7 7 0 0 0 19.05 4.95m-1.06 1.06a5.5 5.5 0 1 1-7.779 7.779A5.5 5.5 0 0 1 17.99 6.01\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M17.64 5.748a7 7 0 0 0-10.019 9.748l-4.099 4.438.552.51.55.509 4.099-4.438A7 7 0 0 0 17.64 5.748M16.622 6.85a5.5 5.5 0 1 1-7.463 8.083 5.5 5.5 0 0 1 7.463-8.083\" />"
     },
     {
       "registryName": "icon-send",
@@ -316,7 +328,7 @@
       "registryName": "icon-text",
       "componentName": "IconText",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M6.5 19.5h11V7.736L14.462 4.5H6.5zm12.5 1a.5.5 0 0 1-.5.5h-13l-.1-.01a.5.5 0 0 1-.4-.49v-17a.5.5 0 0 1 .5-.5h9.611l3.753 3.999a.5.5 0 0 1 .136.342z\" /><path fill=\"currentColor\" d=\"M15 10.25v1.5H9v-1.5zM15 14.25v1.5H9v-1.5z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M6.5 19.5h11V7.736L14.462 4.5H6.5zm12.5 1a.5.5 0 0 1-.5.5h-13l-.1-.01a.5.5 0 0 1-.4-.49v-17a.5.5 0 0 1 .5-.5h9.611l3.753 3.999a.5.5 0 0 1 .136.342z\" /><path fill=\"currentColor\" d=\"M15 8.5V10H9V8.5z\" /><path fill=\"currentColor\" d=\"M12.75 15.5h-1.5v-6h1.5z\" />"
     },
     {
       "registryName": "icon-threeview",
@@ -379,6 +391,24 @@
       "inner": "<mask id=\"a\" fill=\"#fff\"><rect width={17} height={8} x={3.5} y={12.5} rx={0.5} /></mask><rect width={17} height={8} x={3.5} y={12.5} stroke=\"#F5F5F7\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} /><mask id=\"b\" fill=\"#fff\"><rect width={17} height={8} x={3.5} y={20.5} rx={0.5} transform=\"rotate(-90 3.5 20.5)\" /></mask><rect width={17} height={8} x={3.5} y={20.5} stroke=\"#F5F5F7\" strokeWidth={3} mask=\"url(#b)\" rx={0.5} transform=\"rotate(-90 3.5 20.5)\" /><mask id=\"c\" fill=\"#fff\"><rect width={13} height={13} x={3.5} y={20.5} rx={0.5} transform=\"rotate(-90 3.5 20.5)\" /></mask><rect width={13} height={13} x={3.5} y={20.5} stroke=\"#F5F5F7\" strokeWidth={3} mask=\"url(#c)\" rx={0.5} transform=\"rotate(-90 3.5 20.5)\" />"
     },
     {
+      "registryName": "icon-chatwithai",
+      "componentName": "IconchatwithAi",
+      "viewBox": "0 0 24 24",
+      "inner": "<path stroke=\"#F5F5F7\" strokeWidth={1.5} d=\"M20 8.5v-3a.5.5 0 0 0-.5-.5h-15a.5.5 0 0 0-.5.5v13.898a.5.5 0 0 0 .83.376L8 17h2M20.986 16.262c-.682.407-1.552.98-2.149 1.576-.596.596-1.167 1.465-1.574 2.147-.408-.682-.979-1.551-1.575-2.147-.596-.597-1.466-1.169-2.149-1.576.682-.408 1.552-.978 2.149-1.574.596-.597 1.167-1.467 1.575-2.15.407.683.978 1.553 1.575 2.15.596.596 1.466 1.166 2.148 1.574Z\" />"
+    },
+    {
+      "registryName": "icon-default",
+      "componentName": "Icondefault",
+      "viewBox": "0 0 24 24",
+      "inner": "<mask id=\"a\" fill=\"#fff\"><rect width={14} height={14} x={5} y={5} rx={0.5} /></mask><rect width={14} height={14} x={5} y={5} stroke=\"#F5F5F7\" strokeWidth={3} mask=\"url(#a)\" rx={0.5} />"
+    },
+    {
+      "registryName": "icon-keyboard",
+      "componentName": "Iconkeyboard",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M4.5 5.5v13h15v-13zM3.5 20a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5h17a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5z\" /><path stroke=\"#F5F5F7\" strokeLinejoin=\"round\" strokeWidth={1.5} d=\"M7 15h10M11 12h2M11 9h2M7 12h2M7 9h2M15 12h2M15 9h2\" />"
+    },
+    {
       "registryName": "icon-play",
       "componentName": "Iconplay",
       "viewBox": "0 0 24 24",
@@ -389,6 +419,18 @@
       "componentName": "Iconplayspeed",
       "viewBox": "0 0 24 24",
       "inner": "<g stroke=\"#F5F5F7\" strokeWidth={1.5} clipPath=\"url(#a)\"><path d=\"M4.75 17.466V6.534L11.778 12zM12.75 17.466V6.534L19.778 12z\" /></g><defs><clipPath id=\"a\"><path fill=\"currentColor\" d=\"M0 0h24v24H0z\" /></clipPath></defs>"
+    },
+    {
+      "registryName": "icon-score",
+      "componentName": "Iconscore",
+      "viewBox": "0 0 24 24",
+      "inner": "<path stroke=\"#F5F5F7\" strokeLinejoin=\"round\" strokeWidth={1.35} d=\"M12 3.45 9.248 9.065 3 9.97l4.527 4.425-1.083 6.154L12 17.589l5.556 2.961-1.074-6.154L21 9.971l-6.214-.906z\" />"
+    },
+    {
+      "registryName": "icon-selected",
+      "componentName": "Iconselected",
+      "viewBox": "0 0 24 24",
+      "inner": "<rect width={14} height={14} x={5} y={5} fill=\"currentColor\" rx={0.5} /><path stroke=\"#F5F5F7\" strokeWidth={1.5} d=\"M8.5 11.5 11 14l4.5-4.5\" />"
     },
     {
       "registryName": "icon-loading",

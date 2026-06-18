@@ -1,6 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-play",
+  "type": "registry:ui",
   "title": "Iconplay",
   "description": "AZ8 图标：Iconplay",
   "registryDependencies": [
@@ -13,6 +14,5 @@
       "type": "registry:ui",
       "target": "components/icons/Iconplay.tsx"
     }
-  ],
-  "type": "registry:ui"
+  ]
 }
