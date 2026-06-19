@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function Iconadjustment(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <mask id="a" fill="#fff"><rect width={17} height={8} x={3.5} y={12.5} rx={0.5} /></mask><rect width={17} height={8} x={3.5} y={12.5} stroke="#F5F5F7" strokeWidth={3} mask="url(#a)" rx={0.5} /><mask id="b" fill="#fff"><rect width={17} height={8} x={3.5} y={20.5} rx={0.5} transform="rotate(-90 3.5 20.5)" /></mask><rect width={17} height={8} x={3.5} y={20.5} stroke="#F5F5F7" strokeWidth={3} mask="url(#b)" rx={0.5} transform="rotate(-90 3.5 20.5)" /><mask id="c" fill="#fff"><rect width={13} height={13} x={3.5} y={20.5} rx={0.5} transform="rotate(-90 3.5 20.5)" /></mask><rect width={13} height={13} x={3.5} y={20.5} stroke="#F5F5F7" strokeWidth={3} mask="url(#c)" rx={0.5} transform="rotate(-90 3.5 20.5)" />
+      <path fill="currentColor" d="M5 19h14v-5H5zm15.5 1a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h16a.5.5 0 0 1 .5.5z" /><path fill="currentColor" d="M10 19V5H5v14zm1-15.5a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z" /><path fill="currentColor" d="M15 19V9H5v10zm1-11.5.1.01c.196.04.35.194.39.39l.01.1v12a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.49-.4L3.5 20V8l.01-.1A.5.5 0 0 1 4 7.5z" />
     </IconBase>
   )
 }

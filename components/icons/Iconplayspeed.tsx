@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function Iconplayspeed(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <g stroke="#F5F5F7" strokeWidth={1.5} clipPath="url(#a)"><path d="M4.75 17.466V6.534L11.778 12zM12.75 17.466V6.534L19.778 12z" /></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z" /></clipPath></defs>
+      <g fill="currentColor" clipPath="url(#a)"><path d="M12.695 11.764a.3.3 0 0 1 0 .472l-8.21 6.387a.3.3 0 0 1-.472-.148L4 18.387h.3L4 18V5.613a.3.3 0 0 1 .484-.236zM4 18.387V18l.3.386zm1.5-10.32v7.867L10.557 12z" /><path d="M20.695 11.764a.3.3 0 0 1 0 .472l-8.21 6.387a.3.3 0 0 1-.472-.148L12 18.387h.3L12 18V5.613a.3.3 0 0 1 .484-.236zM12 18.387V18l.3.386zm1.5-10.32v7.867L18.557 12z" /></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z" /></clipPath></defs>
     </IconBase>
   )
 }
