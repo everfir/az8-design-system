@@ -72,33 +72,19 @@ jobs:
           REGISTRY_BASE_URL: https://placeholder.invalid
 
       - name: Commit changes to main if changed
+        # Figma 是图标的唯一数据源：把工作区所有产物一次性纳入提交，
+        # 用 --force-with-lease 覆盖 main，避免本地手改与 Figma 同步双向漂移。
         run: |
-          changed_paths="$(
-            git status --porcelain -- \
-              public/raw-svg \
-              registry \
-              registry.json \
-              components/icons \
-              components/icons-meta.json \
-              public/r
-          )"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
 
-          if [ -z "$changed_paths" ]; then
+          if git diff --cached --quiet; then
             echo "No icon changes found."
             exit 0
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- \
-            public/raw-svg \
-            registry \
-            registry.json \
-            components/icons \
-            components/icons-meta.json \
-            public/r
           git commit -m "chore(icons): sync from figma"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git push --force-with-lease origin HEAD:main
 
           echo "Pushed icon sync commit to main."
