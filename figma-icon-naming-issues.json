@@ -1,0 +1,23 @@
+{
+  "rule": "Figma component 名必须形如 \"AZ8/Icon/<PascalCase>\"",
+  "total": 74,
+  "standard": 59,
+  "nonstandard": 15,
+  "names": [
+    "AZ8/Icon/Available to view",
+    "AZ8/Icon/Default avatar",
+    "AZ8/Icon/Default avatar",
+    "AZ8/Icon/Find reference",
+    "AZ8/Icon/Multiple choice/default",
+    "AZ8/Icon/Multiple choice/selected",
+    "AZ8/Icon/Video clarity",
+    "AZ8/Icon/Volume adjustment",
+    "AZ8/Icon/adjustment",
+    "AZ8/Icon/chat with Ai",
+    "AZ8/Icon/keyboard",
+    "AZ8/Icon/loading",
+    "AZ8/Icon/play",
+    "AZ8/Icon/play speed",
+    "AZ8/Icon/score"
+  ]
+}

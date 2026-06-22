@@ -32,6 +32,22 @@ import path from "node:path";
 
 const ROOT = path.resolve(__dirname, "..");
 const RAW_DIR = path.join(ROOT, "public/raw-svg");
+const NAMING_REPORT = path.join(ROOT, "figma-icon-naming-issues.json");
+
+/**
+ * Figma 命名标准：component 名形如 "AZ8/Icon/<PascalCase>"。
+ * 末段必须匹配 PascalCase（首字母大写、纯字母数字、无空格 / 连字符 / 下划线 /
+ * 多级路径）。不符合的项不影响同步流程，但会在 sync 末尾输出原始命名清单，
+ * 供设计侧统一修复。
+ */
+const PASCAL_RE = /^[A-Z][A-Za-z0-9]*$/;
+
+function isStandardName(rawName: string) {
+  const segs = rawName.split("/").filter(Boolean);
+  if (segs.length > 3) return false;
+  const last = segs[segs.length - 1]?.trim() ?? "";
+  return PASCAL_RE.test(last);
+}
 
 const FIGMA_TOKEN = process.env.FIGMA_TOKEN;
 const FIGMA_FILE_KEY = process.env.FIGMA_FILE_KEY;
@@ -170,6 +186,32 @@ async function main() {
     icons.length > 0,
     `${rootLabel} 里没有 COMPONENT。请把图标转成 component（选中 → ⌥⌘K）`,
   );
+
+  // 命名标准检查：不阻塞同步，仅把不符合标准的原始命名输出给设计侧
+  const nonstandard = icons
+    .filter((it) => !isStandardName(it.name))
+    .map((it) => it.name)
+    .sort();
+  const namingReport = {
+    rule: 'Figma component 名必须形如 "AZ8/Icon/<PascalCase>"',
+    total: icons.length,
+    standard: icons.length - nonstandard.length,
+    nonstandard: nonstandard.length,
+    names: nonstandard,
+  };
+  if (!DRY) {
+    await writeFile(
+      NAMING_REPORT,
+      JSON.stringify(namingReport, null, 2) + "\n",
+      "utf8",
+    );
+  }
+  console.log(
+    `🔎 naming: ${namingReport.standard}/${namingReport.total} 规范，${namingReport.nonstandard} 个待修复${
+      DRY ? "" : ` → ${path.relative(ROOT, NAMING_REPORT)}`
+    }`,
+  );
+  for (const name of nonstandard) console.log(`   • ${name}`);
 
   // 同名冲突：去掉非法字符后大小写敏感地比较
   const byName = new Map<string, { id: string; rawName: string }>();
