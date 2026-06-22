@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconSearch(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M17.64 5.748a7 7 0 0 0-10.019 9.748l-4.099 4.438.552.51.55.509 4.099-4.438A7 7 0 0 0 17.64 5.748M16.622 6.85a5.5 5.5 0 1 1-7.463 8.083 5.5 5.5 0 0 1 7.463-8.083" />
+      <circle cx={7} cy={7} r={6.25} stroke="#F5F5F7" strokeWidth={1.5} transform="scale(-1 1)rotate(-42.714 2.03 34.38)" /><path fill="currentColor" d="m8.243 15 1.06 1.06-4.242 4.243L4 19.243z" />
     </IconBase>
   )
 }
