@@ -417,6 +417,22 @@
       ]
     },
     {
+      "name": "icon-dropdownarrow",
+      "type": "registry:ui",
+      "title": "IconDropDownArrow",
+      "description": "AZ8 图标：IconDropDownArrow",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconDropDownArrow.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconDropDownArrow.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-edit",
       "type": "registry:ui",
       "title": "IconEdit",
@@ -477,6 +493,22 @@
           "path": "registry/icons/IconExplore.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconExplore.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-fail",
+      "type": "registry:ui",
+      "title": "IconFail",
+      "description": "AZ8 图标：IconFail",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconFail.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconFail.tsx"
         }
       ]
     },
@@ -589,6 +621,22 @@
           "path": "registry/icons/IconLighting.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconLighting.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-like",
+      "type": "registry:ui",
+      "title": "IconLike",
+      "description": "AZ8 图标：IconLike",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconLike.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconLike.tsx"
         }
       ]
     },
