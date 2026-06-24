@@ -257,6 +257,22 @@
       ]
     },
     {
+      "name": "icon-comment",
+      "type": "registry:ui",
+      "title": "IconComment",
+      "description": "AZ8 图标：IconComment",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconComment.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconComment.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-community",
       "type": "registry:ui",
       "title": "IconCommunity",
@@ -861,6 +877,22 @@
           "path": "registry/icons/IconSaveToAssets.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconSaveToAssets.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-saved",
+      "type": "registry:ui",
+      "title": "IconSaved",
+      "description": "AZ8 图标：IconSaved",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSaved.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSaved.tsx"
         }
       ]
     },
