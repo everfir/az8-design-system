@@ -1,7 +1,7 @@
 {
   "rule": "Figma component 名必须形如 \"AZ8/Icon/<PascalCase>\"",
-  "total": 77,
-  "standard": 77,
+  "total": 79,
+  "standard": 79,
   "nonstandard": 0,
   "names": []
 }

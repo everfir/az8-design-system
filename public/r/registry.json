@@ -145,6 +145,22 @@
       ]
     },
     {
+      "name": "icon-appendix",
+      "type": "registry:ui",
+      "title": "IconAppendix",
+      "description": "AZ8 图标：IconAppendix",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAppendix.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAppendix.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-assets",
       "type": "registry:ui",
       "title": "IconAssets",
@@ -413,6 +429,22 @@
           "path": "registry/icons/IconDelete.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconDelete.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-disavailabletoview",
+      "type": "registry:ui",
+      "title": "IconDisavailableToView",
+      "description": "AZ8 图标：IconDisavailableToView",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconDisavailableToView.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconDisavailableToView.tsx"
         }
       ]
     },
