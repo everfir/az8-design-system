@@ -52,7 +52,7 @@
       "registryName": "icon-appendix",
       "componentName": "IconAppendix",
       "viewBox": "0 0 24 24",
-      "inner": "<path stroke=\"#F5F5F7\" strokeWidth={1.5} d=\"M6 8v6.25a5.75 5.75 0 0 0 11.5 0V7.923a3.923 3.923 0 1 0-7.846 0v5.886a2.077 2.077 0 0 0 4.154 0V8\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M5.25 14.25V8h1.5v6.25a5 5 0 0 0 10 0V7.923a3.173 3.173 0 0 0-6.346 0v5.886a1.327 1.327 0 1 0 2.654 0V8h1.5v5.809a2.827 2.827 0 0 1-5.654 0V7.923a4.673 4.673 0 0 1 9.346 0v6.327a6.5 6.5 0 1 1-13 0\" />"
     },
     {
       "registryName": "icon-assets",
@@ -100,7 +100,7 @@
       "registryName": "icon-comment",
       "componentName": "IconComment",
       "viewBox": "0 0 24 24",
-      "inner": "<path stroke=\"#F5F5F7\" strokeWidth={1.5} d=\"M4 19.118V5.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 .5.5v11.222a.5.5 0 0 1-.5.5H8.783a.5.5 0 0 0-.256.071l-3.77 2.255a.5.5 0 0 1-.757-.43Z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"m4.75 18.678 3.392-2.029.15-.076c.155-.066.322-.1.491-.1H19.25V5.75H4.75zm16-1.955c0 .69-.56 1.25-1.25 1.25H8.85L5.143 20.19a1.25 1.25 0 0 1-1.892-1.073V5.5c0-.69.56-1.25 1.25-1.25h15c.69 0 1.25.56 1.25 1.25z\" />"
     },
     {
       "registryName": "icon-community",
@@ -340,7 +340,7 @@
       "registryName": "icon-saved",
       "componentName": "IconSaved",
       "viewBox": "0 0 24 24",
-      "inner": "<path stroke=\"#F5F5F7\" strokeWidth={1.5} d=\"M5 19.084V5.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v13.584a.5.5 0 0 1-.77.42l-5.96-3.83a.5.5 0 0 0-.54 0l-5.96 3.83a.5.5 0 0 1-.77-.42Z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"m5.75 18.626 5.574-3.583.16-.087a1.25 1.25 0 0 1 1.033 0l.159.087 5.574 3.583V5.75H5.75zm14 .458a1.25 1.25 0 0 1-1.926 1.052L12 16.39l-5.824 3.745a1.25 1.25 0 0 1-1.926-1.052V5.5c0-.69.56-1.25 1.25-1.25h13c.69 0 1.25.56 1.25 1.25z\" />"
     },
     {
       "registryName": "icon-score",
@@ -352,7 +352,7 @@
       "registryName": "icon-search",
       "componentName": "IconSearch",
       "viewBox": "0 0 24 24",
-      "inner": "<circle cx={7} cy={7} r={6.25} stroke=\"#F5F5F7\" strokeWidth={1.5} transform=\"scale(-1 1)rotate(-42.714 2.03 34.38)\" /><path fill=\"currentColor\" d=\"m8.243 15 1.06 1.06-4.242 4.243L4 19.243z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M8.85 7.16a5.5 5.5 0 1 1 .31 7.773l-1.017 1.102A7 7 0 1 0 17.64 5.748a7 7 0 0 0-9.497 10.287l1.018-1.102a5.5 5.5 0 0 1-.31-7.772\" /><path fill=\"currentColor\" d=\"m8.243 15 1.06 1.06-4.242 4.243L4 19.243z\" />"
     },
     {
       "registryName": "icon-send",

@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconAppendix(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path stroke="#F5F5F7" strokeWidth={1.5} d="M6 8v6.25a5.75 5.75 0 0 0 11.5 0V7.923a3.923 3.923 0 1 0-7.846 0v5.886a2.077 2.077 0 0 0 4.154 0V8" />
+      <path fill="currentColor" d="M5.25 14.25V8h1.5v6.25a5 5 0 0 0 10 0V7.923a3.173 3.173 0 0 0-6.346 0v5.886a1.327 1.327 0 1 0 2.654 0V8h1.5v5.809a2.827 2.827 0 0 1-5.654 0V7.923a4.673 4.673 0 0 1 9.346 0v6.327a6.5 6.5 0 1 1-13 0" />
     </IconBase>
   )
 }

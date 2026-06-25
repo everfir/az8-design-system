@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconComment(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path stroke="#F5F5F7" strokeWidth={1.5} d="M4 19.118V5.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 .5.5v11.222a.5.5 0 0 1-.5.5H8.783a.5.5 0 0 0-.256.071l-3.77 2.255a.5.5 0 0 1-.757-.43Z" />
+      <path fill="currentColor" d="m4.75 18.678 3.392-2.029.15-.076c.155-.066.322-.1.491-.1H19.25V5.75H4.75zm16-1.955c0 .69-.56 1.25-1.25 1.25H8.85L5.143 20.19a1.25 1.25 0 0 1-1.892-1.073V5.5c0-.69.56-1.25 1.25-1.25h15c.69 0 1.25.56 1.25 1.25z" />
     </IconBase>
   )
 }
