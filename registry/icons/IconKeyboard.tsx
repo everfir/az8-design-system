@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconKeyboard(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M4.5 5.5v13h15v-13zM3.5 20a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5h17a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5z" /><path stroke="#F5F5F7" strokeLinejoin="round" strokeWidth={1.5} d="M7 15h10M11 12h2M11 9h2M7 12h2M7 9h2M15 12h2M15 9h2" />
+      <path fill="currentColor" d="M4.5 5.5v13h15v-13zM3.5 20a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5h17a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5z" /><path stroke="currentColor" strokeLinejoin="round" strokeWidth={1.5} d="M7 15h10M11 12h2M11 9h2M7 12h2M7 9h2M15 12h2M15 9h2" />
     </IconBase>
   )
 }

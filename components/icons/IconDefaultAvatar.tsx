@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconDefaultAvatar(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <g stroke="#F5F5F7" strokeWidth={1.5} clipPath="url(#a)"><path d="M10 16.75h4c2.9 0 5.25 2.35 5.25 5.25v3.25H4.75V22c0-2.9 2.35-5.25 5.25-5.25Z" /><circle cx={12} cy={9} r={4.25} /></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z" /></clipPath></defs>
+      <g stroke="currentColor" strokeWidth={1.5} clipPath="url(#a)"><path d="M10 16.75h4c2.9 0 5.25 2.35 5.25 5.25v3.25H4.75V22c0-2.9 2.35-5.25 5.25-5.25Z" /><circle cx={12} cy={9} r={4.25} /></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h24v24H0z" /></clipPath></defs>
     </IconBase>
   )
 }

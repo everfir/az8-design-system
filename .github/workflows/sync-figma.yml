@@ -16,7 +16,7 @@
 #   - 拉 SVG → public/raw-svg/
 #   - 跑 icons:build 重新生成组件 + icons-meta.json + registry.json
 #   - 跑 shadcn build 更新 public/r/*.json
-#   - 有变动 → 直接提交到 main 触发 deploy；无变动 → 跳过
+#   - 有变动 → 直接提交到 main 并触发 deploy；无变动 → 跳过
 #
 # 默认带 --prune：Figma 删了的图标本地也删，防止僵尸文件
 name: sync from figma
@@ -34,6 +34,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   sync:
@@ -72,6 +73,7 @@ jobs:
           REGISTRY_BASE_URL: https://placeholder.invalid
 
       - name: Commit changes to main if changed
+        id: commit
         # Figma 是图标的唯一数据源：把工作区所有产物一次性纳入提交，
         # 用 --force-with-lease 覆盖 main，避免本地手改与 Figma 同步双向漂移。
         run: |
@@ -81,10 +83,18 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No icon changes found."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           git commit -m "chore(icons): sync from figma"
           git push --force-with-lease origin HEAD:main
 
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
           echo "Pushed icon sync commit to main."
+
+      - name: Trigger GitHub Pages deploy
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
