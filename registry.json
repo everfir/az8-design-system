@@ -625,6 +625,22 @@
       ]
     },
     {
+      "name": "icon-guide",
+      "type": "registry:ui",
+      "title": "IconGuide",
+      "description": "AZ8 图标：IconGuide",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconGuide.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconGuide.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-image",
       "type": "registry:ui",
       "title": "IconImage",
