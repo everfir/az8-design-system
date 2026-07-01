@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconStoryboardGrid25(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <mask id="a" fill="#fff"><path d="M20 3.5a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z" /></mask><path fill="currentColor" d="M20 3.5V2zm.5.5H22zm0 16H22zm-.5.5V22zm-16 0V22zm-.5-.5H5zm0-16H2zm.5-.5V5zm16 0V5a1 1 0 0 1-1-1h3a2 2 0 0 0-2-2zm.5.5H19v16h3V4zm0 16H19a1 1 0 0 1 1-1v3a2 2 0 0 0 2-2zm-.5.5V19H4v3h16zm-16 0V19a1 1 0 0 1 1 1H2a2 2 0 0 0 2 2zm-.5-.5H5V4H2v16zm0-16H5a1 1 0 0 1-1 1V2a2 2 0 0 0-2 2zm.5-.5V5h16V2H4z" mask="url(#a)" /><path fill="currentColor" d="M10 8.75v1.5H4v-1.5zM20 8.75v1.5h-6v-1.5z" /><path fill="currentColor" d="M10.25 19.5h-1.5V4h1.5zM15.25 19.5h-1.5V4h1.5z" /><path fill="currentColor" d="M15 13.75v1.5H9v-1.5z" />
+      <path fill="currentColor" d="M4 20.5a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5h16a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5zM5 19h14V5H5z" /><path fill="currentColor" d="M10 8.75v1.5H4v-1.5zM20 8.75v1.5h-6v-1.5z" /><path fill="currentColor" d="M10.25 19.5h-1.5V4h1.5zM15.25 19.5h-1.5V4h1.5z" /><path fill="currentColor" d="M15 13.75v1.5H9v-1.5z" />
     </IconBase>
   )
 }

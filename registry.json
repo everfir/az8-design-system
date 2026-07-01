@@ -1281,6 +1281,22 @@
       ]
     },
     {
+      "name": "icon-brandstom",
+      "type": "registry:ui",
+      "title": "Iconbrandstom",
+      "description": "AZ8 图标：Iconbrandstom",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/Iconbrandstom.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/Iconbrandstom.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-loading",
       "type": "registry:ui",
       "title": "IconLoading",
