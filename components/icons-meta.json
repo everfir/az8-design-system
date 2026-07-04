@@ -148,7 +148,7 @@
       "registryName": "icon-defaultavatar",
       "componentName": "IconDefaultAvatar",
       "viewBox": "0 0 24 24",
-      "inner": "<g stroke=\"currentColor\" strokeWidth={1.5} clipPath=\"url(#a)\"><path d=\"M10 16.75h4c2.9 0 5.25 2.35 5.25 5.25v3.25H4.75V22c0-2.9 2.35-5.25 5.25-5.25Z\" /><circle cx={12} cy={9} r={4.25} /></g><defs><clipPath id=\"a\"><path fill=\"currentColor\" d=\"M0 0h24v24H0z\" /></clipPath></defs>"
+      "inner": "<circle cx={12} cy={9} r={4.25} stroke=\"currentColor\" strokeWidth={1.5} /><path fill=\"currentColor\" d=\"M14 16a6 6 0 0 1 5.915 5h-1.528A4.5 4.5 0 0 0 14 17.5h-4A4.5 4.5 0 0 0 5.613 21H4.085A6 6 0 0 1 10 16z\" />"
     },
     {
       "registryName": "icon-delete",
@@ -199,6 +199,12 @@
       "inner": "<path fill=\"currentColor\" d=\"M19.5 12a7.5 7.5 0 1 0-7.5 7.5V21a9 9 0 1 1 0-18 9 9 0 0 1 0 18v-1.5a7.5 7.5 0 0 0 7.5-7.5\" /><path fill=\"currentColor\" d=\"M14.863 8.421a.5.5 0 0 1 .601.602l-1.158 4.912a.5.5 0 0 1-.371.372l-4.912 1.157a.5.5 0 0 1-.602-.602L9.578 9.95a.5.5 0 0 1 .305-.35l.068-.02zm-3.966 2.476-.645 2.736 2.737-.645.644-2.736z\" />"
     },
     {
+      "registryName": "icon-extendduration",
+      "componentName": "IconExtendDuration",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M4.5 18h15V9.284L15.467 6H4.5zM21 19l-.01.1a.5.5 0 0 1-.49.4h-17A.5.5 0 0 1 3 19V5a.5.5 0 0 1 .5-.5H16l4.815 3.92a.5.5 0 0 1 .185.39z\" /><path fill=\"currentColor\" d=\"m13.743 15.486-1.06-1.061 2.181-2.182-2.182-2.182L13.742 9l3.243 3.243zM9.243 15.486l-1.06-1.061 2.181-2.182-2.182-2.182L9.242 9l3.243 3.243z\" />"
+    },
+    {
       "registryName": "icon-fail",
       "componentName": "IconFail",
       "viewBox": "0 0 24 24",
@@ -239,6 +245,12 @@
       "componentName": "IconImage",
       "viewBox": "0 0 24 24",
       "inner": "<path fill=\"currentColor\" d=\"M4.5 5.5v13h15v-13zM3.5 20a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5h17a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5z\" /><path fill=\"currentColor\" d=\"M14.25 13.75h3.25v1.5h-4.75v-3.82L7.5 15.066v-1.824l6.75-4.673z\" />"
+    },
+    {
+      "registryName": "icon-imageedite",
+      "componentName": "IconImageEdite",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M20.5 4a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5h-17a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5zm-16 14.5h15v-13h-15z\" /><path fill=\"currentColor\" d=\"M16 13.5V15h-3v-1.5zM9.768 14.718l-1.238.176.177-1.237L14.364 8l1.06 1.06z\" />"
     },
     {
       "registryName": "icon-keyboard",
@@ -376,7 +388,7 @@
       "registryName": "icon-share",
       "componentName": "IconShare",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"m20.06 4.998-8 9-1.12-.996 8-9z\" /><path fill=\"currentColor\" d=\"M10.5 5H5v14h14v-5.5h1.5V20l-.01.1a.5.5 0 0 1-.39.39l-.1.01H4a.5.5 0 0 1-.49-.4L3.5 20V4a.5.5 0 0 1 .5-.5h6.5zM20.5 9.5H19V5h-4.5V3.5h6z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"m20.06 4.998-8 9-1.12-.996 8-9z\" /><path fill=\"currentColor\" d=\"M9.5 5H5v14h14v-4.5h1.5V20l-.01.1a.5.5 0 0 1-.39.39l-.1.01H4a.5.5 0 0 1-.49-.4L3.5 20V4a.5.5 0 0 1 .5-.5h5.5zM20.5 9.5H19V5h-4.5V3.5h6z\" />"
     },
     {
       "registryName": "icon-signal",
@@ -394,13 +406,13 @@
       "registryName": "icon-smart",
       "componentName": "IconSmart",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"M19.042 13.553a16 16 0 0 0-5.489 5.489L11.9 21.799l-1.653-2.757a16 16 0 0 0-5.489-5.489L2 11.9l2.757-1.653a16 16 0 0 0 5.228-5.07l.26-.419L11.9 2l1.653 2.757a16 16 0 0 0 5.07 5.228l.419.26 2.757 1.655zm-.772-2.022a17.5 17.5 0 0 1-6.002-6.002l-.369-.614-.368.614a17.5 17.5 0 0 1-6.002 6.002l-.613.368.613.369a17.5 17.5 0 0 1 6.002 6.002l.368.612.369-.612a17.5 17.5 0 0 1 6.002-6.002l.613-.37z\" /><path fill=\"currentColor\" d=\"m11.968 10.2 1.768 1.768-1.768 1.768-1.768-1.768z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"M19.042 13.553a16 16 0 0 0-5.489 5.489L11.9 21.799l-1.653-2.757a16 16 0 0 0-5.489-5.489L2 11.9l2.757-1.653a16 16 0 0 0 5.228-5.07l.26-.419L11.9 2l1.653 2.757a16 16 0 0 0 5.07 5.228l.419.26 2.757 1.655zm-.772-2.022a17.5 17.5 0 0 1-6.002-6.002l-.369-.614-.367.614a17.5 17.5 0 0 1-6.003 6.002l-.613.368.613.369a17.5 17.5 0 0 1 6.002 6.002l.368.612.369-.612a17.5 17.5 0 0 1 6.002-6.002l.613-.37z\" /><path fill=\"currentColor\" d=\"m11.968 10.2 1.768 1.768-1.768 1.768-1.768-1.768z\" />"
     },
     {
       "registryName": "icon-splitfromgrid",
       "componentName": "IconSplitFromGrid",
       "viewBox": "0 0 24 24",
-      "inner": "<path fill=\"currentColor\" d=\"m20.53 4.53-6 6-1.06-1.06 6-6z\" /><path fill=\"currentColor\" d=\"M9.556 5H5v14h14v-4.556H9.556zm1.5 7.944H20a.5.5 0 0 1 .5.5V20a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5h6.556a.5.5 0 0 1 .5.5zM20.5 9.5H19V5h-4.5V3.5h6z\" />"
+      "inner": "<path fill=\"currentColor\" d=\"m20.03 5.03-6 6-1.06-1.06 6-6z\" /><path fill=\"currentColor\" d=\"M20 10h-1.5V5.5H14V4h6zM5.5 9.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5zM14.5 18.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5zM5.5 18.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5z\" />"
     },
     {
       "registryName": "icon-storyboardgrid25",
@@ -443,6 +455,12 @@
       "componentName": "IconUpload",
       "viewBox": "0 0 24 24",
       "inner": "<path fill=\"currentColor\" d=\"m11.25 4.656-.021 10 1.499.003.022-10z\" /><path fill=\"currentColor\" d=\"M8.15 6.828 9.21 7.89l2.768-2.768 2.768 2.768 1.06-1.06L11.979 3zM19.75 19.5c0 .69-.56 1.25-1.25 1.25h-13c-.69 0-1.25-.56-1.25-1.25V11h1.5v8.25h12.5V11h1.5z\" />"
+    },
+    {
+      "registryName": "icon-versionupdate",
+      "componentName": "IconVersionUpdate",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M20 7.5a.5.5 0 0 1 .5.5v11.5l-.01.1a.5.5 0 0 1-.39.39L20 20H4a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5zm-15 11h14V9H5z\" /><path fill=\"currentColor\" d=\"M12.743 11.288V16h-1.5v-4.712z\" /><path fill=\"currentColor\" d=\"m15.235 13.823-1.06 1.061-2.182-2.182-2.182 2.182-1.061-1.06 3.243-3.243z\" /><rect width={12} height={1.5} x={6} y={4} fill=\"currentColor\" rx={0.5} />"
     },
     {
       "registryName": "icon-video",

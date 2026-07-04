@@ -545,6 +545,22 @@
       ]
     },
     {
+      "name": "icon-extendduration",
+      "type": "registry:ui",
+      "title": "IconExtendDuration",
+      "description": "AZ8 图标：IconExtendDuration",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconExtendDuration.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconExtendDuration.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-fail",
       "type": "registry:ui",
       "title": "IconFail",
@@ -653,6 +669,22 @@
           "path": "registry/icons/IconImage.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconImage.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-imageedite",
+      "type": "registry:ui",
+      "title": "IconImageEdite",
+      "description": "AZ8 图标：IconImageEdite",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconImageEdite.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconImageEdite.tsx"
         }
       ]
     },
@@ -1197,6 +1229,22 @@
           "path": "registry/icons/IconUpload.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconUpload.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-versionupdate",
+      "type": "registry:ui",
+      "title": "IconVersionUpdate",
+      "description": "AZ8 图标：IconVersionUpdate",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconVersionUpdate.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconVersionUpdate.tsx"
         }
       ]
     },

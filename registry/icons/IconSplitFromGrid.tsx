@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconSplitFromGrid(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="m20.53 4.53-6 6-1.06-1.06 6-6z" /><path fill="currentColor" d="M9.556 5H5v14h14v-4.556H9.556zm1.5 7.944H20a.5.5 0 0 1 .5.5V20a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5h6.556a.5.5 0 0 1 .5.5zM20.5 9.5H19V5h-4.5V3.5h6z" />
+      <path fill="currentColor" d="m20.03 5.03-6 6-1.06-1.06 6-6z" /><path fill="currentColor" d="M20 10h-1.5V5.5H14V4h6zM5.5 9.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5zM14.5 18.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5zM5.5 18.5h4v-4h-4zm5.5 1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5z" />
     </IconBase>
   )
 }
