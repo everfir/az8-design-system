@@ -161,6 +161,22 @@
       ]
     },
     {
+      "name": "icon-arrangecanvasfromlefttoright",
+      "type": "registry:ui",
+      "title": "IconArrangeCanvasfromLefttoRight",
+      "description": "AZ8 图标：IconArrangeCanvasfromLefttoRight",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconArrangeCanvasfromLefttoRight.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconArrangeCanvasfromLefttoRight.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-assets",
       "type": "registry:ui",
       "title": "IconAssets",
