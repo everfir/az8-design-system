@@ -1169,6 +1169,22 @@
       ]
     },
     {
+      "name": "icon-textedite",
+      "type": "registry:ui",
+      "title": "IconTextEdite",
+      "description": "AZ8 图标：IconTextEdite",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconTextEdite.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconTextEdite.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-threeview",
       "type": "registry:ui",
       "title": "IconThreeView",
@@ -1341,6 +1357,22 @@
           "path": "registry/icons/IconVolumeAdjustment.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconVolumeAdjustment.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-volumeoff",
+      "type": "registry:ui",
+      "title": "IconVolumeOff",
+      "description": "AZ8 图标：IconVolumeOff",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconVolumeOff.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconVolumeOff.tsx"
         }
       ]
     },

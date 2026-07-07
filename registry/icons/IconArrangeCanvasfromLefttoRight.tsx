@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconArrangeCanvasfromLefttoRight(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <mask id="a" fill="#fff"><rect width={6} height={7} x={14} y={4} rx={0.5} /></mask><rect width={6} height={7} x={14} y={4} stroke="currentColor" strokeWidth={3} mask="url(#a)" rx={0.5} /><mask id="b" fill="#fff"><rect width={6} height={16} x={4} y={4} rx={0.5} /></mask><rect width={6} height={16} x={4} y={4} stroke="currentColor" strokeWidth={3} mask="url(#b)" rx={0.5} /><mask id="c" fill="#fff"><rect width={6} height={7} x={14} y={13} rx={0.5} /></mask><rect width={6} height={7} x={14} y={13} stroke="currentColor" strokeWidth={3} mask="url(#c)" rx={0.5} /><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 16.5h-2v-9h2M10 7.5h2" />
+      <mask id="a" fill="#fff"><rect width={6} height={7} x={14} y={4} rx={0.5} /></mask><rect width={6} height={7} x={14} y={4} stroke="currentColor" strokeWidth={3} mask="url(#a)" rx={0.5} /><mask id="b" fill="#fff"><rect width={6} height={7} x={4} y={8.5} rx={0.5} /></mask><rect width={6} height={7} x={4} y={8.5} stroke="currentColor" strokeWidth={3} mask="url(#b)" rx={0.5} /><mask id="c" fill="#fff"><rect width={6} height={7} x={14} y={13} rx={0.5} /></mask><rect width={6} height={7} x={14} y={13} stroke="currentColor" strokeWidth={3} mask="url(#c)" rx={0.5} /><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m9.5 12 5-4.5M9.5 12l5 4.5" />
     </IconBase>
   )
 }
