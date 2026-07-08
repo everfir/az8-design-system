@@ -817,6 +817,54 @@
       ]
     },
     {
+      "name": "icon-objectmovement",
+      "type": "registry:ui",
+      "title": "IconObjectMovement",
+      "description": "AZ8 图标：IconObjectMovement",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconObjectMovement.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconObjectMovement.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-objectrotation",
+      "type": "registry:ui",
+      "title": "IconObjectRotation",
+      "description": "AZ8 图标：IconObjectRotation",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconObjectRotation.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconObjectRotation.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-objectscaling",
+      "type": "registry:ui",
+      "title": "IconObjectScaling",
+      "description": "AZ8 图标：IconObjectScaling",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconObjectScaling.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconObjectScaling.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-pause",
       "type": "registry:ui",
       "title": "IconPause",
@@ -1153,6 +1201,22 @@
       ]
     },
     {
+      "name": "icon-takephoto",
+      "type": "registry:ui",
+      "title": "IconTakePhoto",
+      "description": "AZ8 图标：IconTakePhoto",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconTakePhoto.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconTakePhoto.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-text",
       "type": "registry:ui",
       "title": "IconText",
@@ -1293,6 +1357,22 @@
           "path": "registry/icons/IconVideo.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconVideo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-videocamera",
+      "type": "registry:ui",
+      "title": "IconVideoCamera",
+      "description": "AZ8 图标：IconVideoCamera",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconVideoCamera.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconVideoCamera.tsx"
         }
       ]
     },
