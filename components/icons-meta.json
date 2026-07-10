@@ -325,10 +325,22 @@
       "inner": "<path fill=\"currentColor\" d=\"M5.5 18.5h13v-13h-13zm14.5 1a.5.5 0 0 1-.4.49l-.1.01h-15l-.1-.01a.5.5 0 0 1-.39-.39L4 19.5v-15a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 .5.5z\" />"
     },
     {
+      "registryName": "icon-pausefilled",
+      "componentName": "IconPauseFilled",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M19.5 4a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.4.49l-.1.01h-15l-.1-.01a.5.5 0 0 1-.39-.39L4 19.5v-15a.5.5 0 0 1 .5-.5z\" />"
+    },
+    {
       "registryName": "icon-play",
       "componentName": "IconPlay",
       "viewBox": "0 0 24 24",
       "inner": "<path fill=\"currentColor\" d=\"M18.25 11.567a.5.5 0 0 1 0 .866l-12 6.928a.5.5 0 0 1-.75-.433H6l-.5-.866V5.073l.005-.071a.5.5 0 0 1 .745-.362zM5.5 18.927v-.864l.5.865zM7 6.805v10.392L16 12z\" />"
+    },
+    {
+      "registryName": "icon-playfilled",
+      "componentName": "IconPlayFilled",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M5.505 5a.5.5 0 0 1 .745-.362l12 6.93a.5.5 0 0 1 0 .864l-12 6.929a.5.5 0 0 1-.75-.434V5.072z\" />"
     },
     {
       "registryName": "icon-playspeed",

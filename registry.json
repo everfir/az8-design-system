@@ -881,6 +881,22 @@
       ]
     },
     {
+      "name": "icon-pausefilled",
+      "type": "registry:ui",
+      "title": "IconPauseFilled",
+      "description": "AZ8 图标：IconPauseFilled",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconPauseFilled.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconPauseFilled.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-play",
       "type": "registry:ui",
       "title": "IconPlay",
@@ -893,6 +909,22 @@
           "path": "registry/icons/IconPlay.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconPlay.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-playfilled",
+      "type": "registry:ui",
+      "title": "IconPlayFilled",
+      "description": "AZ8 图标：IconPlayFilled",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconPlayFilled.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconPlayFilled.tsx"
         }
       ]
     },
