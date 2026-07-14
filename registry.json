@@ -145,6 +145,22 @@
       ]
     },
     {
+      "name": "icon-animals",
+      "type": "registry:ui",
+      "title": "IconAnimals",
+      "description": "AZ8 图标：IconAnimals",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAnimals.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAnimals.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-appendix",
       "type": "registry:ui",
       "title": "IconAppendix",
@@ -237,6 +253,22 @@
           "path": "registry/icons/IconAvailableToView.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconAvailableToView.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-characters",
+      "type": "registry:ui",
+      "title": "IconCharacters",
+      "description": "AZ8 图标：IconCharacters",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCharacters.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCharacters.tsx"
         }
       ]
     },
