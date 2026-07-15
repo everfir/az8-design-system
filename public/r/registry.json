@@ -673,6 +673,22 @@
       ]
     },
     {
+      "name": "icon-geometry",
+      "type": "registry:ui",
+      "title": "IconGeometry",
+      "description": "AZ8 图标：IconGeometry",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconGeometry.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconGeometry.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-group",
       "type": "registry:ui",
       "title": "IconGroup",
@@ -749,6 +765,22 @@
           "path": "registry/icons/IconKeyboard.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconKeyboard.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-keyframe",
+      "type": "registry:ui",
+      "title": "IconKeyframe",
+      "description": "AZ8 图标：IconKeyframe",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconKeyframe.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconKeyframe.tsx"
         }
       ]
     },
@@ -1041,6 +1073,22 @@
       ]
     },
     {
+      "name": "icon-recordkeyframes",
+      "type": "registry:ui",
+      "title": "IconRecordkeyframes",
+      "description": "AZ8 图标：IconRecordkeyframes",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconRecordkeyframes.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconRecordkeyframes.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-redoaction",
       "type": "registry:ui",
       "title": "IconRedoAction",
@@ -1245,6 +1293,22 @@
           "path": "registry/icons/IconSplitFromGrid.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconSplitFromGrid.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-sticker",
+      "type": "registry:ui",
+      "title": "IconSticker",
+      "description": "AZ8 图标：IconSticker",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSticker.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSticker.tsx"
         }
       ]
     },
