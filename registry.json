@@ -769,6 +769,38 @@
       ]
     },
     {
+      "name": "icon-geometry2",
+      "type": "registry:ui",
+      "title": "IconGeometry2",
+      "description": "AZ8 图标：IconGeometry2",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconGeometry2.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconGeometry2.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-geometry3",
+      "type": "registry:ui",
+      "title": "IconGeometry3",
+      "description": "AZ8 图标：IconGeometry3",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconGeometry3.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconGeometry3.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-group",
       "type": "registry:ui",
       "title": "IconGroup",
