@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconPlayFilled(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M5.505 5a.5.5 0 0 1 .745-.362l12 6.93a.5.5 0 0 1 0 .864l-12 6.929a.5.5 0 0 1-.75-.434V5.072z" />
+      <path fill="currentColor" d="M5.505 5a.5.5 0 0 1 .745-.361l12 6.928a.5.5 0 0 1 0 .865l-12 6.93a.5.5 0 0 1-.75-.434V5.072z" />
     </IconBase>
   )
 }

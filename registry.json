@@ -65,6 +65,22 @@
       ]
     },
     {
+      "name": "icon-addcamera",
+      "type": "registry:ui",
+      "title": "IconAddCamera",
+      "description": "AZ8 图标：IconAddCamera",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAddCamera.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAddCamera.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-adjust",
       "type": "registry:ui",
       "title": "IconAdjust",
@@ -193,6 +209,22 @@
       ]
     },
     {
+      "name": "icon-arrow",
+      "type": "registry:ui",
+      "title": "IconArrow",
+      "description": "AZ8 图标：IconArrow",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconArrow.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconArrow.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-assets",
       "type": "registry:ui",
       "title": "IconAssets",
@@ -257,6 +289,22 @@
       ]
     },
     {
+      "name": "icon-brush",
+      "type": "registry:ui",
+      "title": "IconBrush",
+      "description": "AZ8 图标：IconBrush",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconBrush.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconBrush.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-characters",
       "type": "registry:ui",
       "title": "IconCharacters",
@@ -285,6 +333,22 @@
           "path": "registry/icons/IconChatWithAI.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconChatWithAI.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle",
+      "type": "registry:ui",
+      "title": "IconCircle",
+      "description": "AZ8 图标：IconCircle",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCircle.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCircle.tsx"
         }
       ]
     },
@@ -545,6 +609,22 @@
       ]
     },
     {
+      "name": "icon-eraser",
+      "type": "registry:ui",
+      "title": "IconEraser",
+      "description": "AZ8 图标：IconEraser",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconEraser.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconEraser.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-exit",
       "type": "registry:ui",
       "title": "IconExit",
@@ -737,6 +817,22 @@
       ]
     },
     {
+      "name": "icon-imageassets",
+      "type": "registry:ui",
+      "title": "IconImageAssets",
+      "description": "AZ8 图标：IconImageAssets",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconImageAssets.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconImageAssets.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-imageedite",
       "type": "registry:ui",
       "title": "IconImageEdite",
@@ -813,6 +909,22 @@
           "path": "registry/icons/IconLike.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconLike.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-marqueeselect",
+      "type": "registry:ui",
+      "title": "IconMarqueeSelect",
+      "description": "AZ8 图标：IconMarqueeSelect",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconMarqueeSelect.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconMarqueeSelect.tsx"
         }
       ]
     },
@@ -925,6 +1037,22 @@
           "path": "registry/icons/IconObjectScaling.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconObjectScaling.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-paintbucket",
+      "type": "registry:ui",
+      "title": "IconPaintBucket",
+      "description": "AZ8 图标：IconPaintBucket",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconPaintBucket.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconPaintBucket.tsx"
         }
       ]
     },
@@ -1089,6 +1217,22 @@
       ]
     },
     {
+      "name": "icon-rectangle",
+      "type": "registry:ui",
+      "title": "IconRectangle",
+      "description": "AZ8 图标：IconRectangle",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconRectangle.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconRectangle.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-redoaction",
       "type": "registry:ui",
       "title": "IconRedoAction",
@@ -1181,6 +1325,38 @@
           "path": "registry/icons/IconSearch.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconSearch.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-select",
+      "type": "registry:ui",
+      "title": "IconSelect",
+      "description": "AZ8 图标：IconSelect",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSelect.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSelect.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-selected",
+      "type": "registry:ui",
+      "title": "IconSelected",
+      "description": "AZ8 图标：IconSelected",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSelected.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSelected.tsx"
         }
       ]
     },

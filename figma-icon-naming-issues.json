@@ -1,10 +1,11 @@
 {
   "rule": "Figma component 名必须形如 \"AZ8/Icon/<PascalCase>\"",
-  "total": 100,
-  "standard": 98,
-  "nonstandard": 2,
+  "total": 112,
+  "standard": 109,
+  "nonstandard": 3,
   "names": [
     "AZ8/Icon/ArrangeCanvasfromLefttoRight.",
-    "AZ8/Icon/brandstom"
+    "AZ8/Icon/brandstom",
+    "AZ8/Icon/写字"
   ]
 }

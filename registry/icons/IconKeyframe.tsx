@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconKeyframe(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M11.693 5.627a.433.433 0 0 1 .613 0l6.067 6.066a.433.433 0 0 1 0 .613l-6.067 6.067a.433.433 0 0 1-.613 0l-6.066-6.067a.433.433 0 0 1 0-.613z" />
+      <path fill="currentColor" d="M11.693 5.627c.17-.17.443-.17.612 0l6.068 6.066a.433.433 0 0 1 0 .613l-6.068 6.067a.433.433 0 0 1-.612 0l-6.066-6.068a.433.433 0 0 1 0-.612z" />
     </IconBase>
   )
 }
