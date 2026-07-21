@@ -1,16 +1,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_1022_2910" fill="white">
-<rect x="14" y="4" width="6" height="7" rx="0.5"/>
-</mask>
-<rect x="14" y="4" width="6" height="7" rx="0.5" stroke="#F5F5F7" stroke-width="3" mask="url(#path-1-inside-1_1022_2910)"/>
-<mask id="path-2-inside-2_1022_2910" fill="white">
-<rect x="4" y="8.5" width="6" height="7" rx="0.5"/>
-</mask>
-<rect x="4" y="8.5" width="6" height="7" rx="0.5" stroke="#F5F5F7" stroke-width="3" mask="url(#path-2-inside-2_1022_2910)"/>
-<mask id="path-3-inside-3_1022_2910" fill="white">
-<rect x="14" y="13" width="6" height="7" rx="0.5"/>
-</mask>
-<rect x="14" y="13" width="6" height="7" rx="0.5" stroke="#F5F5F7" stroke-width="3" mask="url(#path-3-inside-3_1022_2910)"/>
-<path d="M9.5 12L14.5 7.5" stroke="#F5F5F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.5 12L14.5 16.5" stroke="#F5F5F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5 9.5H18.5V5.5H15.5V9.5ZM20 10.5C20 10.7761 19.7761 11 19.5 11H14.5L14.3994 10.9902C14.1714 10.9437 14 10.7417 14 10.5V4.5C14 4.22386 14.2239 4 14.5 4H19.5C19.7761 4 20 4.22386 20 4.5V10.5Z" fill="#F5F5F7"/>
+<path d="M5.5 14H8.5V10H5.5V14ZM10 15C10 15.2761 9.77614 15.5 9.5 15.5H4.5L4.39941 15.4902C4.17145 15.4437 4 15.2417 4 15V9C4 8.72386 4.22386 8.5 4.5 8.5H9.5C9.77614 8.5 10 8.72386 10 9V15Z" fill="#F5F5F7"/>
+<path d="M15.5 18.5H18.5V14.5H15.5V18.5ZM20 19.5C20 19.7761 19.7761 20 19.5 20H14.5L14.3994 19.9902C14.1714 19.9437 14 19.7417 14 19.5V13.5C14 13.2239 14.2239 13 14.5 13H19.5C19.7761 13 20 13.2239 20 13.5V19.5Z" fill="#F5F5F7"/>
+<path d="M13.998 6.94238C14.3059 6.6653 14.7805 6.69021 15.0576 6.99805C15.3347 7.30591 15.3098 7.78052 15.002 8.05762L10.002 12.5576C9.69409 12.8347 9.21948 12.8098 8.94238 12.502C8.6653 12.1941 8.69021 11.7195 8.99805 11.4424L13.998 6.94238Z" fill="#F5F5F7"/>
+<path d="M13.998 17.0576C14.3059 17.3347 14.7805 17.3098 15.0576 17.002C15.3347 16.6941 15.3098 16.2195 15.002 15.9424L10.002 11.4424C9.69409 11.1653 9.21948 11.1902 8.94238 11.498C8.6653 11.8059 8.69021 12.2805 8.99805 12.5576L13.998 17.0576Z" fill="#F5F5F7"/>
 </svg>

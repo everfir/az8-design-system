@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconArrangeCanvasfromLefttoRight(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <mask id="a" fill="#fff"><rect width={6} height={7} x={14} y={4} rx={0.5} /></mask><rect width={6} height={7} x={14} y={4} stroke="currentColor" strokeWidth={3} mask="url(#a)" rx={0.5} /><mask id="b" fill="#fff"><rect width={6} height={7} x={4} y={8.5} rx={0.5} /></mask><rect width={6} height={7} x={4} y={8.5} stroke="currentColor" strokeWidth={3} mask="url(#b)" rx={0.5} /><mask id="c" fill="#fff"><rect width={6} height={7} x={14} y={13} rx={0.5} /></mask><rect width={6} height={7} x={14} y={13} stroke="currentColor" strokeWidth={3} mask="url(#c)" rx={0.5} /><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m9.5 12 5-4.5M9.5 12l5 4.5" />
+      <path fill="currentColor" d="M15.5 9.5h3v-4h-3zm4.5 1a.5.5 0 0 1-.5.5h-5l-.1-.01a.5.5 0 0 1-.4-.49v-6a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5zM5.5 14h3v-4h-3zm4.5 1a.5.5 0 0 1-.5.5h-5l-.1-.01A.5.5 0 0 1 4 15V9a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5zM15.5 18.5h3v-4h-3zm4.5 1a.5.5 0 0 1-.5.5h-5l-.1-.01a.5.5 0 0 1-.4-.49v-6a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5z" /><path fill="currentColor" d="M13.998 6.942a.75.75 0 0 1 1.004 1.116l-5 4.5a.75.75 0 0 1-1.004-1.116z" /><path fill="currentColor" d="M13.998 17.058a.75.75 0 0 0 1.004-1.116l-5-4.5a.75.75 0 0 0-1.004 1.116z" />
     </IconBase>
   )
 }
