@@ -81,6 +81,22 @@
       ]
     },
     {
+      "name": "icon-addtag",
+      "type": "registry:ui",
+      "title": "IconAddTag",
+      "description": "AZ8 图标：IconAddTag",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAddTag.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAddTag.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-adjust",
       "type": "registry:ui",
       "title": "IconAdjust",
@@ -941,6 +957,22 @@
           "path": "registry/icons/IconLike.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconLike.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-location",
+      "type": "registry:ui",
+      "title": "IconLocation",
+      "description": "AZ8 图标：IconLocation",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconLocation.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconLocation.tsx"
         }
       ]
     },
