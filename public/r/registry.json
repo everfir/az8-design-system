@@ -321,6 +321,22 @@
       ]
     },
     {
+      "name": "icon-canvasmode",
+      "type": "registry:ui",
+      "title": "IconCanvasMode",
+      "description": "AZ8 图标：IconCanvasMode",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCanvasMode.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCanvasMode.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-characters",
       "type": "registry:ui",
       "title": "IconCharacters",
@@ -397,6 +413,22 @@
           "path": "registry/icons/IconCollapse.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconCollapse.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-collapsegroup",
+      "type": "registry:ui",
+      "title": "IconCollapseGroup",
+      "description": "AZ8 图标：IconCollapseGroup",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCollapseGroup.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCollapseGroup.tsx"
         }
       ]
     },
@@ -625,6 +657,22 @@
       ]
     },
     {
+      "name": "icon-elementlayout",
+      "type": "registry:ui",
+      "title": "IconElementLayout",
+      "description": "AZ8 图标：IconElementLayout",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconElementLayout.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconElementLayout.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-eraser",
       "type": "registry:ui",
       "title": "IconEraser",
@@ -669,6 +717,22 @@
           "path": "registry/icons/IconExpand.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconExpand.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-expandgroup",
+      "type": "registry:ui",
+      "title": "IconExpandGroup",
+      "description": "AZ8 图标：IconExpandGroup",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconExpandGroup.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconExpandGroup.tsx"
         }
       ]
     },
@@ -1313,6 +1377,22 @@
       ]
     },
     {
+      "name": "icon-referencemode",
+      "type": "registry:ui",
+      "title": "IconReferenceMode",
+      "description": "AZ8 图标：IconReferenceMode",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconReferenceMode.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconReferenceMode.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-refresh",
       "type": "registry:ui",
       "title": "IconRefresh",
@@ -1537,6 +1617,22 @@
       ]
     },
     {
+      "name": "icon-state",
+      "type": "registry:ui",
+      "title": "IconState",
+      "description": "AZ8 图标：IconState",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconState.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconState.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-sticker",
       "type": "registry:ui",
       "title": "IconSticker",
@@ -1645,6 +1741,22 @@
           "path": "registry/icons/IconTranslate.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconTranslate.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-ungroup",
+      "type": "registry:ui",
+      "title": "IconUnGroup",
+      "description": "AZ8 图标：IconUnGroup",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconUnGroup.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconUnGroup.tsx"
         }
       ]
     },
@@ -1821,6 +1933,22 @@
           "path": "registry/icons/IconVolumeOff.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconVolumeOff.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-waiting",
+      "type": "registry:ui",
+      "title": "IconWaiting",
+      "description": "AZ8 图标：IconWaiting",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconWaiting.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconWaiting.tsx"
         }
       ]
     },

@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconGroup(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M20 8h-1.5V5.5H16V4h4zM20 16h-1.5v2.5H16V20h4zM4.5 4a.5.5 0 0 0-.5.5V8h1.5V5.5H8V4zM4 16h1.5v2.5H8V20H4zM12 9H9v3h3v3h3v-3h-3zm1.5 1.5H16a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-2.5H8a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5z" />
+      <path fill="currentColor" d="M4 8h1.5V5.5H8V4H4zM4 16h1.5v2.5H8V20H4zM19.5 4a.5.5 0 0 1 .5.5V8h-1.5V5.5H16V4zM20 16h-1.5v2.5H16V20h4zM12 9h3v3h-3v3H9v-3h3zm-1.5 1.5H8a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-2.5H16a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0-.5.5z" />
     </IconBase>
   )
 }

@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconSelect(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path stroke="currentColor" strokeWidth={1.5} d="M17.049 6.211a.25.25 0 0 1 .322.323l-4.39 11.583a.25.25 0 0 1-.468 0l-1.79-4.817-.119-.322-.322-.119-4.815-1.79a.25.25 0 0 1-.002-.468z" />
+      <path stroke="currentColor" strokeWidth={1.5} d="M17.049 6.211a.25.25 0 0 1 .322.323l-4.39 11.583a.25.25 0 0 1-.468 0l-1.79-4.817-.119-.322-.322-.119-4.816-1.79a.25.25 0 0 1 0-.468z" />
     </IconBase>
   )
 }
