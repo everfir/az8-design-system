@@ -289,6 +289,12 @@
       "inner": "<path fill=\"currentColor\" d=\"M12.754 13h-1.5l-.23-4.977a.5.5 0 0 1 .5-.523h.953a.5.5 0 0 1 .5.522z\" /><path fill=\"currentColor\" d=\"M5.5 19.5h13V7.736L15.462 4.5H5.5zm14.5 1a.5.5 0 0 1-.5.5h-15l-.1-.01a.5.5 0 0 1-.4-.49v-17a.5.5 0 0 1 .5-.5h11.611l3.753 3.999a.5.5 0 0 1 .136.342z\" /><circle cx={12} cy={16} r={1} fill=\"currentColor\" />"
     },
     {
+      "registryName": "icon-filter",
+      "componentName": "IconFilter",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M9.838 12.515a.75.75 0 0 1 .112.394v6.341h4.1v-6.34c0-.14.039-.277.112-.395l4.492-7.265H5.346zM15.55 19.5c0 .69-.56 1.25-1.25 1.25H9.7c-.69 0-1.25-.56-1.25-1.25v-6.378L3.834 5.657A1.25 1.25 0 0 1 4.897 3.75h14.206a1.25 1.25 0 0 1 1.063 1.907l-4.616 7.465z\" />"
+    },
+    {
       "registryName": "icon-findreference",
       "componentName": "IconFindReference",
       "viewBox": "0 0 24 24",

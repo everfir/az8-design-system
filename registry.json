@@ -785,6 +785,22 @@
       ]
     },
     {
+      "name": "icon-filter",
+      "type": "registry:ui",
+      "title": "IconFilter",
+      "description": "AZ8 图标：IconFilter",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconFilter.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconFilter.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-findreference",
       "type": "registry:ui",
       "title": "IconFindReference",
