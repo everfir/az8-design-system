@@ -209,6 +209,22 @@
       ]
     },
     {
+      "name": "icon-archive",
+      "type": "registry:ui",
+      "title": "IconArchive",
+      "description": "AZ8 图标：IconArchive",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconArchive.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconArchive.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-arrangecanvasfromlefttoright",
       "type": "registry:ui",
       "title": "IconArrangeCanvasfromLefttoRight",
@@ -1121,6 +1137,22 @@
       ]
     },
     {
+      "name": "icon-nopin",
+      "type": "registry:ui",
+      "title": "IconNoPin",
+      "description": "AZ8 图标：IconNoPin",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconNoPin.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconNoPin.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-notification",
       "type": "registry:ui",
       "title": "IconNotification",
@@ -1229,6 +1261,38 @@
           "path": "registry/icons/IconPauseFilled.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconPauseFilled.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-pin",
+      "type": "registry:ui",
+      "title": "IconPin",
+      "description": "AZ8 图标：IconPin",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconPin.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconPin.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-pinfilled",
+      "type": "registry:ui",
+      "title": "IconPinFilled",
+      "description": "AZ8 图标：IconPinFilled",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconPinFilled.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconPinFilled.tsx"
         }
       ]
     },
