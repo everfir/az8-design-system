@@ -1,7 +1,7 @@
 {
   "rule": "Figma component 名必须形如 \"AZ8/Icon/<PascalCase>\"",
-  "total": 130,
-  "standard": 127,
+  "total": 131,
+  "standard": 128,
   "nonstandard": 3,
   "names": [
     "AZ8/Icon/ArrangeCanvasfromLefttoRight.",
