@@ -3,8 +3,8 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 
 export function IconSelected(props: IconProps) {
   return (
-    <IconBase viewBox="0 0 82 82" {...props}>
-      <path fill="currentColor" d="M44.53 39.53 32.975 51.087l-5.53-6.082 1.11-1.01 4.47 4.918L43.47 38.47z" />
+    <IconBase viewBox="0 0 24 24" {...props}>
+      <path fill="currentColor" d="M20.53 6.53 8.975 18.087l-5.53-6.082 1.11-1.01 4.47 4.918L19.47 5.47z" />
     </IconBase>
   )
 }

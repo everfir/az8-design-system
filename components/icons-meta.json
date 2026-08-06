@@ -591,8 +591,8 @@
     {
       "registryName": "icon-selected",
       "componentName": "IconSelected",
-      "viewBox": "0 0 82 82",
-      "inner": "<path fill=\"currentColor\" d=\"M44.53 39.53 32.975 51.087l-5.53-6.082 1.11-1.01 4.47 4.918L43.47 38.47z\" />"
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M20.53 6.53 8.975 18.087l-5.53-6.082 1.11-1.01 4.47 4.918L19.47 5.47z\" />"
     },
     {
       "registryName": "icon-send",
