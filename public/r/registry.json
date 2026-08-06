@@ -641,6 +641,22 @@
       ]
     },
     {
+      "name": "icon-drag",
+      "type": "registry:ui",
+      "title": "IconDrag",
+      "description": "AZ8 图标：IconDrag",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconDrag.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconDrag.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-dropdownarrow",
       "type": "registry:ui",
       "title": "IconDropDownArrow",

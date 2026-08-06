@@ -235,6 +235,12 @@
       "inner": "<path fill=\"currentColor\" d=\"m11.25 13.001-.021-10 1.499-.003.022 10z\" /><path fill=\"currentColor\" d=\"m8.15 10.829 1.06-1.061 2.768 2.768 2.768-2.768 1.06 1.06-3.828 3.829z\" /><path fill=\"currentColor\" d=\"M19.75 19.5c0 .69-.56 1.25-1.25 1.25h-13c-.69 0-1.25-.56-1.25-1.25V11h1.5v8.25h12.5V11h1.5z\" />"
     },
     {
+      "registryName": "icon-drag",
+      "componentName": "IconDrag",
+      "viewBox": "0 0 24 24",
+      "inner": "<rect width={3} height={3} x={7.5} y={4.5} fill=\"currentColor\" rx={0.5} /><rect width={3} height={3} x={7.5} y={10.5} fill=\"currentColor\" rx={0.5} /><rect width={3} height={3} x={7.5} y={16.5} fill=\"currentColor\" rx={0.5} /><rect width={3} height={3} x={13.5} y={4.5} fill=\"currentColor\" rx={0.5} /><rect width={3} height={3} x={13.5} y={10.5} fill=\"currentColor\" rx={0.5} /><rect width={3} height={3} x={13.5} y={16.5} fill=\"currentColor\" rx={0.5} />"
+    },
+    {
       "registryName": "icon-dropdownarrow",
       "componentName": "IconDropDownArrow",
       "viewBox": "0 0 24 24",
