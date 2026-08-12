@@ -145,6 +145,22 @@
       ]
     },
     {
+      "name": "icon-aithinking",
+      "type": "registry:ui",
+      "title": "IconAiThinking",
+      "description": "AZ8 图标：IconAiThinking",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAiThinking.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAiThinking.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-alignleft",
       "type": "registry:ui",
       "title": "IconAlignLeft",
@@ -493,6 +509,22 @@
           "path": "registry/icons/IconCommunity.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconCommunity.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-completed",
+      "type": "registry:ui",
+      "title": "IconCompleted",
+      "description": "AZ8 图标：IconCompleted",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconCompleted.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconCompleted.tsx"
         }
       ]
     },
