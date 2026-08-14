@@ -1793,6 +1793,22 @@
       ]
     },
     {
+      "name": "icon-storyboard",
+      "type": "registry:ui",
+      "title": "IconStoryboard",
+      "description": "AZ8 图标：IconStoryboard",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconStoryboard.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconStoryboard.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-storyboardgrid25",
       "type": "registry:ui",
       "title": "IconStoryboardGrid25",
