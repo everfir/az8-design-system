@@ -337,6 +337,38 @@
       ]
     },
     {
+      "name": "icon-bodytext",
+      "type": "registry:ui",
+      "title": "IconBodyText",
+      "description": "AZ8 图标：IconBodyText",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconBodyText.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconBodyText.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-boldtext",
+      "type": "registry:ui",
+      "title": "IconBoldText",
+      "description": "AZ8 图标：IconBoldText",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconBoldText.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconBoldText.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-brush",
       "type": "registry:ui",
       "title": "IconBrush",
@@ -1009,6 +1041,54 @@
       ]
     },
     {
+      "name": "icon-h1",
+      "type": "registry:ui",
+      "title": "IconH1",
+      "description": "AZ8 图标：IconH1",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconH1.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconH1.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-h2",
+      "type": "registry:ui",
+      "title": "IconH2",
+      "description": "AZ8 图标：IconH2",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconH2.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconH2.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-h3",
+      "type": "registry:ui",
+      "title": "IconH3",
+      "description": "AZ8 图标：IconH3",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconH3.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconH3.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-image",
       "type": "registry:ui",
       "title": "IconImage",
@@ -1053,6 +1133,22 @@
           "path": "registry/icons/IconImageEdite.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconImageEdite.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-italicfont",
+      "type": "registry:ui",
+      "title": "IconItalicFont",
+      "description": "AZ8 图标：IconItalicFont",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconItalicFont.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconItalicFont.tsx"
         }
       ]
     },
@@ -1229,6 +1325,22 @@
           "path": "registry/icons/IconNotification.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconNotification.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-numberedlist",
+      "type": "registry:ui",
+      "title": "IconNumberedList",
+      "description": "AZ8 图标：IconNumberedList",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconNumberedList.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconNumberedList.tsx"
         }
       ]
     },
@@ -1661,6 +1773,22 @@
           "path": "registry/icons/IconSend.tsx",
           "type": "registry:ui",
           "target": "components/icons/IconSend.tsx"
+        }
+      ]
+    },
+    {
+      "name": "icon-separatorline",
+      "type": "registry:ui",
+      "title": "IconSeparatorLine",
+      "description": "AZ8 图标：IconSeparatorLine",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSeparatorLine.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSeparatorLine.tsx"
         }
       ]
     },
