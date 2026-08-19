@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconSeparatorLine(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path stroke="currentColor" strokeLinejoin="round" strokeWidth={1.5} d="M4 12h16" /><path fill="currentColor" d="M14 18.25v1.5h-4v-1.5zM20 18.25v1.5h-4v-1.5zM14 4.25v1.5h-4v-1.5zM8 18.25v1.5H4v-1.5zM8 4.25v1.5H4v-1.5zM20 4.25v1.5h-4v-1.5z" />
+      <path fill="currentColor" d="M20 11.25v1.5H4v-1.5zM14 18.25v1.5h-4v-1.5zM20 18.25v1.5h-4v-1.5zM14 4.25v1.5h-4v-1.5zM8 18.25v1.5H4v-1.5zM8 4.25v1.5H4v-1.5zM20 4.25v1.5h-4v-1.5z" />
     </IconBase>
   )
 }

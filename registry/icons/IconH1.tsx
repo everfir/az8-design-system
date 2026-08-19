@@ -4,7 +4,7 @@ import { IconBase, type IconProps } from "@/components/icons/icon-base"
 export function IconH1(props: IconProps) {
   return (
     <IconBase viewBox="0 0 24 24" {...props}>
-      <path fill="currentColor" d="M13 12.75H5v-1.5h8z" /><path fill="currentColor" d="M13.25 4a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5h-.5a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5zM5 4a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5h-.5a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5z" /><path fill="currentColor" d="M16.5 19.41a.5.5 0 0 1-.5-.5v-.2a.5.5 0 0 1 .5-.5h1.1v-4.67h-.85a.5.5 0 0 1-.5-.5c0-.243.174-.449.41-.504q.305-.07.55-.156.337-.123.633-.3a.54.54 0 0 1 .277-.08h.44a.5.5 0 0 1 .5.5v5.71h.89a.5.5 0 0 1 .5.5v.2a.5.5 0 0 1-.5.5z" />
+      <path fill="currentColor" d="M13 12.75H5v-1.5h8z" /><path fill="currentColor" d="M13.25 4a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5h-.5a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5zM5 4a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-.5.5h-.5a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5zM16.5 19.41a.5.5 0 0 1-.5-.5v-.2a.5.5 0 0 1 .5-.5h1.1v-4.67h-.85a.5.5 0 0 1-.5-.5c0-.243.174-.449.41-.504q.305-.07.55-.156.337-.123.633-.3a.54.54 0 0 1 .277-.08h.44a.5.5 0 0 1 .5.5v5.71h.89a.5.5 0 0 1 .5.5v.2a.5.5 0 0 1-.5.5z" />
     </IconBase>
   )
 }

@@ -1857,6 +1857,22 @@
       ]
     },
     {
+      "name": "icon-skills",
+      "type": "registry:ui",
+      "title": "IconSkills",
+      "description": "AZ8 图标：IconSkills",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconSkills.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconSkills.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-smart",
       "type": "registry:ui",
       "title": "IconSmart",
