@@ -457,6 +457,12 @@
       "inner": "<path fill=\"currentColor\" d=\"M14 20v-1.44h4.56V14H20v4.8a1.2 1.2 0 0 1-1.2 1.2zM14 4v1.44h4.56V10H20V5.2A1.2 1.2 0 0 0 18.8 4zM10 4v1.44H5.44V10H4V5.2A1.2 1.2 0 0 1 5.2 4zM10 20v-1.44H5.44V14H4v4.8A1.2 1.2 0 0 0 5.2 20zM11.914 10.5l1.414 1.414-1.414 1.414-1.414-1.414z\" />"
     },
     {
+      "registryName": "icon-map",
+      "componentName": "IconMap",
+      "viewBox": "0 0 24 24",
+      "inner": "<path stroke=\"currentColor\" strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth={1.5} d=\"M19.25 7.445v11.291l-4.14-2.258a1.25 1.25 0 0 0-1.094-.05l-.147.076-4.387 2.632-4.732-2.582V5.263L8.89 7.52a1.25 1.25 0 0 0 1.24-.025l4.387-2.633zM9.5 8v10.5M14.5 5v11\" />"
+    },
+    {
       "registryName": "icon-marqueeselect",
       "componentName": "IconMarqueeSelect",
       "viewBox": "0 0 24 24",

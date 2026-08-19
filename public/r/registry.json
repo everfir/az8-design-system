@@ -1233,6 +1233,22 @@
       ]
     },
     {
+      "name": "icon-map",
+      "type": "registry:ui",
+      "title": "IconMap",
+      "description": "AZ8 图标：IconMap",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconMap.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconMap.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-marqueeselect",
       "type": "registry:ui",
       "title": "IconMarqueeSelect",
