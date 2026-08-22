@@ -115,6 +115,12 @@
       "inner": "<path fill=\"currentColor\" d=\"M12.75 4v16h-1.5V4zM16.75 7v10h-1.5V7zM5 10v4H3.5v-4zM20.5 10v4H19v-4zM8.75 7v10h-1.5V7z\" />"
     },
     {
+      "registryName": "icon-authorization",
+      "componentName": "IconAuthorization",
+      "viewBox": "0 0 24 24",
+      "inner": "<path fill=\"currentColor\" d=\"M12.75 3v4h-1.5V3zM21 12.75h-4v-1.5h4zM17.728 18.789l-2.829-2.829 1.061-1.06 2.829 2.828zM6.06 18.789l2.83-2.829-1.062-1.06L5 17.728zM12.75 17v4h-1.5v-4zM7 12.75H3v-1.5h4zM7.828 8.89 5 6.06 6.06 5l2.83 2.828zM15.96 8.89l2.829-2.83L17.728 5l-2.829 2.828zM13.25 12a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0m1.5 0a2.75 2.75 0 1 1-5.5 0 2.75 2.75 0 0 1 5.5 0\" />"
+    },
+    {
       "registryName": "icon-availabletoview",
       "componentName": "IconAvailableToView",
       "viewBox": "0 0 24 24",

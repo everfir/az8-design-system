@@ -321,6 +321,22 @@
       ]
     },
     {
+      "name": "icon-authorization",
+      "type": "registry:ui",
+      "title": "IconAuthorization",
+      "description": "AZ8 图标：IconAuthorization",
+      "registryDependencies": [
+        "https://placeholder.invalid/r/icon-base.json"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/IconAuthorization.tsx",
+          "type": "registry:ui",
+          "target": "components/icons/IconAuthorization.tsx"
+        }
+      ]
+    },
+    {
       "name": "icon-availabletoview",
       "type": "registry:ui",
       "title": "IconAvailableToView",
